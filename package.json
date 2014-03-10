@@ -9,7 +9,7 @@
     "express": "3.4.8",
     "jade": "*",
     "mongodb": "*",
-    "monk": "*",
+    "mongoskin": "*",
     "ejs": "*"
   }
 }

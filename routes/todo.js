@@ -1,10 +1,8 @@
 exports.list = function(db) {
   return function(req, res) {
-    var collection = db.get('todocollection');
-    collection.find({},{},function(e,docs){
-      //res.json(docs);
+    db.collection('todocollection').find().toArray(function(err, items) {
       res.write('{"todos":');
-      res.write(JSON.stringify(docs));
+      res.write(JSON.stringify(items));
       res.end('}');
     });
   };
@@ -12,20 +10,17 @@ exports.list = function(db) {
 
 exports.update = function(db) {
   return function(req, res) {
-    var i = 0;
+    var id = req.params.id;
   };
 };
 
 exports.create = function(db) {
   return function(req, res) {
-    var collection = db.get('todocollection');
-    // Submit to the DB
-    collection.insert(req.body.todo, function (err, doc) {
+    db.collection('todocollection').insert(req.body.todo, function (err, result) {
       if (err) {
-        res.send("There was a problem adding the information to the database.");
-      }
-      else {
-        res.json(doc);
+        res.send({msg: err});
+      } else {
+        res.json(result);
       }
     });
   };
@@ -33,6 +28,9 @@ exports.create = function(db) {
 
 exports.del = function(db) {
   return function(req, res) {
-    var i = 0;
+    var id = req.params.id;
+    db.collection('todocollection').removeById(id, function(err, result) {
+      res.send((result === 1) ? { msg: '' } : { msg:'error: ' + err });
+    });
   };
 };

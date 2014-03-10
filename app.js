@@ -1,8 +1,6 @@
-
 /**
  * Module dependencies.
  */
-
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -10,17 +8,14 @@ var todo = require('./routes/todo');
 var http = require('http');
 var path = require('path');
 
-// New Code
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('localhost:27017/ember-todo');
+var mongo = require('mongoskin');
+var db = mongo.db("mongodb://localhost:27017/ember-todo", {native_parser:true});
 
 var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-//app.set('view engine', 'jade');
 app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
@@ -44,6 +39,6 @@ app.put('/todos/:id', todo.update(db));
 app.post('/todos', todo.create(db));
 app.del('/todos/:id', todo.del(db));
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });
