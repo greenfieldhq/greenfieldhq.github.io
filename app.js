@@ -40,10 +40,9 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list(db));
 app.get('/todos', todo.list(db));
-//app.get('/helloworld', routes.helloworld);
-//app.get('/userlist', routes.userlist(db));
-//app.get('/newuser', routes.newuser);
-//app.post('/adduser', routes.adduser(db));
+app.put('/todos/:id', todo.update(db));
+app.post('/todos', todo.create(db));
+app.del('/todos', todo.delete(db));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
