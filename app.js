@@ -42,7 +42,7 @@ app.get('/users', user.list(db));
 app.get('/todos', todo.list(db));
 app.put('/todos/:id', todo.update(db));
 app.post('/todos', todo.create(db));
-app.del('/todos', todo.delete(db));
+app.del('/todos/:id', todo.del(db));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
