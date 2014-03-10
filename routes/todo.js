@@ -11,6 +11,9 @@ exports.list = function(db) {
 exports.update = function(db) {
   return function(req, res) {
     var id = req.params.id;
+    db.collection('todocollection').updateById(id, req.body.todo, function(err, result) {
+      res.send((result === 1) ? { msg: '' } : { msg:'error: ' + err });
+    });
   };
 };
 
