@@ -3,6 +3,7 @@ Todos.Router.map(function() {
     this.route('active');
     this.route('completed');
   });
+  this.resource('users', { path: '/users' });
 });
 
 Todos.TodosRoute = Ember.Route.extend({
@@ -14,6 +15,18 @@ Todos.TodosRoute = Ember.Route.extend({
 Todos.TodosIndexRoute = Ember.Route.extend({
   model: function() {
     return this.modelFor('todos');
+  },
+  renderTemplate: function(controller) {
+    this.render({outlet: 'todos'});
+    var controller = this.controllerFor('users');
+    this.render('users', {
+      outlet: 'users',
+      controller: controller
+    });
+  },
+  setupController: function(controller, model) {
+    controller.set('model', model);
+    this.controllerFor('users').set('model',this.store.find('user'));
   }
 });
 
@@ -36,5 +49,11 @@ Todos.TodosCompletedRoute = Ember.Route.extend({
   },
   renderTemplate: function(controller) {
     this.render('todos/index', {controller: controller});
+  }
+});
+
+Todos.UsersRoute = Ember.Route.extend({
+  model: function() {
+    return this.store.find('user');
   }
 });

@@ -14,10 +14,12 @@ Todos.TodoController = Ember.ObjectController.extend({
       return value;
     }
   }.property('model.isCompleted'),
+
   actions: {
     editTodo: function() {
       this.set('isEditing', true);
     },
+
     acceptChanges: function() {
       this.set('isEditing', false);
 
@@ -27,6 +29,7 @@ Todos.TodoController = Ember.ObjectController.extend({
         this.get('model').save();
       }
     },
+
     removeTodo: function() {
       var todo = this.get('model');
       todo.deleteRecord();

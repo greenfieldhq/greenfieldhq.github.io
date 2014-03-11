@@ -14,7 +14,7 @@
       </header>
 
       <section id="main">
-        {{outlet}}
+        {{outlet todos}}
         {{input type="checkbox" id="toggle-all" checked=allAreDone}}
       </section>
 
@@ -22,6 +22,7 @@
         <span id="todo-count">
           <strong>{{remaining}}</strong> {{inflection}} left
         </span>
+
         <ul id="filters">
           <li>
             {{#link-to "todos.index" activeClass="selected"}}All{{/link-to}}
@@ -45,6 +46,7 @@
     <footer id="info">
       <p>Double-click to edit a todo</p>
     </footer>
+    {{outlet users}}
   </script>
 
   <script type="text/x-handlebars" data-template-name="todos/index">
@@ -62,6 +64,14 @@
     </ul>
   </script>
 
+  <script type="text/x-handlebars" data-template-name="users">
+    <ul>
+      {{#each}}
+      <li>{{username}}: {{email}}</li>
+      {{/each}}
+    </ul>
+  </script>
+
   <script src="javascripts/libs/jquery-1.11.0.min.js"></script>
   <script src="javascripts/libs/handlebars-1.1.2.js"></script>
   <script src="javascripts/libs/ember-1.4.0.js"></script>
@@ -69,8 +79,10 @@
   <script src="javascripts/libs/bootstrap.min.js"></script>
   <script src="javascripts/app.js"></script>  
   <script src="javascripts/models/todo.js"></script>
+  <script src="javascripts/models/user.js"></script>
   <script src="javascripts/controllers/todos_controller.js"></script>
   <script src="javascripts/controllers/todo_controller.js"></script>
+  <script src="javascripts/controllers/users_controller.js"></script>
   <script src="javascripts/views/edit_todo_view.js"></script>
   <script src="javascripts/router.js"></script>
 
