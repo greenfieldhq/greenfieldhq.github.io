@@ -9,7 +9,7 @@ var http = require('http');
 var path = require('path');
 
 var mongo = require('mongoskin');
-var db = mongo.db("mongodb://localhost:27017/ember-todo", { native_parser:true });
+var db = mongo.db("mongodb://localhost:27017/greenfield", { native_parser:true });
 
 var app = express();
 

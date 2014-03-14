@@ -1,6 +1,6 @@
-window.Todos = Ember.Application.create();
+window.App = Ember.Application.create();
 
 //Todos.ApplicationAdapter = DS.FixtureAdapter.extend();
-Todos.ApplicationSerializer = DS.RESTSerializer.extend({
+App.ApplicationSerializer = DS.RESTSerializer.extend({
   primaryKey: '_id',
 });
