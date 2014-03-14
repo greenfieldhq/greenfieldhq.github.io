@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 		else if(element_class == 'menu-contact') { scroll_to = $(".contact").offset().top - nav_height - 60; }
 		
 		if($(window).scrollTop() != scroll_to && element_class !== undefined) {
-			$('html').animate({scrollTop: scroll_to}, 1000);
+			$('body').animate({scrollTop: scroll_to}, 1000);
 		}
 	});
 	// learn more
@@ -90,7 +90,7 @@ jQuery(document).ready(function() {
 	*/
 	$('.latest-tweets .tweets').tweet({
 		modpath: 'twitter/',
-		username: 'anli_zaimi',
+		username: 'greenfieldhq',
 		page: 1,
 		count: 5,
 		loading_text: 'loading ...'
