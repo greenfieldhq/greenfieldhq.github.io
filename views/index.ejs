@@ -1,439 +1,735 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>greenfield</title>
-    <link rel="icon" href="/images/backgrounds/1.jpg">
-    <!--link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oleo+Script">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600"-->
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Open+Sans+Condensed:300,700|Roboto:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/stylesheets/form-elements.css">
-    <link rel="stylesheet" href="/stylesheets/buttons.css">
-    <link rel="stylesheet" href="/ultimate-flat-social-icons/ultm-css/ultm-general.css">
-    <link rel="stylesheet" href="/ultimate-flat-social-icons/ultm-css/ultm-sizes.css">
-    <link rel="stylesheet" href="/ultimate-flat-social-icons/ultm-css/ultm-shapes.css">
-    <link rel="stylesheet" href="/ultimate-flat-social-icons/ultm-css/ultm-bg-colors.css">
-    <link rel="stylesheet" href="/ultimate-flat-social-icons/ultm-css/ultm-bg-images-48.css">
-    <link rel="stylesheet" href="/ultimate-flat-social-icons/ultm-css/ultm-effects.css">
-    <link rel="stylesheet" href="/stylesheets/style.css?v=2">
-    <link rel="stylesheet" href="/stylesheets/media-queries.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Favicon and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/img/greenfield.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/maximage.css">
+    <link rel="stylesheet" href="assets/css/spirito.css" />
+    <script src="assets/js/modernizr.custom.min.js"></script>
   </head>
-  <body>
+  <body data-color="turquoise">
 
     <script type="text/x-handlebars" data-template-name="application">
-      <!-- Top menu -->
-      <nav>
-      <!--a class="menu-top" href="">Top</a>
-      <a class="menu-features" href="">Features</a>
-      <a class="menu-subscribe" href="">Subscribe</a>
-      <a class="menu-testimonials" href="">Testimonials</a-->
-      <a class="menu-about-us" href="">About us</a>
-      <a class="menu-contact" href="">Contact</a>
-      </nav>
-      <div class="hide-menu">
-        <a href="" rel="tooltip" data-placement="bottom">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <div class="show-menu">
-        <a href="" rel="tooltip">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <!-- Top content -->
-      <div class="top-content">
-        <div class="inner-bg">
-          <div class="container">
-            <div class="row splash">
-              <div class="col-sm-5 phone">
-              </div>
-              <div class="col-sm-7 text">
-                <!--div class="logo">
-                  <h1><a href="">Quadris - Responsive App Landing Page</a></h1>
-                </div-->
-                <h2 id="logo-title">greenfield</h2>
-                <div class="description">
-                  We build stunning applications. Web and mobile.
-                </div>
-                <!--div class="top-button">
-                <a class="button-1" href="#">
-                  <i class="fa fa-apple"></i> Get it now
-                </a>
-                </div-->
-                <div id="bottom-spacer">
-                </div>
-                <div class="top-arrow">
-                  <i class="fa fa-chevron-down learn-more"></i>
-                </div>
-              </div>
+      <div id="wrapper">
+        <header id="home">
+        <div id="maximage" class="maximage-slider">
+          <img src="assets/img/greenfield.jpg" alt=""/>
+        </div>
+        <div class="pattern"></div>
+        <div class="home-wrapper">
+          <div class="logo">
+            <h1>greenfield</h1>
+          </div>
+          <div id="home-slider">
+            <div class="star-line">
+              <span class="line-pre"></span>
+              <span class="icons">
+                <i class="glyphicon glyphicon-star"></i>
+                <i class="glyphicon glyphicon-star"></i>
+                <i class="glyphicon glyphicon-star"></i>
+              </span>
+              <span class="line-after"></span>
             </div>
+            <ul class="">
+              <li><h1>We build stunning applications.<br>Web and mobile.</h1></li>
+            </ul>
+          </div>
+          <div class="buttons">
+            <a class="btn" href="#about" data-scroll="#about">Learn More</a>
           </div>
         </div>
-      </div>
-
-      <!-- Features -->
-      <!--div class="features-container">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 features">
-              <h3>Main features</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-              </p>
-            </div>
+        </header>
+        <nav>
+        <div class="logo">
+          <h1>greenfield</h1>
+        </div>
+        <div class="menu-trigger">
+          <a href="#"><i class="fa fa-bars"></i></a>
+        </div>
+        <ul>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>		
+        </nav>
+        <section id="about">
+        <div class="container page">
+          <div class="section-title">
+            <h1 class="super-title" data-animate="fade-in-top">We are a Spirito.<br />It's nice to meet you.</h1>
+            <p class="subheading" data-animate="fade-in-top">We are a creative agency located in Paris, France.<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+          </div>
+        </div>
+        </section>
+        <section class="grey">
+        <div class="container page">
+          <div class="section-title">
+            <h4 data-animate="fade-in">What we do?</h4>
+            <h2 data-animate="fade-in">We creating best-looking web design and logotypes.</h2>
           </div>
           <div class="row">
-            <div class="col-sm-4 features-box-1">
-              <div class="features-box-1-icon">
+            <div data-animate="fade-in-top" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="feature-box">
                 <i class="fa fa-eye"></i>
-              </div>
-              <h4>Easy To Use</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et.
-              </p>
-            </div>
-            <div class="col-sm-4 features-box-1">
-              <div class="features-box-1-icon">
-                <i class="fa fa-table"></i>
-              </div>
-              <h4>Responsive Layout</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et.
-              </p>
-            </div>
-            <div class="col-sm-4 features-box-1">
-              <div class="features-box-1-icon">
-                <i class="fa fa-pencil"></i>
-              </div>
-              <h4>Flat Design</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div-->
-
-      <!-- Single feature -->
-      <!--div class="single-feature-container single-feature-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 single-feature-text">
-              <h3>Easy to use</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 single-feature-img">
-              <img src="images/iphone-2.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div-->
-
-      <!-- Single feature -->
-      <!--div class="single-feature-container single-feature-no-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 single-feature-text">
-              <h3>Responsive layout</h3>
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
-                aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 single-feature-img">
-              <img src="images/iphone-3.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div-->
-
-      <!-- Single feature -->
-      <!--div class="single-feature-container single-feature-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 single-feature-text">
-              <h3>Flat design</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12 single-feature-img">
-              <img src="images/iphone-2.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div-->
-
-      <!-- Subscription form -->
-      <!--div class="subscribe-container">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 subscribe">
-              <h3>Subscribe to our newsletter</h3>
-              <p>Sign up now to our newsletter and you'll be one of the first to know about new updates:</p>
-              <form class="form-inline" action="assets/subscribe.php" method="post">
-                <input type="text" name="email" placeholder="Enter your email...">
-                <button type="submit" class="btn">Subscribe</button>
-              </form>
-              <div class="success-message"></div>
-              <div class="error-message"></div>
-            </div>
-          </div>
-        </div>
-      </div-->
-
-      <!-- Testimonials -->
-      <!--div class="container">
-        <div class="row">
-          <div class="col-sm-12 testimonials">
-            <h3>What our users say</h3>
-            <div class="testimonial-active"></div>
-            <div class="testimonial-quote">&ldquo; &rdquo;</div>
-            <div class="testimonial-single">
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-                lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, 
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
-                <br>
-                <a href="">John Doe, johndoe.com</a>
-              </p>
-              <div class="testimonial-single-image">
-                <img src="images/testimonials/1.jpg" alt="">
+                <h4>RETINA READY</h4>
+                <p> Praesent vitae purus eu libero laoreet ornare. Justo quamet cursus neque. Fusce dui nibh auctor. Nam ornare neque odio.</p>
               </div>
             </div>
-            <div class="testimonial-single">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-                ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                incididunt ut labore et.
-                <br>
-                <a href="">Jane Jonsson, blog.jane.com</a>
-              </p>
-              <div class="testimonial-single-image">
-                <img src="images/testimonials/2.jpg" alt="">
+            <div data-animate="fade-in-top" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="feature-box">
+                <i class="fa fa-arrows-alt"></i>
+                <h4>FULLY RESPONSIVE</h4>
+                <p> Praesent vitae purus eu libero laoreet ornare. Justo quamet cursus neque. Fusce dui nibh auctor. Nam ornare neque odio.</p>
               </div>
             </div>
-            <div class="testimonial-single">
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-                lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, 
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
-                <br>
-                <a href="">John Doe, johndoe.com</a>
-              </p>
-              <div class="testimonial-single-image">
-                <img src="images/testimonials/3.jpg" alt="">
-              </div>
-            </div>
-            <div class="testimonial-single">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
-                ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                incididunt ut labore et.
-                <br>
-                <a href="">Jane Jonsson, blog.jane.com</a>
-              </p>
-              <div class="testimonial-single-image">
-                <img src="images/testimonials/2.jpg" alt="">
+            <div data-animate="fade-in-top" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <div class="feature-box">
+                <i class="fa fa-eye"></i>
+                <h4>RETINA READY</h4>
+                <p> Praesent vitae purus eu libero laoreet ornare. Justo quamet cursus neque. Fusce dui nibh auctor. Nam ornare neque odio.</p>
               </div>
             </div>
           </div>
         </div>
-      </div-->
-
-      <!-- Who's behind this -->
-      <div class="whos-behind-container">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 whos-behind">
-              <h3>Who's behind this</h3>
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit 
-                lobortis nisl ut aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 whos-behind-box-1">
-              <div class="whos-behind-photo">
-                <img src="images/team/1.jpg" alt="">
-                <div class="whos-behind-social">
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                  <a href=""><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-              <h4>John Doe</h4>
-              <h5>Developer</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et.
-              </p>
-            </div>
-            <div class="col-sm-4 whos-behind-box-1">
-              <div class="whos-behind-photo">
-                <img src="images/team/2.jpg" alt="">
-                <div class="whos-behind-social">
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                  <a href=""><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-              <h4>Tim Brown</h4>
-              <h5>Founder</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et.
-              </p>
-            </div>
-            <div class="col-sm-4 whos-behind-box-1">
-              <div class="whos-behind-photo">
-                <img src="images/team/3.jpg" alt="">
-                <div class="whos-behind-social">
-                  <a href=""><i class="fa fa-facebook"></i></a>
-                  <a href=""><i class="fa fa-twitter"></i></a>
-                  <a href=""><i class="fa fa-linkedin"></i></a>
-                  <a href=""><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-              <h4>Sarah Red</h4>
-              <h5>Designer</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-                labore et.
-              </p>
-            </div>
-          </div>
-          <!-- Latest tweets -->
-          <div class="row">
-            <div class="col-sm-12 latest-tweets">
-              <h4>Our Latest Tweets</h4>
-              <p class="tweet-active"></p>
-              <div class="tweets"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- How to contact us -->
-<section id="contact">
-			<div class="container page">
-				<div class="section-title">
-					<h1 data-animate="fade-in-top" data-delay="none" class="animate fade-in-top">Contact</h1>
-					<hr data-animate="fade-in" data-delay="none" class="animate fade-in">
-					<p data-animate="fade-in-top" class="subheading animate fade-in-top">
-						You want to say hello, or you want to know more about us? Drop us a call! We&nbsp;will be happy to answer you.
-					</p>
-				</div>
-				<form id="contact-form" name="contact-form" action="#" method="post">
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4 animate fade-in-left" data-animate="fade-in-left" data-delay="none">
-							<div class="form-group">
-								<input class="form-control input-lg" type="text" name="" placeholder="Name" mouseev="true" keyev="true" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); padding-right: 0px; background-attachment: scroll; cursor: auto; background-position: 100% 50%; background-repeat: no-repeat no-repeat;">
-							</div>
-							<div class="form-group">
-								<input class="form-control input-lg" type="text" name="" placeholder="E-mail">
-							</div>
-							<div class="form-group">
-								<input class="form-control input-lg" type="text" name="" placeholder="Subject">
-							</div>		
-						</div>
-						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 animate fade-in-right" data-animate="fade-in-right" data-delay="none">
-							<div class="form-group">
-								<textarea class="form-control" placeholder="Your message"></textarea>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit">
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-		</section>
-
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 contact">
-            <h3>How to contact us</h3>
-            <p>
-              We'de love to hear from you!
+        </section>
+        <section id="team">
+        <div class="container page">
+          <div class="section-title">
+            <h1 data-animate="fade-in-top"><span class="text-primary">Our</span> Team</h1>
+            <hr data-animate="fade-in" />
+            <p data-animate="fade-in-top" class="subheading">
+              Best projects is built by people with passion and love for what they do<br />
+              Our goal is to build simple, unique and user-friendly designs
             </p>
           </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="team" data-animate="fade-in-top" data-delay="100">
+                <div class="team-photo">
+                  <div class="team-mask"></div>
+                  <img src="assets/img/demo/team_1.jpg" alt="Jennifer Goldberg" />
+                  <div class="team-overlay"></div>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-dribbble"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="team-name">Jennifer Goldberg</p>
+                <p class="team-type">CEO Founder</p>
+                <p>Lorem ipsum Ut est anim et adipisicing Excepteur Duis culpa quis proident esse sunt est nisi.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="team" data-animate="fade-in-top" data-delay="200">
+                <div class="team-photo">
+                  <div class="team-mask"></div>
+                  <img src="assets/img/demo/team_3.jpg" alt="Daniel Olson" />
+                  <div class="team-overlay"></div>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-dribbble"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="team-name">Daniel Olson</p>
+                <p class="team-type">Web Designer</p>
+                <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="team" data-animate="fade-in-top" data-delay="300">
+                <div class="team-photo">
+                  <div class="team-mask"></div>
+                  <img src="assets/img/demo/team_2.jpg" alt="John Doe" />
+                  <div class="team-overlay"></div>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-dribbble"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="team-name">John Doe</p>
+                <p class="team-type">Developer</p>
+                <p>Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+              <div class="team" data-animate="fade-in-top" data-delay="400">
+                <div class="team-photo">
+                  <div class="team-mask"></div>
+                  <img src="assets/img/demo/team_4.jpg" alt="Alice Brink" />
+                  <div class="team-overlay"></div>
+                  <ul class="team-social">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-dribbble"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="team-name">Alice Brink</p>
+                <p class="team-type">Graphic Designer</p>
+                <p>Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-sm-7 contact-form">
-            <h4>Send us a message</h4>
-            <form method="post" action="assets/contact.php">
-              <input type="text" name="email" placeholder="Email..." class="contact-email">
-              <input type="text" name="subject" placeholder="Subject..." class="contact-subject">
-              <textarea name="message" placeholder="Message..."></textarea>
-              <button type="submit">Send</button>
+        </section>
+        <section id="quote" class="parallax">
+        <div class="pattern"></div>
+        <div class="container">
+          <div class="quote white" data-animate="fade-in">            
+            <h2>You can't connect the dots looking forward. You can only connect them looking backwards. So you have to trust that the dots will somehow connect in&nbsp;your&nbsp;future.</h2>
+            <p>- Steve Jobs -</p>            
+          </div>
+        </div>
+        </section>
+        <section id="portfolio">
+        <div class="page">
+          <div class="container">
+            <div class="section-title">
+              <h1 data-animate="fade-in-top"><span class="text-primary">Our</span> Work</h1>
+              <hr data-animate="fade-in" />
+              <p class="subheading" data-animate="fade-in-top">We creating best-looking web design and logotypes. We also offer rebrand your company in&nbsp;way that you never seen before.</p>
+            </div>
+          </div>
+          <ul id="portfolio-filters" class="portfolio-grid-controls" data-animate="fade-in">
+            <li class="filter" data-filter="all">
+              All
+            </li>
+            <li class="filter" data-filter="webdesign">
+              Web design
+            </li>
+            <li class="filter" data-filter="logo">
+              Logo
+            </li>
+            <li class="filter" data-filter="video">
+              Video
+            </li>
+            <li class="filter" data-filter="printdesign">
+              Print Design
+            </li>
+          </ul>
+          <div id="portfolio-items" class="portfolio-grid" data-animate="fade-in">
+            <div class="portfolio-item webdesign video" data-title="Natural Food" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/1_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Natural Food</h3>
+                      <h6>Webdesign, Video</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item video all" data-title="Boba Fett" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/13_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Boba Fett</h3>
+                      <h6>Video</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/13.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item video all" data-title="The Avengers" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/14_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>The Avengers</h3>
+                      <h6>Video</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/14.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item logo all" data-title="Hudddle" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/7_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Hudddle</h3>
+                      <h6>Logo</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/7.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item webdesign all" data-title="Coffee UI Kit" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/2_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Coffee UI Kit</h3>
+                      <h6>Web Design</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item video all" data-title="The Walking Dead" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/15_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>The Walking Dead</h3>
+                      <h6>Video</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/15.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item logo all" data-title="Apple" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/8_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Apple</h3>
+                      <h6>Logo</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/8.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item webdesign all" data-title="Hotel Site" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/3_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Hotel Site</h3>
+                      <h6>Web Design</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item webdesign all" data-title="Colors UI" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/4_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Colors UI</h3>
+                      <h6>Web Design</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item webdesign all" data-title="Open Cinema" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/5_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Open Cinema</h3>
+                      <h6>Web Design</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/5.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item printdesign video all" data-title="Pictos" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/11_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Pictos</h3>
+                      <h6>Print Design, Video</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/11.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item printdesign all" data-title="Standard Issue" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/12_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Standard Issue</h3>
+                      <h6>Print Design</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/12.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item webdesign all" data-title="Dark UI Kit" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/6_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Dark UI Kit</h3>
+                      <h6>Web Design</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/6.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item logo all" data-title="Ark Designs" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/9_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Ark Designs</h3>
+                      <h6>Logo</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/9.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-item video logo all" data-title="Reflect Architecture" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-largesrc="assets/img/demo/portfolio/10_big.jpg">
+              <div class="portfolio-item-inner">
+                <div class="portfolio-image">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-details">
+                      <h3>Reflect Architecture</h3>
+                      <h6>Video, Logo</h6>
+                    </div>
+                  </div>
+                  <img src="assets/img/demo/portfolio/10.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section id="clients" class="parallax" style="background-image: url(assets/img/demo/bg_5.jpg);">
+        <div class="pattern"></div>
+        <div class="container page">
+          <div class="section-title">
+            <h1 data-animate="fade-in-top" class="white"><span class="text-primary">Our</span> best clients</h1>
+            <hr data-animate="fade-in" />
+            <p data-animate="fade-in-top" class="subheading white">
+              We worked with some of the largest companies in the world.
+            </p>
+          </div>
+          <div class="clients">
+            <div class="row">
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/fb.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/google.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/microsoft.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/ubuntu.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/twitter.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/behance.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/loreal.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="client" data-animate="fade-in">
+                  <a href="#" class="inner">
+                    <img src="assets/img/demo/logos/sony.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="grey">
+        <div class="container">
+          <div class="call-to" data-animate="fade-in-left">
+            <h3>
+              You like <span class="text-primary">our</span> work? So why not drop us a call?
+              <a class="btn btn-primary btn-lg" data-scroll="#contact">Contact Us</a>
+            </h3>
+          </div>
+        </div>
+        </section>
+        <section id="blog">
+        <div class="container page">
+          <div class="section-title">
+            <h1 data-animate="fade-in-top"><span class="text-primary">Latest</span> Blog Entries</h1>
+            <hr data-animate="fade-in" />
+            <p data-animate="fade-in-top" class="subheading">
+              Read latest news, tutorial and other useful resources
+            </p>
+          </div>
+          <div class="blog-home">
+            <div class="row posts">
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <article class="post" data-animate="fade-in-bottom">
+                <a href="blog/blog_post.html" class="post-image">
+                  <img src="assets/img/demo/portfolio/3.jpg" alt="">
+                  <div class="overlay"><i class="fa fa-picture-o"></i></div>
+                </a>
+                <h3 class="post-title"><a href="blog/blog_post.html">This is a post title</a></h3>
+                <p class="post-meta"><span class="meta-date">21 December 2013</span><span class="meta-by"><a href="#">Jonathan</a></span></p>
+                <p class="post-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, labore, earum accusamus corrupti odio saepe dicta ipsum dolores! Eveniet, enim consectetur.
+                </p>
+                <p class="post-read-more"><a href="" class="btn btn-primary btn-sm">Read More</a></p>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <article class="post" data-animate="fade-in-bottom">
+                <a href="blog/blog_post.html" class="post-image">
+                  <img src="assets/img/demo/portfolio/6.jpg" alt="">
+                  <div class="overlay"><i class="fa fa-film"></i></div>
+                </a>
+                <h3 class="post-title"><a href="blog/blog_post.html">This is a post title</a></h3>
+                <p class="post-meta"><span class="meta-date">21 December 2013</span><span class="meta-by"><a href="#">Jonathan</a></span></p>
+                <p class="post-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi earum sapiente aperiam quia voluptates harum id. Quidem, sit aut nulla con.
+                </p>
+                <p class="post-read-more"><a href="" class="btn btn-primary btn-sm">Read More</a></p>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <article class="post" data-animate="fade-in-bottom">
+                <a href="blog/blog_post.html" class="post-image">
+                  <img src="assets/img/demo/portfolio/9.jpg" alt="">
+                  <div class="overlay"><i class="fa fa-globe"></i></div>
+                </a>
+                <h3 class="post-title"><a href="blog/blog_post.html">This is a post title</a></h3>
+                <p class="post-meta"><span class="meta-date">21 December 2013</span><span class="meta-by"><a href="#">Jonathan</a></span></p>
+                <p class="post-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dignissimos ut architecto aliquam doloribus. Magni, sequi aut quos reiciendis consequatur.
+                </p>
+                <p class="post-read-more"><a href="" class="btn btn-primary btn-sm">Read More</a></p>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <article class="post" data-animate="fade-in-bottom">
+                <a href="blog/blog_post.html" class="post-image">
+                  <img src="assets/img/demo/portfolio/2.jpg" alt="">
+                  <div class="overlay"><i class="fa fa-music"></i></div>
+                </a>
+                <h3 class="post-title"><a href="blog/blog_post.html">This is a post title</a></h3>
+                <p class="post-meta"><span class="meta-date">21 December 2013</span><span class="meta-by"><a href="#">Jonathan</a></span></p>
+                <p class="post-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptatem facere eligendi similique error consequatur vero quis minima. Laudantium iusto.
+                </p>
+                <p class="post-read-more"><a href="" class="btn btn-primary btn-sm">Read More</a></p>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <article class="post" data-animate="fade-in-bottom">
+                <a href="blog/blog_post.html" class="post-image">
+                  <img src="assets/img/demo/portfolio/8.jpg" alt="">
+                  <div class="overlay"><i class="fa fa-link"></i></div>
+                </a>
+                <h3 class="post-title"><a href="blog/blog_post.html">This is a post title</a></h3>
+                <p class="post-meta"><span class="meta-date">21 December 2013</span><span class="meta-by"><a href="#">Jonathan</a></span></p>
+                <p class="post-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, debitis, quidem, illo alias eligendi assumenda excepturi voluptate consectetur.
+                </p>
+                <p class="post-read-more"><a href="" class="btn btn-primary btn-sm">Read More</a></p>
+                </article>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <article class="post" data-animate="fade-in-bottom">
+                <a href="blog/blog_post.html" class="post-image">
+                  <img src="assets/img/demo/portfolio/11.jpg" alt="">
+                  <div class="overlay"><i class="fa fa-camera"></i></div>
+                </a>
+                <h3 class="post-title"><a href="blog/blog_post.html">This is a post title</a></h3>
+                <p class="post-meta"><span class="meta-date">21 December 2013</span><span class="meta-by"><a href="#">Jonathan</a></span></p>
+                <p class="post-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, accusantium, molestias architecto rem consequatur fugit id aliquid nulla eveniet aut.
+                </p>
+                <p class="post-read-more"><a href="" class="btn btn-primary btn-sm">Read More</a></p>
+                </article>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <br />
+                <a data-animate="fade-in" href="#" class="blog-more-posts btn btn-primary btn-lg">Load more posts</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section class="grey">
+        <div class="container page">
+          <div class="subscribe text-center" data-animate="fade-in-bottom">
+            <h2 class="light">Subscribe to our newsletter</h2>
+            <form action="#" method="post">
+              <input type="text" class="form-control input-lg" placeholder="Your e-mail address..." />
+              <input type="submit" class="btn btn-lg btn-primary" value="Subscribe" />
             </form>
           </div>
-          <div class="col-sm-5 contact-address">
-            <h4>Come visit us</h4>
-            <div class="map"></div>
-            <h4>Address</h4>
-            <p><i class="fa fa-map-marker"></i>21 Wormwood St. Suite 608 <br/>
-              Boston, MA 02210</p>
-            <p><i class="fa fa-phone"></i>Phone: 0039 333 12 68 347</p>
+        </div>
+        </section>
+        <section class="dark">
+        <div class="container page">
+          <div class="connect text-center" data-animate="fade-in-top">
+            <h2 class="light white">We love hearing from you. Say hello or just connect with us</h2>
+            <ul class="social-media">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+            </ul>
           </div>
         </div>
-      </div>
-
-      <!-- Footer -->
-      <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7 footer-copyright">
-            <p>&copy; greenfield</p>
-          </div>
-          <div class="col-sm-5 footer-social">
-            <a class="ultm ultm-facebook ultm-48 ultm-square ultm-gray-to-color" href=""></a>
-            <a class="ultm ultm-twitter ultm-48 ultm-square ultm-gray-to-color" href=""></a>
-            <a class="ultm ultm-google-plus-1 ultm-48 ultm-square ultm-gray-to-color" href=""></a>
-            <a class="ultm ultm-dribbble ultm-48 ultm-square ultm-gray-to-color" href=""></a>
-            <a class="ultm ultm-pinterest ultm-48 ultm-square ultm-gray-to-color" href=""></a>
+        </section>
+        <section id="contact-details" class="parallax" style="background-image: url(assets/img/demo/bg_4.jpg);">
+        <div class="pattern"></div>
+        <div class="container page">
+          <div class="contact-details">
+            <div class="icon" data-animate="fade-in-top">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="phone-number" data-animate="fade-in-top">
+              <h2>123-456-7890</h2>
+            </div>
+            <div class="company-address" data-animate="fade-in-top">
+              <h2>Spirito Company, 223 Autumn Lane<br />Paris, France</h2>
+            </div>
           </div>
         </div>
+        </section>
+        <section id="contact">
+        <div class="container page">
+          <div class="section-title">
+            <h1 data-animate="fade-in-top" data-delay="none">Contact</h1>
+            <hr data-animate="fade-in" data-delay="none" />
+            <p data-animate="fade-in-top" class="subheading">
+              You want to say hello, or you want to know more about us? Drop us a call! We&nbsp;will be happy to answer you.
+            </p>
+          </div>
+          <form id="contact-form" name="contact-form" action="#" method="post">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4" data-animate="fade-in-left" data-delay="none">
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" name="" placeholder="Name" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" name="" placeholder="E-mail" />
+                </div>
+                <div class="form-group">
+                  <input class="form-control input-lg" type="text" name="" placeholder="Subject" />
+                </div>		
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-animate="fade-in-right" data-delay="none">
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Your message"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        </section>
+        <section id="location-map">
+        <div id="google-map" class="map"></div>
+        </section>
+        <footer>
+        <h3>Spirito</h3>
+        </footer>
       </div>
-      </footer>
-
     </script>
 
     <script type="text/x-handlebars" data-template-name="users">
@@ -444,23 +740,38 @@
       </ul>
     </script>
 
-    <script src="javascripts/libs/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/waypoints.sticky.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.bxslider.min.js"></script>
+    <script src="assets/js/jquery.cycle.all.min.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.maximage.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="assets/js/jquery.gmap.min.js"></script>
+    <script src="assets/js/jquery.parallax.js"></script>
+    <script src="assets/js/spirito.js"></script>
+    <script src="assets/js/portfolio-grid.js"></script>
+
+    <!--script src="javascripts/libs/jquery-1.11.0.min.js"></script>
+  <script src="javascripts/libs/bootstrap.min.js"></script-->
     <script src="javascripts/libs/handlebars-1.1.2.js"></script>
     <script src="javascripts/libs/ember-1.4.0.js"></script>
     <script src="javascripts/libs/ember-data.js"></script>
-    <script src="javascripts/libs/bootstrap.min.js"></script>
     <script src="javascripts/app.js"></script>  
     <script src="javascripts/controllers/application_controller.js"></script>
     <script src="javascripts/router.js"></script>
 
-
-    <script src="/javascripts/libs/jquery.backstretch.min.js"></script>
-    <script src="/twitter/jquery.tweet.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="/javascripts/libs/jquery.ui.map.min.js"></script>
-    <script src="/javascripts/libs/retina-1.1.0.min.js"></script>
-    <script src="/javascripts/scripts.js"></script>
-
+    <script>
+      $(document).ready(function() {
+        Spirito.init().initSliders().initPortfolio().initMaps();
+        Grid.init();			
+      });
+    </script>
 
   </body>
 </html>
