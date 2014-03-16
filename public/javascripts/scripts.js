@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 	$('.top-arrow i').on('click', function() {
 		var nav_height = $('nav').height();
 		var nav_display = $('nav').css('display');
-		var features_top = $('.features').offset().top;
+		var features_top = $('.whos-behind').offset().top;
 		
 		if(nav_display == 'block') { scroll_to = features_top - nav_height - 60; }
 		else if(nav_display == 'none') { scroll_to = features_top - 60; }

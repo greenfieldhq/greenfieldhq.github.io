@@ -1,7 +1,7 @@
 
 body {
   background: #fff;
-  font-family: 'Droid Sans', 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
@@ -19,7 +19,7 @@ a, a:hover, a:focus {
 
 h2, h3 {
   margin-top: 10px;
-  font-family: 'Oleo Script', cursive;
+  font-family: 'Open Sans', cursive;
   font-size: 50px;
   font-weight: 400;
   line-height: 54px;
@@ -40,8 +40,6 @@ nav {
   left: 0;
   width: 100%;
   z-index: 998;
-  /*background: #63c081;
-  background: #afe904;*/
   background: rgb(175, 233, 4);
   background: rgba(175, 233, 4, .7);
   font-size: 18px;
@@ -54,16 +52,15 @@ nav a {
   display: inline-block;
   margin: 0 15px;
   padding: 10px 0;
-  color: rgba(10,60,150, 0.8);
+  color: rgba(0,22,91, 4.8);
   text-shadow: 0px 0px 0px #35CE35, 0 0 0 #000, 0px 0px 0px #def;
-  font-weight: bold;
 }
 nav a:hover { 
-  color: rgba(10,60,150, 0.8);
+  color: rgba(0,22,91, 4.8);
 }
 
 nav a:focus { 
-  color: rgba(10,60,150, 0.8);
+  color: rgba(0,22,91, 4.8);
 }
 
 .show-menu, .hide-menu {
@@ -179,7 +176,7 @@ nav a:focus {
   left: 0;
   width: 105px;
   padding: 5px;
-  font-family: 'Droid Sans', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: rgba(0,22,91, 4.8);
@@ -400,7 +397,7 @@ nav a:focus {
 }
 
 .testimonials h3 {
-  font-family: 'Oleo Script', cursive;
+  font-family: 'Open Sans', cursive;
   font-size: 50px;
   font-weight: 400;
   color: #555;
@@ -467,7 +464,6 @@ nav a:focus {
 }
 
 .whos-behind h3 {    
-  font-family: 'Oleo Script', cursive;
   font-size: 50px;
   font-weight: 400;
   line-height: 54px;
@@ -619,7 +615,6 @@ nav a:focus {
 }
 
 .contact h3 {
-  font-family: 'Oleo Script', cursive;
   font-size: 50px;
   font-weight: 400;
   color: #555;
@@ -722,6 +717,7 @@ footer {
 #logo-title {
   /*color: rgba(0,22,115, 4.8);
   text-shadow: 4px 9px 7px #def, 0 0 0 #000, 1px 4px 6px #def;*/
+  font-family: 'Open Sans Condensed';
   color: rgba(0,22,91, 4.8);
   text-shadow: 4px 2px 34px #ECF4FD, 0 0 0 #000, 1px 4px 6px #def;
 }
@@ -732,20 +728,12 @@ footer {
     text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def;
 }
 
-/*.splash h2, .splash h3 {
-  margin-top: 10px;
-  font-family: 'Oleo Script', cursive;
-  font-size: 69px;
-  font-weight: 400;
-  line-height: 56px;
-}*/
-
 .splash h2, .splash h3 {
   margin-top: 10px;
-  font-family: 'Droid Sans', 'Oleo Script', cursive;
+  font-family: 'Roboto';
   font-size: 55px;
-  font-weight: 700;
-  line-height: 25px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .learn-more {
