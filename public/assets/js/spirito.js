@@ -1,7 +1,3 @@
-
-
-	
-		
 Spirito = {
 
 	i: 1,
@@ -133,7 +129,7 @@ Spirito = {
 		$('#maximage').maximage({
 			cycleOptions: {
 				fx: 'fade',
-				speed: 1500,
+				speed: 4000,
 				prev: '.img-prev',
 				next: '.img-next'
 			}
