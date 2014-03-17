@@ -915,7 +915,7 @@ nav:after {
 }
 nav .logo {
   float: left;
-  height: 70px;
+  height: 50px;
 }
 nav .logo h1 {
   font-family: 'Lobster', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -923,6 +923,7 @@ nav .logo h1 {
   font-size: 36px;
   margin: 0 0 0 30px;
   padding: 0;
+  line-height: 44px;
 }
 nav .menu-trigger {
   display: none;
@@ -939,7 +940,7 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 70px;
+  height: 50px;
   vertical-align: middle;
   display: table;
 }
@@ -957,9 +958,6 @@ nav ul li {
   display: table-cell;
   padding-right: 30px;
   vertical-align: middle;
-}
-nav ul li:last-child {
-  border-bottom: 1px solid #eeeeee;
 }
 nav ul li a {
   text-transform: uppercase;
@@ -1085,6 +1083,10 @@ nav.sticky {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+#team .col-md-1,
+#team .col-lg-1 {
+  width: 12.333333%;
 }
 .team {
   text-align: center;
@@ -1453,7 +1455,7 @@ nav.sticky {
   -webkit-transform-style: preserve-3d;
 }
 #quote {
-  background-image: url('../img/demo/bg_3.jpg');
+  background-image: url('../img/greenfield2.jpg');
 }
 .pattern {
   display: block;
@@ -2546,119 +2548,6 @@ body[data-color="blue"] aside .tags li a {
 @media (max-width: 767px) {
   body[data-color="blue"] nav.colored ul li {
     background-color: #3498db;
-  }
-}
-body[data-color="green"] a {
-  color: #2ecc71;
-}
-body[data-color="green"] .text-primary {
-  color: #2ecc71;
-}
-body[data-color="green"] .btn-primary {
-  color: #ffffff;
-  background-color: #2ecc71;
-  border-color: #2ecc71;
-}
-body[data-color="green"] .btn-primary:hover,
-body[data-color="green"] .btn-primary:focus,
-body[data-color="green"] .btn-primary:active,
-body[data-color="green"] .btn-primary.active,
-.open .dropdown-togglebody[data-color="green"] .btn-primary {
-  color: #ffffff;
-  background-color: #26ab5f;
-  border-color: #239a55;
-}
-body[data-color="green"] .btn-primary:active,
-body[data-color="green"] .btn-primary.active,
-.open .dropdown-togglebody[data-color="green"] .btn-primary {
-  background-image: none;
-}
-body[data-color="green"] .btn-primary.disabled,
-body[data-color="green"] .btn-primary[disabled],
-fieldset[disabled] body[data-color="green"] .btn-primary,
-body[data-color="green"] .btn-primary.disabled:hover,
-body[data-color="green"] .btn-primary[disabled]:hover,
-fieldset[disabled] body[data-color="green"] .btn-primary:hover,
-body[data-color="green"] .btn-primary.disabled:focus,
-body[data-color="green"] .btn-primary[disabled]:focus,
-fieldset[disabled] body[data-color="green"] .btn-primary:focus,
-body[data-color="green"] .btn-primary.disabled:active,
-body[data-color="green"] .btn-primary[disabled]:active,
-fieldset[disabled] body[data-color="green"] .btn-primary:active,
-body[data-color="green"] .btn-primary.disabled.active,
-body[data-color="green"] .btn-primary[disabled].active,
-fieldset[disabled] body[data-color="green"] .btn-primary.active {
-  background-color: #2ecc71;
-  border-color: #2ecc71;
-}
-body[data-color="green"] input[type=text]:focus,
-body[data-color="green"] input[type=password]:focus,
-body[data-color="green"] textarea:focus {
-  border-color: #2ecc71;
-}
-body[data-color="green"] nav ul li a:hover,
-body[data-color="green"] nav.dark ul li a:hover {
-  color: #2ecc71 !important;
-}
-body[data-color="green"] nav ul li a:hover:active,
-body[data-color="green"] nav.dark ul li a:hover:active,
-body[data-color="green"] nav ul li a:hover:focus,
-body[data-color="green"] nav.dark ul li a:hover:focus {
-  color: #2ecc71 !important;
-}
-body[data-color="green"] nav ul li.active a,
-body[data-color="green"] nav.dark ul li.active a {
-  color: #2ecc71 !important;
-}
-body[data-color="green"] nav.colored {
-  background-color: #2ecc71;
-}
-body[data-color="green"] nav .menu-trigger a:hover {
-  color: #2ecc71;
-}
-body[data-color="green"] .section-title h2 {
-  color: #2ecc71;
-}
-body[data-color="green"] .feature-box .fa {
-  background-color: #2ecc71;
-}
-body[data-color="green"] .feature-box .fa:after {
-  box-shadow: 0 0 0 3px #2ecc71;
-}
-body[data-color="green"] .team .team-photo .team-overlay,
-body[data-color="green"] .blog-home .post .post-image .overlay,
-body[data-color="green"] .portfolio-grid .portfolio-item .portfolio-overlay {
-  background-color: #2ecc71;
-  background-color: rgba(46, 204, 113, 0.92);
-}
-body[data-color="green"] .portfolio-grid-controls .filter:hover,
-body[data-color="green"] .portfolio-grid-controls .filter.active {
-  border-color: #2ecc71;
-  background-color: #2ecc71;
-}
-body[data-color="green"] .portfolio-grid .portfolio-item .portfolio-details a:hover,
-body[data-color="green"] .post .post-title a:hover,
-body[data-color="green"] aside .categories li a:hover {
-  color: #2ecc71 !important;
-}
-body[data-color="green"] .post .social-media li a:hover {
-  background-color: #2ecc71;
-}
-body[data-color="green"] .process .process-circle {
-  border-color: #2ecc71;
-}
-body[data-color="green"] .clients .client a {
-  background-color: rgba(46, 204, 113, 0.5);
-}
-body[data-color="green"] .clients .client a:hover {
-  background-color: #2ecc71;
-}
-body[data-color="green"] aside .tags li a {
-  background-color: #2ecc71;
-}
-@media (max-width: 767px) {
-  body[data-color="green"] nav.colored ul li {
-    background-color: #2ecc71;
   }
 }
 body[data-color="purple"] a {
