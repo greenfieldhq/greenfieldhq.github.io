@@ -18,6 +18,7 @@
         <header id="home">
         <div id="maximage" class="maximage-slider">
           <img src="assets/img/greenfield.jpg" alt=""/>
+          <img src="assets/img/greenfield.jpg" alt=""/>
         </div>
         <div class="pattern"></div>
         <div class="home-wrapper">
@@ -720,7 +721,12 @@
     <script>
       $(document).ready(function() {
         Spirito.init().initSliders().initPortfolio().initMaps();
-        Grid.init();			
+        Grid.init();
+
+        $(window).load(function(){
+          $('#loader').fadeOut(1000,function(){ $(this).remove(); });
+          Spirito.parallax();
+        });
       });
     </script>
 

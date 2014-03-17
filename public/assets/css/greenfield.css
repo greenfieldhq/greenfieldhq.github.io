@@ -915,7 +915,7 @@ nav:after {
 }
 nav .logo {
   float: left;
-  height: 50px;
+  height: 70px;
 }
 nav .logo h1 {
   font-family: 'Lobster', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -923,7 +923,7 @@ nav .logo h1 {
   font-size: 36px;
   margin: 0 0 0 30px;
   padding: 0;
-  line-height: 44px;
+  line-height: 64px;
 }
 nav .menu-trigger {
   display: none;
@@ -940,7 +940,7 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 50px;
+  height: 70px;
   vertical-align: middle;
   display: table;
 }
