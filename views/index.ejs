@@ -13,20 +13,13 @@
     <script src="assets/js/libs/modernizr.custom.min.js"></script>
   </head>
   <body data-color="green">
-
     <script type="text/x-handlebars" data-template-name="application">
       <div id="wrapper">
         <header id="home">
         <div id="maximage" class="maximage-slider mc-cycle" style="height: 275px; max-height: 275px; width: 100%;">
-          <div class="mc-image " title="" style="background-image: url(http://localhost:3000/assets/img/greenfield.jpg); position: absolute; top: 0px; left: 0px; display: block; z-index: 3; opacity: 1; width: 100%; height: 275px; bottom: 0px; max-height: 275px;" data-href=""></div>
+          <div class="mc-image" title="" style="background-image: url(/assets/img/greenfield.jpg); position: absolute; top: 0px; left: 0px; display: block; z-index: 3; opacity: 1; width: 100%; height: 275px; bottom: 0px; max-height: 275px;" data-href=""></div>
         </div>
 
-        <!--
-        <div id="maximage" class="maximage-slider">
-          <img src="assets/img/greenfield.jpg" alt=""/>
-          <img src="assets/img/greenfield.jpg" alt=""/>
-        </div>
-        -->
         <!--div class="pattern"></div-->
         <div class="home-wrapper">
           <div class="logo">
@@ -63,8 +56,6 @@
           <li><a href="#about">About</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <!--li><a href="#clients">Clients</a></li-->
-          <!--li><a href="#blog">Blog</a></li-->
           <li><a href="#contact">Contact</a></li>
         </ul>		
         </nav>
@@ -686,7 +677,7 @@
         <div id="google-map" class="map"></div>
         </section>
         <footer>
-        <h3>Spirito</h3>
+        <h3>greenfield</h3>
         </footer>
       </div>
     </script>
@@ -705,7 +696,7 @@
     <script src="assets/js/libs/waypoints.sticky.js"></script>
     <script src="assets/js/libs/jquery.nav.js"></script>
     <script src="assets/js/libs/jquery.scrollTo.min.js"></script>
-    <script src="assets/js/libs/jquery.bxslider.min.js"></script>
+    <!--script src="assets/js/libs/jquery.bxslider.min.js"></script-->
     <script src="assets/js/libs/jquery.cycle.all.min.js"></script>
     <script src="assets/js/libs/jquery.mixitup.min.js"></script>
     <script src="assets/js/libs/jquery.appear.js"></script>
@@ -725,7 +716,7 @@
 
     <script>
       $(document).ready(function() {
-        Spirito.init().initSliders().initPortfolio().initMaps();
+        Spirito.init().initPortfolio().initMaps();
         Grid.init();
 
         $(window).load(function(){
@@ -733,6 +724,13 @@
           Spirito.parallax();
         });
       });
+
+      var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+      var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+      var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+      var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+      var is_Opera = navigator.userAgent.indexOf("Presto") > -1;
+      if ((is_chrome)&&(is_safari)) {is_safari=false;}
     </script>
 
   </body>

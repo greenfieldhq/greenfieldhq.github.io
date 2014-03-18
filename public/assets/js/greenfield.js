@@ -63,18 +63,6 @@ Spirito = {
 		$(window).scroll(function(){
 			if($(window).width() >= 1200) {
 				$this.homeParallax();
-				//$('.parallax').each(function(e) {
-					/*$('.parallax:appeared').each(function() {
-						$t = $(this);
-						if($t.is(':appeared')) {
-							$(this).addClass('pvisible');
-							console.log('.parallax appeared');
-						} else if($t.filter(':disappeared')) {
-							$(this).removeClass('pvisible');
-
-						}
-					});*/
-				//});
 				$this.fadeHome();
 				$this.animated_contents();
 			}
@@ -111,31 +99,10 @@ Spirito = {
 
 	// Functions for parallax effect on home main top bg 
 	homeParallax: function(){
-		if(!$('#home').hasClass('static')) {
+		if(!is_safari && !$('#home').hasClass('static')) {
  	    	var scrolled = $(window).scrollTop();
-	    	$('#home #maximage .mc-image').css({'top':'auto','bottom': -(scrolled * 0.7) + 'px'});
+	    	$('#home #maximage .mc-image').css({'top':'auto','bottom': -(Math.round(scrolled * 0.7)) + 'px'});
 	    }
-	},
-
-	// Function to hold sliders options and initializers
-	initSliders: function() {
-		$('.bxslider').bxSlider({
-		  	mode: 'horizontal',
-		  	pager: false,
-		  	controls: false,
-			auto: true
-		});
-
-		/*$('#maximage').maximage({
-			cycleOptions: {
-				fx: 'fade',
-				speed: 4000,
-				prev: '.img-prev',
-				next: '.img-next'
-			}
-		});*/
-
-		return this;
 	},
 
 	// Function to show or hide menu when screen width < 768
@@ -192,15 +159,10 @@ Spirito = {
 
 	// Function to initialize fade effect on scroll for main home wrapper
 	fadeHome: function() {
-	    //Get scroll position of window
-	    //windowScroll = $(this).scrollTop() - 50;
-	    //Fade the .home-wrapper
-	    /*$('.home-wrapper').css({
-		   'opacity' : 1-(windowScroll/400)
-		});*/
-		var ws = $(window).scrollTop(), offset = ws/2;
-		$('.home-wrapper, .fullscreen-controls').css({transform: 'translateY('+offset+'px)', opacity: 1-(ws/700)});
-		
+    if (!is_safari) {
+		  var ws = $(window).scrollTop(), offset = ws/2;
+		  $('.home-wrapper, .fullscreen-controls').css({transform: 'translateY('+offset+'px)', opacity: 1-(ws/700)});
+    }
 	},
 
 	// Function to correct main home wrapper dimensions
