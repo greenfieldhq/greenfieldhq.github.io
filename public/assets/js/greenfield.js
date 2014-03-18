@@ -126,14 +126,14 @@ Spirito = {
 			auto: true
 		});
 
-		$('#maximage').maximage({
+		/*$('#maximage').maximage({
 			cycleOptions: {
 				fx: 'fade',
 				speed: 4000,
 				prev: '.img-prev',
 				next: '.img-next'
 			}
-		});
+		});*/
 
 		return this;
 	},
