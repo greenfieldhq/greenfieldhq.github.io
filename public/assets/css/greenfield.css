@@ -1084,10 +1084,6 @@ nav.sticky {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-#team .col-md-1,
-#team .col-lg-1 {
-  width: 12.333333%;
-}
 .team {
   text-align: center;
   margin-top: 40px;
