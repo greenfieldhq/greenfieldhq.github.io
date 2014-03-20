@@ -11,6 +11,7 @@
     "mongodb": "*",
     "mongoskin": "*",
     "ejs": "*",
-    "less": "*"
+    "less": "*",
+    "nodemailer": "*"
   }
 }
