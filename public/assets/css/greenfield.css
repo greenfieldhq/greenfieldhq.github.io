@@ -322,6 +322,19 @@ blockquote cite {
   overflow: hidden;
   z-index: 5;
 }
+#home .splash {
+  background-image: url(/assets/img/greenfield_low.jpg);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  z-index: 3;
+  opacity: 1;
+  width: 100%;
+  height: 275px;
+  bottom: 0px;
+  max-height: 275px;
+}
 #home #maximage {
   display: block;
   position: absolute;
@@ -1451,7 +1464,7 @@ nav.sticky {
   -webkit-transform-style: preserve-3d;
 }
 #quote {
-  background-image: url('../img/greenfield2.jpg');
+  background-image: url('../img/greenfield2_low.jpg');
 }
 .pattern {
   display: block;
