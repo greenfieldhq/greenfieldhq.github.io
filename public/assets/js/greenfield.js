@@ -144,11 +144,11 @@ Spirito = {
                 streetViewControl: false,
                 overviewMapControl: true
             },
-            address: "Paris, France",
-            zoom: 15,
+            address: "Boston, Massachusetts",
+            zoom: 13,
             markers:[
                 {
-                    address: "Paris, France",
+                    address: "21 Wormwood St., Boston, Massachusetts",
                     html: "Our office is here!"
                 }
             ]
