@@ -12,6 +12,7 @@
     "mongoskin": "*",
     "ejs": "*",
     "less": "*",
-    "nodemailer": "*"
+    "nodemailer": "*",
+    "postmark": "*"
   }
 }

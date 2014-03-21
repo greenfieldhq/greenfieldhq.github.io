@@ -1,10 +1,6 @@
-/**
- * Module dependencies.
- */
 var express = require('express');
 var routes = require('./routes');
-var todo = require('./routes/todo');
-var user = require('./routes/user');
+var contact = require('./routes/contact')
 var http = require('http');
 var path = require('path');
 
@@ -12,6 +8,8 @@ var mongo = require('mongoskin');
 var db = mongo.db("mongodb://localhost:27017/greenfield", { native_parser:true });
 
 var app = express();
+
+var postmark = require("postmark")("4b618cad-705b-41a3-a198-6c566a813a93");
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -33,11 +31,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/todos', todo.list(db));
-app.post('/todos', todo.create(db));
-app.del('/todos/:id', todo.del(db));
-app.put('/todos/:id', todo.update(db));
-app.get('/users', user.list(db));
+app.post('/contacts', contact.create(postmark));
 
 http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
