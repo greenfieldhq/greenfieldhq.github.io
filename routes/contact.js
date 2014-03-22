@@ -2,8 +2,8 @@ exports.create = function(postmark){
   return function(req, res){
     var contact = req.body.contact
       postmark.send({
-        "From": "ryan@greenfieldhq.com", 
-        "To": "greenfieldhq@googlegroups.com", 
+        "From": "info@greenfieldhq.com", 
+        "To": "info@greenfieldhq.com", 
         "Subject": "Contact Us", 
         "TextBody": JSON.stringify(contact)
       }, function(error, success) {
