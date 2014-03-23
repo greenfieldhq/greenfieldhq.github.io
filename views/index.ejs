@@ -186,7 +186,14 @@
             </p>
           </div>
           <form id="contact-form" name="contact-form" action="#" method="post">
-            <div class="row">
+            <div id="contact-confirm" class="row" style="display:none;">
+              <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 section-title">
+                <p class="subheading">
+                  Thanks for contacting us! Your message has been recieved and we will be in contact soon.
+                </p>
+              </div>
+            </div>
+            <div id="contact-us" class="row">
               <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4" data-animate="fade-in-left" data-delay="none">
                 <div class="form-group">
                   {{input type="text" value=name class="form-control input-lg" name="" placeholder="Name"}}

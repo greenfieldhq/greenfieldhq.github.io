@@ -8,6 +8,8 @@ App.ApplicationController = Ember.Controller.extend({
         body: this.get('body')
       });
       contact.save();
+      $('#contact-us').hide();
+      $('#contact-confirm').show();
     }
   }
 });
