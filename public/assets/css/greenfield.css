@@ -277,10 +277,10 @@ hr.divider {
   margin-bottom: 15px;
 }
 .form-group .error {
-  border-bottom: 1px red solid;
+  border-right: 1px red solid;
 }
 .form-group .no {
-  border-bottom: 1px #01A815 solid;
+  border-right: 1px #01A815 solid;
 }
 h3.title {
   margin-top: 30px;
@@ -2163,7 +2163,7 @@ fieldset[disabled] body[data-color="turquoise"] .btn-primary.active {
 body[data-color="turquoise"] input[type=text]:focus,
 body[data-color="turquoise"] input[type=password]:focus,
 body[data-color="turquoise"] textarea:focus {
-  border-color: #1abc9c;
+  border-color: #B0BBB2;
 }
 body[data-color="turquoise"] nav ul li a:hover,
 body[data-color="turquoise"] nav.dark ul li a:hover {
@@ -2276,7 +2276,7 @@ fieldset[disabled] body[data-color="green"] .btn-primary.active {
 body[data-color="green"] input[type=text]:focus,
 body[data-color="green"] input[type=password]:focus,
 body[data-color="green"] textarea:focus {
-  border-color: #01a815;
+  border-color: #B0BBB2;
 }
 body[data-color="green"] nav ul li a:hover,
 body[data-color="green"] nav.dark ul li a:hover {
@@ -2389,7 +2389,7 @@ fieldset[disabled] body[data-color="red"] .btn-primary.active {
 body[data-color="red"] input[type=text]:focus,
 body[data-color="red"] input[type=password]:focus,
 body[data-color="red"] textarea:focus {
-  border-color: #e74c3c;
+  border-color: #B0BBB2;
 }
 body[data-color="red"] nav ul li a:hover,
 body[data-color="red"] nav.dark ul li a:hover {
@@ -2502,7 +2502,7 @@ fieldset[disabled] body[data-color="blue"] .btn-primary.active {
 body[data-color="blue"] input[type=text]:focus,
 body[data-color="blue"] input[type=password]:focus,
 body[data-color="blue"] textarea:focus {
-  border-color: #3498db;
+  border-color: #B0BBB2;
 }
 body[data-color="blue"] nav ul li a:hover,
 body[data-color="blue"] nav.dark ul li a:hover {
@@ -2615,7 +2615,7 @@ fieldset[disabled] body[data-color="purple"] .btn-primary.active {
 body[data-color="purple"] input[type=text]:focus,
 body[data-color="purple"] input[type=password]:focus,
 body[data-color="purple"] textarea:focus {
-  border-color: #9b59b6;
+  border-color: #B0BBB2;
 }
 body[data-color="purple"] nav ul li a:hover,
 body[data-color="purple"] nav.dark ul li a:hover {
@@ -2728,7 +2728,7 @@ fieldset[disabled] body[data-color="yellow"] .btn-primary.active {
 body[data-color="yellow"] input[type=text]:focus,
 body[data-color="yellow"] input[type=password]:focus,
 body[data-color="yellow"] textarea:focus {
-  border-color: #f1c40f;
+  border-color: #B0BBB2;
 }
 body[data-color="yellow"] nav ul li a:hover,
 body[data-color="yellow"] nav.dark ul li a:hover {
