@@ -273,6 +273,15 @@ hr.divider {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group .error {
+  border-bottom: 1px red solid;
+}
+.form-group .no {
+  border-bottom: 1px #01A815 solid;
+}
 h3.title {
   margin-top: 30px;
   margin-bottom: 20px;

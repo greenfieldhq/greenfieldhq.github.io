@@ -1,15 +1,16 @@
 App.ApplicationController = Ember.Controller.extend({
   actions: {
     contactUs: function() {
-      var contact = this.store.createRecord('contact', {
-        name: this.get('name'),
-        email: this.get('email'),
-        subject: this.get('subject'),
-        body: this.get('body')
-      });
-      contact.save();
-      $('#contact-us').hide();
-      $('#contact-confirm').show();
+      var contact = this.get('model');
+
+      contact.validate().then(function() {
+        contact.get('isValid');
+        contact.save();
+        $('#contact-us').hide();
+        $('#contact-confirm').show();
+      }, function() {
+        contact.get('isValid');
+      })
     }
   }
 });

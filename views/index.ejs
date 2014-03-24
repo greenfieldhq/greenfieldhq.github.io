@@ -187,18 +187,24 @@
             <div id="contact-us" class="row">
               <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4" data-animate="fade-in-left" data-delay="none">
                 <div class="form-group">
-                  {{input type="text" value=name class="form-control input-lg" name="" placeholder="Name"}}
+                  <div {{bind-attr class="model.isNameValid:no:error"}}>
+                    {{input type="text" value=model.name class="form-control input-lg" name="" placeholder="Name*"}}
+                  </div>
                 </div>
                 <div class="form-group">
-                  {{input type="text" value=email class="form-control input-lg" name="" placeholder="E-mail"}}
+                  <div {{bind-attr class="model.isEmailValid:no:error"}}>
+                    {{input type="text" value=model.email class="form-control input-lg" name="" placeholder="E-mail*"}}
+                  </div>
                 </div>
                 <div class="form-group">
-                  {{input type="text" value=subject class="form-control input-lg" name="" placeholder="Subject"}}
+                  {{input type="text" value=model.subject class="form-control input-lg" name="" placeholder="Subject"}}
                 </div>		
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-animate="fade-in-right" data-delay="none">
                 <div class="form-group">
-                  {{textarea value=body class="form-control" placeholder="Your message"}}
+                  <div {{bind-attr class="model.isBodyValid:no:error"}}>
+                    {{textarea value=model.body class="form-control" placeholder="Your message*"}}
+                  </div>
                 </div>
                 <div class="form-group">
                   <input {{action "contactUs"}} type="submit" class="btn btn-primary btn-lg btn-block" value="Submit" />
@@ -214,14 +220,6 @@
         <footer>
         </footer>
       </div>
-    </script>
-
-    <script type="text/x-handlebars" data-template-name="users">
-      <ul>
-        {{#each}}
-        <li>{{username}}: {{email}}</li>
-        {{/each}}
-      </ul>
     </script>
 
     <script src="assets/js/libs/jquery.min.js"></script>
@@ -244,6 +242,7 @@
     <script src="assets/js/libs/handlebars-1.1.2.js"></script>
     <script src="assets/js/libs/ember-1.4.0.js"></script>
     <script src="assets/js/libs/ember-data.js"></script>
+    <script src="assets/js/libs/ember-validations.js"></script>
     <script src="assets/js/app.js"></script>  
     <script src="assets/js/controllers/application_controller.js"></script>
     <script src="assets/js/models/contact.js"></script>
