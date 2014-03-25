@@ -273,14 +273,14 @@ hr.divider {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.form-group {
+#contact-us {
   margin-bottom: 15px;
 }
-.form-group .error {
-  border-right: 1px red solid;
+#contact-us .error {
+  color: red;
 }
-.form-group .no {
-  border-right: 1px #01A815 solid;
+#contact-us .no {
+  color: #01A815;
 }
 h3.title {
   margin-top: 30px;

@@ -186,26 +186,32 @@
             </div>
             <div id="contact-us" class="row">
               <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4" data-animate="fade-in-left" data-delay="none">
-                <div class="form-group">
-                  <div {{bind-attr class="model.isNameValid:no:error"}}>
-                    {{input type="text" value=model.name class="form-control input-lg" name="" placeholder="Name*"}}
-                  </div>
+                <div class="form-group" style="float: left; width: 97%;">
+                  {{input type="text" value=model.name class="form-control input-lg" name="" placeholder="Name"}}
                 </div>
-                <div class="form-group">
-                  <div {{bind-attr class="model.isEmailValid:no:error"}}>
-                    {{input type="text" value=model.email class="form-control input-lg" name="" placeholder="E-mail*"}}
-                  </div>
+                <div {{bind-attr class="model.isNameValid:no:error"}}>
+                  *
                 </div>
-                <div class="form-group">
+                <div style="clear: both;"></div>
+                <div class="form-group" style="float: left; width: 97%;">
+                    {{input type="text" value=model.email class="form-control input-lg" name="" placeholder="E-mail"}}
+                </div>
+                <div {{bind-attr class="model.isEmailValid:no:error"}}>
+                  *
+                </div>
+                <div style="clear: both;"></div>
+                <div class="form-group" style="float: left; width: 97%;">
                   {{input type="text" value=model.subject class="form-control input-lg" name="" placeholder="Subject"}}
                 </div>		
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-animate="fade-in-right" data-delay="none">
-                <div class="form-group">
-                  <div {{bind-attr class="model.isBodyValid:no:error"}}>
-                    {{textarea value=model.body class="form-control" placeholder="Your message*"}}
-                  </div>
+                <div class="form-group" style="float: left; width: 97%;">
+                    {{textarea value=model.body class="form-control" placeholder="Your message"}}
                 </div>
+                <div {{bind-attr class="model.isBodyValid:no:error"}}>
+                  *
+                </div>
+                <div style="clear: both;"></div>
                 <div class="form-group">
                   <input {{action "contactUs"}} type="submit" class="btn btn-primary btn-lg btn-block" value="Submit" />
                 </div>
