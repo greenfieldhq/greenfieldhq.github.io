@@ -278,9 +278,11 @@ hr.divider {
 }
 #contact-us .error {
   color: red;
+  font-size: 24px;
 }
 #contact-us .no {
   color: #01A815;
+  font-size: 24px;
 }
 h3.title {
   margin-top: 30px;
