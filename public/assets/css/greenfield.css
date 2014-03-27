@@ -519,17 +519,24 @@ blockquote cite {
 #home .home-wrapper .buttons {
   margin-top: 20px;
 }
+#home .home-wrapper .buttons .opaque-bg {
+  background-color: #fff;
+  opacity: 0.9;
+  width: 100px;
+  margin: 0 auto;
+}
 #home .home-wrapper .buttons .btn {
   position: relative;
   z-index: 6;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  border-radius: 0;
-  font-size: 12px;
+  border: 1px solid #333;
+  color: #333;
+  border-radius: 0.5;
+  font-size: 11px;
+  font-weight: bold;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  padding: 15px 20px;
+  padding: 9px 13px;
 }
 #home .home-wrapper .buttons .or {
   position: relative;
@@ -1102,11 +1109,8 @@ nav.sticky {
   cursor: default;
 }
 .feature-box:hover .fa:after {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  /*.opacity(1);
+				.scale(1.1);*/
 }
 .team {
   text-align: center;

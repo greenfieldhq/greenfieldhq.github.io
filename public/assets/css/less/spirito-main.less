@@ -273,19 +273,27 @@ blockquote {
 		}
 		.buttons {
 			margin-top: 20px;
-			.btn {
-				position: relative;
-				z-index: 6;
-				border: 1px solid #ffffff;
-				color: #ffffff;
-				border-radius: 0;
-				font-size: 12px;
-				text-transform: uppercase;
-				.transition(all 0.3s);
-				padding: 15px 20px;
+      .opaque-bg {
+        background-color: #fff;
+        opacity: 0.9;
+        width: 100px;
+        margin: 0 auto;
+      }
+      .btn {
+        position: relative;
+        z-index: 6;
+        border: 1px solid #333;
+        color: #333;
+        border-radius: 0.5;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        padding: 9px 13px;
 				&:hover {
 				}
-			}
+      }
 			.or {
 				position: relative;
 				z-index: 7;
