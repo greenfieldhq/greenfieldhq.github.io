@@ -537,7 +537,7 @@ blockquote cite {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   padding: 7px 13px;
-  background-color: rgba(182, 255, 115, 0.4);
+  background-color: rgba(182, 255, 115, 0.2);
 }
 #home .home-wrapper .buttons .or {
   position: relative;
