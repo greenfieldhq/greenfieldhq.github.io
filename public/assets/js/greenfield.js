@@ -149,7 +149,7 @@ Spirito = {
             markers:[
                 {
                     address: "21 Wormwood St., Boston, Massachusetts",
-                    html: "Our office is here!<br>21 Wormwood St.<br>suite 608<br>Boston, MA 02210"
+                    html: "Our office is here!<br>21 Wormwood St.<br>Suite 608<br>Boston, MA 02210"
                 }
             ]
         });
