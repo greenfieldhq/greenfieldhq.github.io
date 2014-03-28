@@ -181,26 +181,13 @@ Spirito = {
 
 	// Function for parallax effect
 	parallax: function() {
-		/*
-		var scrolled = $(window).scrollTop();
-		$('.parallax').each(function() {
-			if(!$(this).hasClass('static')) {
-				$(this).css({'background-position': '0px ' + -(scrolled * 0.05) + 'px'});
-			}
-		});*/
-
-		 
-        /* Dont user paralax for tablet and mobile devices. */
-        $('#quote').parallax("50%", 0.2);
-        $('#clients').parallax("50%", 0.2);
-        $('#contact-details').parallax("50%", 0.2);
-        //$('#page-features').parallax("0%", 0.07);
-        //$('#page-twitter').parallax("0%", 0.1);
-    
+    /* Dont user paralax for tablet and mobile devices. */
+    $('#quote').parallax("50%", 0.2);
+    $('#clients').parallax("50%", 0.2);
+    $('#contact-details').parallax("50%", 0.2);
 	},
 
 	parallaxMove: function() {
-
 	},
 
 	// Function to scroll with animation to desired element
