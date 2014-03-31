@@ -162,7 +162,6 @@ $.fn.imagesLoaded = function( callback ) {
 };
 
 var Grid = (function() {
-
 	// list of items
 	var $grid = $( '#portfolio-items' ),
 		// the items
@@ -516,7 +515,7 @@ var Grid = (function() {
 		addItems : addItems
 	};
 
-})();
+});//();
 	
 
 		

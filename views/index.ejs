@@ -461,6 +461,17 @@
         <footer>
         </footer>
       </div>
+      <script>
+        $(document).ready(function() {
+          Spirito.init().initPortfolio().initMaps();
+          Grid().init();
+
+          $(window).load(function(){
+            $('#loader').fadeOut(1000,function(){ $(this).remove(); });
+            Spirito.parallax();
+          });
+        });
+      </script>
     </script>
 
     <script src="assets/js/libs/jquery.min.js"></script>
@@ -490,16 +501,6 @@
     <script src="assets/js/router.js"></script>
 
     <script>
-      $(document).ready(function() {
-        Spirito.init().initPortfolio().initMaps();
-        Grid.init();
-
-        $(window).load(function(){
-          $('#loader').fadeOut(1000,function(){ $(this).remove(); });
-          Spirito.parallax();
-        });
-      });
-
       var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
       var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
       var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
