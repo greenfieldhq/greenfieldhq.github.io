@@ -1378,6 +1378,21 @@ nav.sticky {
   outline: medium none;
   text-transform: uppercase;
 }
+.portfolio-grid .portfolio-item .og-expander .og-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.portfolio-grid .portfolio-item .og-expander .og-details ul li a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: inline-block;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  word-spacing: 0px;
+  outline: medium none;
+  text-transform: none;
+  margin-top: 10px;
+}
 .portfolio-grid .portfolio-item .portfolio-item-inner .portfolio-image {
   width: 100%;
   position: relative;
