@@ -1268,6 +1268,7 @@ nav.sticky {
   font-size: 0px;
   letter-spacing: 0px;
   word-spacing: 0px;
+  text-align: center;
 }
 .portfolio-grid .portfolio-item {
   width: 20%;
