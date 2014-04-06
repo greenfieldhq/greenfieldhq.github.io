@@ -13,6 +13,7 @@
     "ejs": "*",
     "less": "*",
     "nodemailer": "*",
-    "postmark": "*"
+    "postmark": "*",
+    "prerender-node": "~1.0.0"
   }
 }

@@ -24,6 +24,7 @@ app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(require('prerender-node')).set('prerenderToken', 'BHt0dTM5G8QWslPlp6u4');
 
 // development only
 if ('development' == app.get('env')) {
