@@ -10,3 +10,6 @@ To run greenfield
 
 In production be sure to set the correct port
 * export PORT=80
+
+Create a local config file
+* Create a new config/app.json file. See config/app.json.sample as an example

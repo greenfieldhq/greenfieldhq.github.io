@@ -14,6 +14,7 @@
     "less": "*",
     "nodemailer": "*",
     "postmark": "*",
-    "prerender-node": "~1.0.0"
+    "prerender-node": "~1.0.0",
+    "konfig": "*"
   }
 }

@@ -4,12 +4,14 @@ var contact = require('./routes/contact')
 var http = require('http');
 var path = require('path');
 
+global.config = require('konfig')();
+console.log(global.config.app);
+
 var mongo = require('mongoskin');
 var db = mongo.db("mongodb://localhost:27017/greenfield", { native_parser:true });
 
 var app = express();
-
-var postmark = require("postmark")("4b618cad-705b-41a3-a198-6c566a813a93");
+var postmark = require("postmark")(global.config.app.keys.postmark);
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -20,11 +22,11 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-app.use(express.cookieParser('your secret here'));
+app.use(express.cookieParser(global.config.app.keys.cookieParser));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('prerender-node')).set('prerenderToken', 'BHt0dTM5G8QWslPlp6u4');
+app.use(require('prerender-node')).set('prerenderToken', global.config.app.keys.prerender);
 
 // development only
 if ('development' == app.get('env')) {
