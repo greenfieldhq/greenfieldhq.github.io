@@ -63,7 +63,7 @@
           <a href="#"><i class="fa fa-bars"></i></a>
         </div>
         <ul>
-          <li class="active"><a href="#home">Home</a></li>
+          <li class="active"><a href="#home" id="home-link">Home</a></li>
           <li><a href="#about" id="about-link">About</a></li>
           <li><a href="#team" id="team-link">Team</a></li>
           <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
@@ -322,7 +322,7 @@
         });
 
         var anchor = App.__container__.lookup('controller:application').get('anchor');
-        $.scrollTo('#' + anchor, 800, {offset: 350});
+        $.scrollTo('#' + anchor, 1500, {offset: 350});
       </script>
     </script>
 
