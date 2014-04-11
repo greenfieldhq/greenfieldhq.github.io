@@ -83,6 +83,7 @@ Spirito = {
 		});
 
 		$('nav>ul').onePageNav({
+				filter: ':not(.external)',
 		    currentClass: 'active',
 		    changeHash: false,
 		    scrollSpeed: 700,
