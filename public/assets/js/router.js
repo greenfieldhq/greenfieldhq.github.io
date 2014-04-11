@@ -3,7 +3,7 @@ App.Router.map(function() {
 });
 
 App.ApplicationRoute = Ember.Route.extend({
-  setupController: function(controller, model) {
+  setupController: function(controller, model, params) {
     controller.set('model', model);
   },
   model: function(params) {

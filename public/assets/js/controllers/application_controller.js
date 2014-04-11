@@ -1,4 +1,8 @@
 App.ApplicationController = Ember.Controller.extend({
+  queryParams: ['anchor'],
+  anchor: null,
+  anchorPage: function() {
+  }.observes('anchor'),
   actions: {
     contactUs: function() {
       var contact = this.get('model');

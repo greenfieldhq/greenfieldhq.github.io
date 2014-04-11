@@ -64,11 +64,11 @@
         </div>
         <ul>
           <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about" id="about-link">About</a></li>
+          <li><a href="#team" id="team-link">Team</a></li>
+          <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
           <li><a href="http://greenfieldhq.github.io">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
         </nav>
         <section id="about">
@@ -309,6 +309,7 @@
         <footer>
         </footer>
       </div>
+
       <script>
         $(document).ready(function() {
           Spirito.init().initPortfolio().initMaps();
@@ -319,7 +320,14 @@
             Spirito.parallax();
           });
         });
+
+        var anchor = App.__container__.lookup('controller:application').get('anchor');
+        $.scrollTo('#' + anchor, 800, {offset: 350});
       </script>
+    </script>
+
+    <script>
+      EmberENV = {FEATURES: {'query-params-new': true}};
     </script>
 
     <script src="assets/js/libs/jquery.min.js"></script>
@@ -340,7 +348,8 @@
     <script src="assets/js/libs/portfolio-grid.js"></script>
 
     <script src="assets/js/libs/handlebars-1.1.2.js"></script>
-    <script src="assets/js/libs/ember-1.4.0.js"></script>
+    <!--script src="assets/js/libs/ember-1.4.0.js"></script-->
+    <script src="assets/js/libs/ember.canary.js"></script>
     <script src="assets/js/libs/ember-data.js"></script>
     <script src="assets/js/libs/ember-validations.js"></script>
     <script src="assets/js/app.js"></script>
