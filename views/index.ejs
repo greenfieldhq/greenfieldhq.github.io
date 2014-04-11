@@ -319,10 +319,10 @@
             $('#loader').fadeOut(1000,function(){ $(this).remove(); });
             Spirito.parallax();
           });
+          var anchor = App.__container__.lookup('controller:application').get('anchor');
+          $('#' + anchor + '-link').click();
         });
 
-        var anchor = App.__container__.lookup('controller:application').get('anchor');
-        $.scrollTo('#' + anchor, 1500, {offset: 350});
       </script>
     </script>
 
