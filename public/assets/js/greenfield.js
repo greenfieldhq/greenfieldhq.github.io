@@ -48,7 +48,7 @@ Spirito = {
 				$('nav > ul').removeAttr('style');
 			}
 			if($(window).width() < 768) {
-				$('.menu-trigger a').click(function(){
+				$('.menu-trigger a').unbind('click').click(function(){
 					$this.toggleMenu();
 					return false;
 				});
