@@ -319,8 +319,11 @@
             $('#loader').fadeOut(1000,function(){ $(this).remove(); });
             Spirito.parallax();
           });
-          var anchor = App.__container__.lookup('controller:application').get('anchor');
-          $('#' + anchor + '-link').click();
+
+          setTimeout(function() {
+            var anchor = App.__container__.lookup('controller:application').get('anchor');
+            $('#' + anchor + '-link').click();
+          },500);
         });
 
       </script>
