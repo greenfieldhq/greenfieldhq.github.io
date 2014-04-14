@@ -387,13 +387,14 @@ var Grid = (function() {
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
 			if(eldata.href !== '') {
+				this.$details.children('a').show();
 				this.$href.attr( 'href', eldata.href );
 			} else {
-				this.$details.children('a').remove();
+				this.$details.children('a').hide();
 			}
 
 			var self = this;
-			
+
 			// remove the current image in the preview
 			if( typeof self.$largeImg != 'undefined' ) {
 				self.$largeImg.remove();
