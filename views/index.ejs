@@ -14,7 +14,6 @@
     <script src="assets/js/libs/modernizr.custom.min.js"></script>
   </head>
   <body data-color="green">
-    <script type="text/x-handlebars" data-template-name="application">
       <div id="wrapper">
         <header id="home">
         <div id="maximage" class="maximage-slider mc-cycle" style="height: 275px; max-height: 275px; width: 100%;">
@@ -311,6 +310,13 @@
       </div>
 
       <script>
+        function getParameterByName(name) {
+          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+
         $(document).ready(function() {
           Spirito.init().initPortfolio().initMaps();
           Grid().init();
@@ -321,16 +327,16 @@
           });
 
           setTimeout(function() {
-            var anchor = App.__container__.lookup('controller:application').get('anchor');
+            //var anchor = App.__container__.lookup('controller:application').get('anchor');
+            var anchor = getParameterByName('anchor');
             $('#' + anchor + '-link').click();
           },500);
         });
 
       </script>
-    </script>
 
     <script>
-      EmberENV = {FEATURES: {'query-params-new': true}};
+      //EmberENV = {FEATURES: {'query-params-new': true}};
     </script>
 
     <script src="assets/js/libs/jquery.min.js"></script>
@@ -349,16 +355,6 @@
     <script src="assets/js/libs/jquery.parallax.js"></script>
     <script src="assets/js/greenfield.js"></script>
     <script src="assets/js/libs/portfolio-grid.js"></script>
-
-    <script src="assets/js/libs/handlebars-1.1.2.js"></script>
-    <!--script src="assets/js/libs/ember-1.4.0.js"></script-->
-    <script src="assets/js/libs/ember.canary.js"></script>
-    <script src="assets/js/libs/ember-data.js"></script>
-    <script src="assets/js/libs/ember-validations.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/controllers/application_controller.js"></script>
-    <script src="assets/js/models/contact.js"></script>
-    <script src="assets/js/router.js"></script>
 
     <script>
       var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
