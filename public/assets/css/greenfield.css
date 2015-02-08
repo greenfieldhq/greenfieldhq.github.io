@@ -2843,3 +2843,8 @@ body[data-color="yellow"] aside .tags li a {
     background-color: #f1c40f;
   }
 }
+
+#contact-us .error {
+  color: red;
+  font-size: 16px;
+}
