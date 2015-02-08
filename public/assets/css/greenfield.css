@@ -2848,3 +2848,14 @@ body[data-color="yellow"] aside .tags li a {
   color: red;
   font-size: 16px;
 }
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #01a815;
+  z-index: 100;
+}
