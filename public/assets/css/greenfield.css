@@ -263,7 +263,7 @@ hr.divider {
 }
 .form-control {
   border-radius: 0;
-  border-color: #eeeeee;
+  border-color: #999999;
   color: #999999;
 }
 .form-control,
@@ -300,10 +300,6 @@ hr.divider {
 }
 #contact-us {
   margin-bottom: 15px;
-}
-#contact-us .error {
-  color: red;
-  font-size: 24px;
 }
 #contact-us .no {
   color: #01A815;
@@ -2845,8 +2841,13 @@ body[data-color="yellow"] aside .tags li a {
 }
 
 #contact-us .error {
-  color: red;
-  font-size: 16px;
+}
+
+#contact-us label {
+  color: rgb(245, 35, 35);
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0px;
 }
 
 #loader {
