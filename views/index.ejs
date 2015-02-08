@@ -365,7 +365,8 @@
               You want to say hello, or you want to know more about us? Drop us an email! We would love to hear from you.
             </p>
           </div>
-          <form id="contact-form" name="contact-form" action="#" method="post">
+
+          <form id="contact-form" name="contact-form" action="/contacts" method="post">
             <div id="contact-confirm" class="row" style="display:none;">
               <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 section-title">
                 <p class="subheading">
@@ -376,37 +377,38 @@
             <div id="contact-us" class="row">
               <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4" data-animate="fade-in-left" data-delay="none">
                 <div class="form-group" style="float: left; width: 97%;">
-                  {{input type="text" value=model.name class="form-control input-lg" name="" placeholder="Name"}}
+                  <input type="text" name="name" placeholder="Name" class="form-control input-lg" />
                 </div>
                 <div {{bind-attr class="model.isNameValid:no:error"}}>
                   *
                 </div>
                 <div style="clear: both;"></div>
                 <div class="form-group" style="float: left; width: 97%;">
-                    {{input type="text" value=model.email class="form-control input-lg" name="" placeholder="E-mail"}}
+                  <input type="text" name="email" placeholder="E-mail" class="form-control input-lg" />
                 </div>
                 <div {{bind-attr class="model.isEmailValid:no:error"}}>
                   *
                 </div>
                 <div style="clear: both;"></div>
                 <div class="form-group" style="float: left; width: 97%;">
-                  {{input type="text" value=model.subject class="form-control input-lg" name="" placeholder="Subject"}}
+                  <input type="text" name="subject" placeholder="Subject" class="form-control input-lg" />
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-animate="fade-in-right" data-delay="none">
                 <div class="form-group" style="float: left; width: 97%;">
-                    {{textarea value=model.body class="form-control" placeholder="Your message"}}
+                  <textarea name="body" placeholder="Your message" class="form-control"></textarea>
                 </div>
                 <div {{bind-attr class="model.isBodyValid:no:error"}}>
                   *
                 </div>
                 <div style="clear: both;"></div>
                 <div class="form-group">
-                  <input {{action "contactUs"}} type="submit" class="btn btn-primary btn-lg btn-block" value="Submit" />
+                  <input type="submit" class="btn btn-primary btn-lg btn-block" value="Submit" />
                 </div>
               </div>
             </div>
           </form>
+
         </div>
         </section>
         <section id="location-map">
@@ -432,6 +434,7 @@
     <script src="assets/js/libs/jquery.parallax.js"></script>
     <script src="assets/js/greenfield.js"></script>
     <script src="assets/js/libs/portfolio-grid.js"></script>
+    <script src="assets/js/libs/jquery.form.min.js"></script>
 
     <script>
       var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
@@ -449,21 +452,34 @@
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
       }
 
+      function validate(formData, jqForm, options) { 
+        return true;
+      }
+
+      function success(responseText, statusText, xhr, $form)  { 
+        $('#contact-us').hide();
+        $('#contact-confirm').show();
+      } 
+
       $(document).ready(function() {
         Spirito.init().initPortfolio().initMaps();
         Grid().init();
 
         $(window).load(function(){
-          $('#loader').fadeOut(500,function(){ $(this).remove(); });
+          $('#loader').fadeOut(300,function(){ $(this).remove(); });
           Spirito.parallax();
         });
+
+        $('#contact-form').ajaxForm({ 
+          beforeSubmit: validate,
+          success: success
+        }); 
 
         setTimeout(function() {
           var anchor = getParameterByName('anchor');
           $('#' + anchor + '-link').click();
         },500);
       });
-
     </script>
 
     <script>
