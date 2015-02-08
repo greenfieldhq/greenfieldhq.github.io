@@ -12,6 +12,7 @@ exports.create = function(postmark){
       }
       console.info("Sent to postmark for delivery")
     });
+
     res.write('{"contacts":');
      res.write(JSON.stringify(req.body));
     res.end('}');

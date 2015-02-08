@@ -377,28 +377,28 @@
             <div id="contact-us" class="row">
               <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4" data-animate="fade-in-left" data-delay="none">
                 <div class="form-group" style="float: left; width: 97%;">
-                  <input type="text" name="name" placeholder="Name" class="form-control input-lg" />
+                  <input type="text" id="name" name="name" placeholder="Name" class="form-control input-lg" required />
                 </div>
-                <div {{bind-attr class="model.isNameValid:no:error"}}>
+                <div class="no">
                   *
                 </div>
                 <div style="clear: both;"></div>
                 <div class="form-group" style="float: left; width: 97%;">
-                  <input type="text" name="email" placeholder="E-mail" class="form-control input-lg" />
+                  <input type="text" id="email" name="email" placeholder="E-mail" class="form-control input-lg" required />
                 </div>
-                <div {{bind-attr class="model.isEmailValid:no:error"}}>
+                <div class="no">
                   *
                 </div>
                 <div style="clear: both;"></div>
                 <div class="form-group" style="float: left; width: 97%;">
-                  <input type="text" name="subject" placeholder="Subject" class="form-control input-lg" />
+                  <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control input-lg" />
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" data-animate="fade-in-right" data-delay="none">
                 <div class="form-group" style="float: left; width: 97%;">
-                  <textarea name="body" placeholder="Your message" class="form-control"></textarea>
+                  <textarea id="body" name="body" placeholder="Your message" class="form-control" required></textarea>
                 </div>
-                <div {{bind-attr class="model.isBodyValid:no:error"}}>
+                <div class="no">
                   *
                 </div>
                 <div style="clear: both;"></div>
@@ -435,6 +435,7 @@
     <script src="assets/js/greenfield.js"></script>
     <script src="assets/js/libs/portfolio-grid.js"></script>
     <script src="assets/js/libs/jquery.form.min.js"></script>
+    <script src="assets/js/libs/jquery.validate.js"></script>
 
     <script>
       var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
@@ -461,24 +462,31 @@
         $('#contact-confirm').show();
       } 
 
+      function error(responseText, statusText, xhr, $form)  { 
+        alert('error');
+      } 
+
       $(document).ready(function() {
         Spirito.init().initPortfolio().initMaps();
         Grid().init();
 
-        $(window).load(function(){
-          $('#loader').fadeOut(300,function(){ $(this).remove(); });
-          Spirito.parallax();
-        });
+        $('#contact-form').validate(); 
 
         $('#contact-form').ajaxForm({ 
           beforeSubmit: validate,
-          success: success
+          success: success,
+          error: error
         }); 
 
         setTimeout(function() {
           var anchor = getParameterByName('anchor');
           $('#' + anchor + '-link').click();
         },500);
+      });
+
+      $(window).load(function(){
+        $('#loader').fadeOut(300,function(){ $(this).remove(); });
+        Spirito.parallax();
       });
     </script>
 
