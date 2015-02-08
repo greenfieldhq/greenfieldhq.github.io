@@ -13,3 +13,7 @@ In production be sure to set the correct port
 
 Create a local config file
 * Create a new config/app.json file. See config/app.json.sample as an example
+
+To debug in develpoment
+* npm install node-debug
+* node-debug app.js
