@@ -11,9 +11,33 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/maximage.css">
     <link rel="stylesheet" href="assets/css/greenfield.css" />
-    <script src="assets/js/libs/modernizr.custom.min.js"></script>
   </head>
   <body data-color="green">
+	<div id="loader">
+	<div class="windows8">
+<div class="wBall" id="wBall_1">
+<div class="wInnerBall">
+</div>
+</div>
+<div class="wBall" id="wBall_2">
+<div class="wInnerBall">
+</div>
+</div>
+<div class="wBall" id="wBall_3">
+<div class="wInnerBall">
+</div>
+</div>
+<div class="wBall" id="wBall_4">
+<div class="wInnerBall">
+</div>
+</div>
+<div class="wBall" id="wBall_5">
+<div class="wInnerBall">
+</div>
+</div>
+</div>
+</div>
+
       <div id="wrapper">
         <header id="home">
         <div id="maximage" class="maximage-slider mc-cycle" style="height: 275px; max-height: 275px; width: 100%;">
@@ -391,37 +415,7 @@
         <footer>
         </footer>
       </div>
-
-      <script>
-        function getParameterByName(name) {
-          name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-              results = regex.exec(location.search);
-          return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-        }
-
-        $(document).ready(function() {
-          Spirito.init().initPortfolio().initMaps();
-          Grid().init();
-
-          $(window).load(function(){
-            $('#loader').fadeOut(1000,function(){ $(this).remove(); });
-            Spirito.parallax();
-          });
-
-          setTimeout(function() {
-            //var anchor = App.__container__.lookup('controller:application').get('anchor');
-            var anchor = getParameterByName('anchor');
-            $('#' + anchor + '-link').click();
-          },500);
-        });
-
-      </script>
-
-    <script>
-      //EmberENV = {FEATURES: {'query-params-new': true}};
-    </script>
-
+    <script src="assets/js/libs/modernizr.custom.min.js"></script>
     <script src="assets/js/libs/jquery.min.js"></script>
     <script src="assets/js/libs/bootstrap.min.js"></script>
     <script src="assets/js/libs/waypoints.min.js"></script>
@@ -446,6 +440,30 @@
       var is_safari = navigator.userAgent.indexOf("Safari") > -1;
       var is_Opera = navigator.userAgent.indexOf("Presto") > -1;
       if ((is_chrome)&&(is_safari)) {is_safari=false;}
+    </script>
+    <script>
+      function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      $(document).ready(function() {
+        Spirito.init().initPortfolio().initMaps();
+        Grid().init();
+
+        $(window).load(function(){
+          $('#loader').fadeOut(500,function(){ $(this).remove(); });
+          Spirito.parallax();
+        });
+
+        setTimeout(function() {
+          var anchor = getParameterByName('anchor');
+          $('#' + anchor + '-link').click();
+        },500);
+      });
+
     </script>
 
     <script>
