@@ -33,6 +33,20 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+var sassMiddleware = require('node-sass-middleware');
+
+var srcPath = __dirname + '/public/assets/sass';
+var destPath = __dirname + '/public/assets/css';
+
+debugger;
+
+app.use('/assets/css', sassMiddleware({
+  src: srcPath,
+  dest: destPath,
+  debug: true,
+  outputStyle: 'expanded'
+}));
+
 app.get('/', routes.index);
 app.post('/contacts', contact.create(postmark));
 

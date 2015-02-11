@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>greenfield</title>
+    <title>Greenfield - We’re a nimble, Boston-based consulting team of developers and designers focused on solving problems.</title>
     <meta name="fragment" content="!">
     <meta charset="UTF-8" />
     <meta name="keywords" content="Mobile app development Boston, iPhone app developer Boston, iPhone app development Boston, app developer Boston, mobile application development Boston, iPhone developer Boston, app developers Boston, iPhone apps development Boston, Boston iPhone apps, iPhone application development Boston, iPhone app developers Boston, mobile app developer Boston, Android app developer Boston, Android developer Boston">
@@ -14,29 +14,43 @@
   </head>
   <body data-color="green">
 	  <div id="loader">
-	    <div class="windows8">
-        <!--
-        <div class="wBall" id="wBall_1">
-          <div class="wInnerBall">
+      <div id="wrapper">
+        <header id="home-splash">
+          <div class="home-wrapper">
+            <div class="logo">
+              <h1>greenfield</h1>
+            </div>
+            <div id="home-slider">
+              <div class="star-line">
+                <span class="line-pre"></span>
+                <span class="icons">
+                  <i class="glyphicon glyphicon-star"></i>
+                  <i class="glyphicon glyphicon-star"></i>
+                  <i class="glyphicon glyphicon-star"></i>
+                </span>
+                <span class="line-after"></span>
+              </div>
+              <ul class="">
+                <li>
+                <h1>
+                  We’re a nimble,<br>
+                  Boston-based team of developers and designers<br>
+                  focused on solving problems.
+                </h1>
+                </li>
+              </ul>
+            </div>
+            <div class="buttons">
+              <div>
+                <a class="btn" href="#about" data-scroll="#about">
+                  Learn More
+                </a>
+                <div class="opaque-bg">
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="wBall" id="wBall_2">
-          <div class="wInnerBall">
-          </div>
-        </div>
-        <div class="wBall" id="wBall_3">
-          <div class="wInnerBall">
-          </div>
-        </div>
-        <div class="wBall" id="wBall_4">
-          <div class="wInnerBall">
-          </div>
-        </div>
-        <div class="wBall" id="wBall_5">
-          <div class="wInnerBall">
-          </div>
-        </div>
-        -->
+        </header>
       </div>
     </div>
 
@@ -66,7 +80,13 @@
             <span class="line-after"></span>
           </div>
           <ul class="">
-            <li><h1>We build stunning applications<br>for the Web and mobile.</h1></li>
+            <li>
+              <h1>
+                We’re a nimble,<br>
+                Boston-based team of developers and designers<br>
+                focused on solving problems.
+              </h1>
+            </li>
           </ul>
         </div>
         <div class="buttons">
@@ -462,10 +482,12 @@
           success: success,
           error: error
         }); 
+        setTimeout(function() {
+          $('#loader').fadeOut(500,function(){ $(this).remove(); });
+        },500);
       });
 
       $(window).load(function(){
-        $('#loader').fadeOut(300,function(){ $(this).remove(); });
         Spirito.parallax();
 
         setTimeout(function() {
