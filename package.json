@@ -15,6 +15,7 @@
     "nodemailer": "*",
     "postmark": "*",
     "prerender-node": "~1.0.0",
-    "konfig": "*"
+    "konfig": "*",
+    "node-sass-middleware": "^0.4.0"
   }
 }
