@@ -5,15 +5,15 @@ Spirito = {
 	// @param home: Default true, defines if this is home page or not
 	init: function(home) {
 		home = (home !== undefined ? home : true);
-		this.homesize();
-		this.animated_contents();
+		//this.homesize();
+		//this.animated_contents();
 
 		if (home) {
 			this.handleNav();
 		}
 		this.handleScroll();
-		this.handleResize();
-		this.blog();
+		//this.handleResize();
+		//this.blog();
 		//this.parallax();
 
 		return this;

@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:400,300,700|Open+Sans:400,300,700|Lobster);
+
+body a {
+  color: #01a815;
+}
+
+body a:hover {
+  color: #01a815 !important;
+}
+
+#splash {
+  background-image: url("/assets/img/greenfield_med.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 3;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  -moz-transition: opacity 1.5s ease-in-out;
+  -o-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.show-menu a, .hide-menu a {
+  position: absolute;
+  right: 43px;
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  padding-top: 11px;
+  font-size: 21px;
+  color: #fff;
+  z-index: 100;
+  color: #333 !important;
+  font-size: 24px;
+}
+
+/* bootstrap 3 helpers */
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+header {
+	height:280px;
+}
+
+
+#nav {
+  box-shadow: 0 1px 0 3px rgba(0, 0, 0, 0.05);
+}
+
+#nav .navbar {
+  border-radius: 0px;
+  border: none;
+  background-color: #FFF;
+  margin-bottom: 0px;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:10;
+}
+
+#nav.affix + .main-content {
+  margin-top: 70px;
+}
+
+#nav .logo {
+  float: left;
+  height: 70px;
+}
+
+#nav .logo h1 {
+  font-family: Lobster, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 36px;
+  margin: 0 0 0 30px;
+  padding: 0;
+  line-height: 64px;
+}
+
+#nav ul {
+  /*float: right;*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 70px;
+  vertical-align: middle;
+  display: table;
+}
+
+#nav ul li {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+#nav ul li a {
+  text-transform: uppercase;
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none !important;
+  color: #333;
+}
+
+#nav ul li.active a {
+  color: #01a815 !important;
+  background-color: transparent;
+}

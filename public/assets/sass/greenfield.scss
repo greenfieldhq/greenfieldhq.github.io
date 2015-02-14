@@ -184,7 +184,7 @@ $url_5: url("../img/grid.png");
 }
 
 //original selectors
-//.portfolio-grid .portfolio-item .og-expander .og-fullimg, .portfolio-grid .portfolio-item .og-expander .og-details
+//.portfolio-grid .eortfolio-item .og-expander .og-fullimg, .portfolio-grid .portfolio-item .og-expander .og-details
 %extend_11 {
 	float: left;
 	height: 100%;
@@ -1618,9 +1618,9 @@ nav {
 	text-align: center;
 	.portfolio-item {
 		width: 20%;
-		display: none;
-		opacity: 0;
-		filter: alpha(opacity=0);
+		//display: none;
+		//opacity: 0;
+		//filter: alpha(opacity=0);
 		overflow: hidden;
 		margin: 0;
 		padding: 0;

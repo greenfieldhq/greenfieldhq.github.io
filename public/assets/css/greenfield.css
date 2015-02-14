@@ -1170,9 +1170,6 @@ nav {
   text-align: center; }
   .portfolio-grid .portfolio-item {
     width: 20%;
-    display: none;
-    opacity: 0;
-    filter: alpha(opacity=0);
     overflow: hidden;
     margin: 0;
     padding: 0;
