@@ -20,6 +20,7 @@ Greenfield = {
 	},
 
 	// Function to handle rezie events
+  /*
 	handleResize: function() {
 		$this = this;
 		if($(window).width() < 1200) {
@@ -56,10 +57,12 @@ Greenfield = {
 			$this.homesize();
 		});
 	},
+  */
 
 	// Function to handle scroll events
 	handleScroll: function() {
 		var $this = Greenfield;
+    /*
 		$(window).scroll(function(){
 			if($(window).width() >= 1200) {
 				$this.homeParallax();
@@ -67,6 +70,7 @@ Greenfield = {
 				$this.animated_contents();
 			}
 		});
+    */
 
 		$('*[data-scroll]').on('click',function(){
 			var target = $(this).data('scroll');
@@ -95,14 +99,17 @@ Greenfield = {
   },
 
 	// Functions for parallax effect on home main top bg 
+  /*
 	homeParallax: function(){
 		if(!is_safari && !$('#home').hasClass('static')) {
  	    	var scrolled = $(window).scrollTop();
 	    	$('#home #maximage .mc-image').css({'top':'auto','bottom': -(Math.round(scrolled * 0.7)) + 'px'});
 	    }
 	},
+  */
 
 	// Function to show or hide menu when screen width < 768
+  /*
 	toggleMenu: function() {
 		if(!$('.menu-trigger').hasClass('open')) {
 			$('.menu-trigger').addClass('open');
@@ -112,8 +119,10 @@ Greenfield = {
 			$('nav > ul').stop(false,true).slideUp();			
 		}
 	},
+  */
 
 	// Function to hold portfolio sort functions and initializers
+  /*
 	initPortfolio: function(element) {
 		element = element !== undefined ? element : "#portfolio";
 		$(element).mixitup({
@@ -128,6 +137,7 @@ Greenfield = {
 
 		return this;
 	},
+  */
 
 	// Function to init maps
 	initMaps: function(element) {
@@ -155,14 +165,17 @@ Greenfield = {
 	},
 
 	// Function to initialize fade effect on scroll for main home wrapper
+  /*
 	fadeHome: function() {
     if (!is_safari) {
 		  var ws = $(window).scrollTop(), offset = ws/2;
 		  $('.home-wrapper, .fullscreen-controls').css({transform: 'translateY('+offset+'px)', opacity: 1-(ws/700)});
     }
 	},
+  */
 
 	// Function to correct main home wrapper dimensions
+  /*
 	homesize: function() {
 		windowHeight = $(window).height();
 		windowWidth = $(window).width();
@@ -175,6 +188,7 @@ Greenfield = {
 			$('.bxslider li').css({'width': windowWidth+"px"});
 		}
 	},
+  */
 
 	// Function for parallax effect
 	parallax: function() {
@@ -184,8 +198,10 @@ Greenfield = {
     //}
 	},
 
+  /*
 	parallaxMove: function() {
 	},
+  */
 
 	// Function to scroll with animation to desired element
 	scrollTo: function(hash,offset,speed) {
@@ -198,6 +214,7 @@ Greenfield = {
 	},
 
 	// Function to control animatons events and classes
+  /*
 	animated_contents: function() {
 		$(".animate:appeared").each(function(i) {
 			var $this = $(this),
@@ -222,7 +239,8 @@ Greenfield = {
 			}
 		});
 	},
-
+  */
+/*
 	blog: function() {
 		$('.blog-more-posts').click(function(){
 			var btn = $(this);
@@ -246,4 +264,5 @@ Greenfield = {
 			return false;
 		});
 	}
+  */
 }
