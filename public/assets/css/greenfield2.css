@@ -639,8 +639,19 @@ section.grey {
 }
 @media (max-width: 768px) {
   .parallax {
-    background-size: 200% !important; }
- }
+    background-size: 200% !important; 
+  }
+}
+@media (max-width: 634px) {
+  .parallax {
+    background-size: 350% !important; 
+  }
+}
+@media (max-width: 375px) {
+  .parallax {
+    background-size: 400% !important; 
+  }
+}
 
 @media (max-width: 991px) {
   .parallax {
