@@ -1,4 +1,4 @@
-Spirito = {
+Greenfield = {
 
 	i: 1,
 	// Main initalize function
@@ -59,7 +59,7 @@ Spirito = {
 
 	// Function to handle scroll events
 	handleScroll: function() {
-		var $this = Spirito;
+		var $this = Greenfield;
 		$(window).scroll(function(){
 			if($(window).width() >= 1200) {
 				$this.homeParallax();
@@ -77,26 +77,28 @@ Spirito = {
 	},
 
 	// Function to control navigation
-	handleNav: function() {
-		$('nav').waypoint('sticky', {
-			stuckClass: 'sticky'
-		});
+  handleNav: function() {
+    /*
+    $('#nav').waypoint('sticky', {
+      stuckClass: 'sticky'
+    });
+    */
 
-		$('nav>ul').onePageNav({
-				filter: ':not(.external)',
-		    currentClass: 'active',
-		    changeHash: false,
-		    scrollSpeed: 700,
-		    scrollOffset: 60,
-		    easing: 'swing',
-		    end: function() {
-		        if($(window).width() < 768) {
-		        	$('.menu-trigger a').removeClass('open');
-					$('nav > ul').slideUp();
-		        }
-		    }
-		});
-	},
+    $('#nav ul.nav').onePageNav({
+      filter: ':not(.external)',
+      currentClass: 'active',
+      changeHash: false,
+      scrollSpeed: 700,
+      scrollOffset: 60,
+      easing: 'swing',
+      end: function() {
+        if($(window).width() < 768) {
+          $('.menu-trigger a').removeClass('open');
+          $('nav > ul').slideUp();
+        }
+      }
+    });
+  },
 
 	// Functions for parallax effect on home main top bg 
 	homeParallax: function(){
