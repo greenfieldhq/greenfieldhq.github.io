@@ -14,7 +14,7 @@ Greenfield = {
 		this.handleScroll();
 		//this.handleResize();
 		//this.blog();
-		//this.parallax();
+		this.parallax();
 
 		return this;
 	},
@@ -78,12 +78,6 @@ Greenfield = {
 
 	// Function to control navigation
   handleNav: function() {
-    /*
-    $('#nav').waypoint('sticky', {
-      stuckClass: 'sticky'
-    });
-    */
-
     $('#nav ul.nav').onePageNav({
       filter: ':not(.external)',
       currentClass: 'active',
@@ -185,9 +179,9 @@ Greenfield = {
 	// Function for parallax effect
 	parallax: function() {
     /* Dont user paralax for tablet and mobile devices. */
-    $('#quote').parallax("50%", 0.2);
-    $('#clients').parallax("50%", 0.2);
-    $('#contact-details').parallax("50%", 0.2);
+    //if($(window).width() > 768) {
+      $('#quote').parallax("50%", 0.2);
+    //}
 	},
 
 	parallaxMove: function() {
