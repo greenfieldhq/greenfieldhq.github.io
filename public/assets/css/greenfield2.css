@@ -839,6 +839,7 @@ input[type=text]:focus {
   top: auto;
   width: 100%;
   border-bottom: 1px solid #eeeeee;
+  max-height: 700px;
 }
 .portfolio-grid .portfolio-item .og-expander .og-expander-inner {
   height: 100%;
