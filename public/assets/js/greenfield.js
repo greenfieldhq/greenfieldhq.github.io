@@ -1,73 +1,17 @@
-Spirito = {
-
-	i: 1,
-	// Main initalize function
-	// @param home: Default true, defines if this is home page or not
+Greenfield = {
 	init: function(home) {
 		home = (home !== undefined ? home : true);
-		this.homesize();
-		this.animated_contents();
-
 		if (home) {
 			this.handleNav();
 		}
 		this.handleScroll();
-		this.handleResize();
-		this.blog();
-		//this.parallax();
-
+		this.parallax();
 		return this;
-	},
-
-	// Function to handle rezie events
-	handleResize: function() {
-		$this = this;
-		if($(window).width() < 1200) {
-			$('#home').attr('style','');
-		}
-		
-		if ($(window).width() >= 1200) {
-			$('*[data-animate]').addClass('animate');
-			if($('html').hasClass('no-cssanimations')) {
-				$('*[data-animate]').css('opacity','1');
-			} 
-		}
-
-		if($(window).width() < 768) {
-			$('.menu-trigger a').click(function(){
-				$this.toggleMenu();
-				return false;
-			});
-		}
-
-		$this.homesize();
-		
-		$(window).resize(function(){
-			if($(window).width() >= 768) {
-				$('.menu-trigger a').removeClass('open');
-				$('nav > ul').removeAttr('style');
-			}
-			if($(window).width() < 768) {
-				$('.menu-trigger a').unbind('click').click(function(){
-					$this.toggleMenu();
-					return false;
-				});
-			}
-			$this.homesize();
-		});
 	},
 
 	// Function to handle scroll events
 	handleScroll: function() {
-		var $this = Spirito;
-		$(window).scroll(function(){
-			if($(window).width() >= 1200) {
-				$this.homeParallax();
-				$this.fadeHome();
-				$this.animated_contents();
-			}
-		});
-
+		var $this = Greenfield;
 		$('*[data-scroll]').on('click',function(){
 			var target = $(this).data('scroll');
 			var off = $(window).width() < 401 ? 30 : 50;
@@ -77,61 +21,22 @@ Spirito = {
 	},
 
 	// Function to control navigation
-	handleNav: function() {
-		$('nav').waypoint('sticky', {
-			stuckClass: 'sticky'
-		});
-
-		$('nav>ul').onePageNav({
-				filter: ':not(.external)',
-		    currentClass: 'active',
-		    changeHash: false,
-		    scrollSpeed: 700,
-		    scrollOffset: 60,
-		    easing: 'swing',
-		    end: function() {
-		        if($(window).width() < 768) {
-		        	$('.menu-trigger a').removeClass('open');
-					$('nav > ul').slideUp();
-		        }
-		    }
-		});
-	},
-
-	// Functions for parallax effect on home main top bg 
-	homeParallax: function(){
-		if(!is_safari && !$('#home').hasClass('static')) {
- 	    	var scrolled = $(window).scrollTop();
-	    	$('#home #maximage .mc-image').css({'top':'auto','bottom': -(Math.round(scrolled * 0.7)) + 'px'});
-	    }
-	},
-
-	// Function to show or hide menu when screen width < 768
-	toggleMenu: function() {
-		if(!$('.menu-trigger').hasClass('open')) {
-			$('.menu-trigger').addClass('open');
-			$('nav > ul').stop(false,true).slideDown();			
-		} else {
-			$('.menu-trigger').removeClass('open');
-			$('nav > ul').stop(false,true).slideUp();			
-		}
-	},
-
-	// Function to hold portfolio sort functions and initializers
-	initPortfolio: function(element) {
-		element = element !== undefined ? element : "#portfolio";
-		$(element).mixitup({
-			targetSelector: ".portfolio-item",
-			effects: ['fade','rotateX'],
-			onMixStart: function() {
-				$('.portfolio-item').css('height','');
-				$('.portfolio-item').removeClass('og-expanded');
-				$('.portfolio-item .og-expander').fadeOut('fast').remove();
-			}
-		});
-
-		return this;
-	},
+  handleNav: function() {
+    $('#nav ul.nav').onePageNav({
+      filter: ':not(.external)',
+      currentClass: 'active',
+      changeHash: false,
+      scrollSpeed: 700,
+      scrollOffset: 60,
+      easing: 'swing',
+      end: function() {
+        if($(window).width() < 768) {
+          $('.menu-trigger a').removeClass('open');
+          $('nav > ul').slideUp();
+        }
+      }
+    });
+  },
 
 	// Function to init maps
 	initMaps: function(element) {
@@ -158,37 +63,9 @@ Spirito = {
 		return this;
 	},
 
-	// Function to initialize fade effect on scroll for main home wrapper
-	fadeHome: function() {
-    if (!is_safari) {
-		  var ws = $(window).scrollTop(), offset = ws/2;
-		  $('.home-wrapper, .fullscreen-controls').css({transform: 'translateY('+offset+'px)', opacity: 1-(ws/700)});
-    }
-	},
-
-	// Function to correct main home wrapper dimensions
-	homesize: function() {
-		windowHeight = $(window).height();
-		windowWidth = $(window).width();
-		elements = $("#home, #maximage, .mc-cycle, #maximage > .mc-image, #home .pattern");
-		elements.css({'height':'auto'});
-		elements.css({ 'height': windowHeight+"px", "max-height": windowHeight+"px"});
-		if($('body').hasClass('boxed')) {
-			$('#maximage, .bxslider li').css({'width': "100%"});
-		} else {
-			$('.bxslider li').css({'width': windowWidth+"px"});
-		}
-	},
-
 	// Function for parallax effect
 	parallax: function() {
-    /* Dont user paralax for tablet and mobile devices. */
     $('#quote').parallax("50%", 0.2);
-    $('#clients').parallax("50%", 0.2);
-    $('#contact-details').parallax("50%", 0.2);
-	},
-
-	parallaxMove: function() {
 	},
 
 	// Function to scroll with animation to desired element
@@ -200,54 +77,4 @@ Spirito = {
 		    scrollTop: target_offset
 		}, speed);
 	},
-
-	// Function to control animatons events and classes
-	animated_contents: function() {
-		$(".animate:appeared").each(function(i) {
-			var $this = $(this),
-			animated = $(this).data('animate'),	
-			delay = 0, 
-			del = '';
-			if($(this).data('delay')) {
-				del = $(this).data('delay');
-				if($.isNumeric(del)) {
-					delay = $(this).data('delay');
-				}
-			}
-			if(del == 'none') {
-				setTimeout(function () {
-					$this.addClass(animated);
-				}, 200);
-				i = i+1;
-			} else {
-				setTimeout(function () {
-					$this.addClass(animated);
-				}, (150 * i) + delay);
-			}
-		});
-	},
-
-	blog: function() {
-		$('.blog-more-posts').click(function(){
-			var btn = $(this);
-			var output = {}
-			$.getJSON('http://192.168.1.69/themes/Spirito/php/posts.php', 
-				function(posts) {
-					for (var i=0; i<posts.length; i++) {
-						post = '<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"><article data-animate="fade-in-bottom" class="post animate fade-in-bottom"><a class="post-image" href="'+posts[i].link+'"><img alt="" src="'+posts[i].img+'"><div class="overlay"><i class="fa fa-'+posts[i].type+'"></i></div></a><h3 class="post-title"><a href="'+posts[i].link+'">'+posts[i].title+'</a></h3><p class="post-meta"><span class="meta-date">'+posts[i].date+'</span><span class="meta-by"><a href="#">'+posts[i].author+'</a></span></p><p class="post-content">'+posts[i].content+'</p><p class="post-read-more"><a class="btn btn-primary btn-sm" href="'+posts[i].link+'">Read More</a></p></article></div>';
-						output[i] = post;
-					}
-					$.each(output, function(i,value){
-						setTimeout(function(){
-							$('.posts').append(value);
-						}, (200 * i));
-					});
-					btn.animate({'opacity': '0','height': '0'},function(){
-						btn.remove();
-					});
-				}
-			);
-			return false;
-		});
-	}
 }

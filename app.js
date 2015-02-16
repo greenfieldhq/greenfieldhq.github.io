@@ -1,6 +1,7 @@
 var express = require('express');
 var routes = require('./routes');
 var contact = require('./routes/contact')
+var work = require('./routes/work')
 var http = require('http');
 var path = require('path');
 
@@ -38,7 +39,6 @@ var sassMiddleware = require('node-sass-middleware');
 var srcPath = __dirname + '/public/assets/sass';
 var destPath = __dirname + '/public/assets/css';
 
-debugger;
 
 app.use('/assets/css', sassMiddleware({
   src: srcPath,
@@ -48,6 +48,7 @@ app.use('/assets/css', sassMiddleware({
 }));
 
 app.get('/', routes.index);
+app.get('/work', work.index);
 app.post('/contacts', contact.create(postmark));
 
 http.createServer(app).listen(app.get('port'), function() {
