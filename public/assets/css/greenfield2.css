@@ -32,6 +32,207 @@ body a:hover {
   overflow: hidden;
 }
 
+#splash .lead-descriptor {
+  width: 100%;
+  margin: auto;
+  /*display: table-cell;*/
+  top: 361px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+#splash .lead-descriptor .logo h1 {
+  font-family: Lobster, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  padding: 0 15px 20px;
+  display: inline-block;
+  color: #333;
+  font-size: 80px;
+  line-height: 88px;
+  padding-bottom: 10px;
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  #splash .lead-descriptor .logo h1 {
+    font-size: 56px;
+    line-height: 64px;
+    padding-bottom: 10px;
+  }
+
+  #splash .lead-descriptor .tagline h1 {
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 401px) {
+  #splash .lead-descriptor .logo h1 {
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom: 10px;
+  }
+
+  #splash .lead-descriptor .tagline h1 {
+    font-size: 31px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 400px) {
+  #splash .lead-descriptor .logo h1 {
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 0;
+  }
+
+  #splash .lead-descriptor .tagline h1 {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+#home-slider {
+  max-width: 99% !important;
+}
+
+#home-slider .star-line {
+  height: 20px;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#home-slider .star-line .line-pre {
+  left: 0;
+  background-image: linear-gradient(to right, transparent 0, #333 70%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#ff333333', GradientType=1);
+}
+#home-slider .star-line .line-pre, 
+#home-slider .star-line .line-after {
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 340px;
+  top: 9px;
+}
+
+#home-slider .star-line .icons {
+  display: block;
+  width: 76px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#home-slider .star-line .icons:before {
+  content: " ";
+  display: table;
+}
+
+#home-slider .star-line .icons .glyphicon:first-child {
+  font-size: 14px;
+  margin-top: 2px;
+}
+#home-slider .star-line .icons .glyphicon:last-child {
+  font-size: 14px;
+  margin-top: 2px;
+}
+#home-slider .star-line .icons .glyphicon {
+  color: #333 !important;
+  font-size: 18px;
+  display: block;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.glyphicon:empty {
+  width: 1em;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-star:before {
+  content: "\e006";
+}
+#home-slider .star-line .icons:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#home-slider .star-line .line-after {
+  right: 0;
+  background-image: linear-gradient(to right, #333 30%, transparent 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff333333', endColorstr='#00000000', GradientType=1);
+}
+#home-slider .star-line .line-after, 
+#home-slider .star-line .line-pre, 
+#home-slider .star-line .line-after {
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 340px;
+  top: 9px;
+}
+#home-slider .star-line .line-pre, 
+#home-slider .star-line .line-after {
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 340px;
+  top: 9px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  #home-slider .star-line {
+    width: 470px;
+  }
+
+  #home-slider .star-line .line-pre {
+    width: 180px;
+  }
+
+  #home-slider .star-line .line-after {
+    width: 180px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 401px) {
+  #home-slider .star-line {
+    width: 470px;
+  }
+
+  #home-slider .star-line .line-pre {
+    width: 180px;
+  }
+
+  #home-slider .star-line .line-after {
+    width: 180px;
+  }
+}
+
+@media (max-width: 400px) {
+  #home-slider .star-line {
+    display: none;
+  }
+}
+
+#home-slider ul {
+  margin: 0;
+  padding: 0;
+}
+
 .show-menu a, .hide-menu a {
   position: absolute;
   right: 43px;
