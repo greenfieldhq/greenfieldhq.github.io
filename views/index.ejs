@@ -460,6 +460,7 @@
     var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
     var is_safari = navigator.userAgent.indexOf("Safari") > -1;
     var is_Opera = navigator.userAgent.indexOf("Presto") > -1;
+    var isGoogle = navigator.userAgent.toLowerCase().indexOf('googlebot') > 0;
     if ((is_chrome)&&(is_safari)) {is_safari=false;}
   </script>
   <script>
@@ -488,6 +489,10 @@
       console.log('setupNav');
       var winHeight = $(window).height();
 	    var winWidth = $(window).width();
+
+      if (isGoogle) {
+        return;
+      }
 
       $('.masthead').css({height: winHeight+'px'});
 
