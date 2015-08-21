@@ -1,10 +1,16 @@
 greenfield
 ==========
 
-We use Less.js to generate our style sheets so please don't edit greenfield.css directly. 
+If using newer version of node, use nvm to install node v0.10.40:
+* nvm install 0.10.40
+
+Run npm install:
+* npm install
+
+We use Less.js to generate our style sheets so please don't edit greenfield.css directly.
 * install less: "npm install -g less"
 * generate styles: "lessc public/assets/css/less/greenfield.less public/assets/css/greenfield.css"
-  
+
 To run greenfield
 * node app.js
 
