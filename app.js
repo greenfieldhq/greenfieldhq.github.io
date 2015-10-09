@@ -8,9 +8,6 @@ var path = require('path');
 global.config = require('konfig')();
 console.log(global.config.app);
 
-var mongo = require('mongoskin');
-var db = mongo.db("mongodb://localhost:27017/greenfield", { native_parser:true });
-
 var app = express();
 var postmark = require("postmark")(global.config.app.keys.postmark);
 
