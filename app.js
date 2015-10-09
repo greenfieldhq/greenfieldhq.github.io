@@ -6,7 +6,6 @@ var http = require('http');
 var path = require('path');
 
 global.config = require('konfig')();
-console.log(global.config.app);
 
 var app = express();
 var postmark = require("postmark")(global.config.app.keys.postmark);
