@@ -39,7 +39,6 @@ var sassMiddleware = require('node-sass-middleware');
 var srcPath = __dirname + '/public/assets/sass';
 var destPath = __dirname + '/public/assets/css';
 
-
 app.use('/assets/css', sassMiddleware({
   src: srcPath,
   dest: destPath,
@@ -48,7 +47,6 @@ app.use('/assets/css', sassMiddleware({
 }));
 
 app.get('/', routes.index);
-app.get('/work', work.index);
 app.post('/contacts', contact.create(postmark));
 
 http.createServer(app).listen(app.get('port'), function() {
