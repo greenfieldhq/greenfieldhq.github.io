@@ -1,19 +1,20 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "greenfield",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "express": "3.4.8",
-    "jade": "*",
-    "ejs": "*",
-    "less": "*",
-    "nodemailer": "*",
-    "postmark": "*",
-    "prerender-node": "~1.0.0",
-    "konfig": "*",
-    "node-sass-middleware": "^0.4.0"
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "dotenv-safe": "^1.0.2",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "morgan": "~1.6.1",
+    "node-sass-middleware": "0.8.0",
+    "postmark": "^1.2.1",
+    "serve-favicon": "~2.3.0"
   }
 }
