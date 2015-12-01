@@ -5,7 +5,7 @@ const postmarkClient = new postmark.Client(process.env.POSTMARK);
 const router = express.Router();
 
 router.post('/', function(req, res, next) {
-  client.sendEmail({
+  postmarkClient.sendEmail({
     'From': 'info@greenfieldhq.com',
     'To': 'info@greenfieldhq.com',
     'Subject': 'Contact Us',
