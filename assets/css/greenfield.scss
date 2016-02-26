@@ -65,6 +65,10 @@ section.page-body {
   background-position: 0 -15px;
 }
 
+.btn:focus {
+  outline: 0px;
+}
+
 .hire-us {
   padding: 7px 15px 5px 15px;
   font-size: 20px;
