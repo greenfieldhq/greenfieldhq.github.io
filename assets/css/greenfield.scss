@@ -6,13 +6,14 @@
 
 $brand-primary: #6EC829;
 $gray-base: #414042;
-$gray-light: #E6E7E8;
+$gray-light: lighten($gray-base, 40%);
+$gray-lighter: #E6E7E8;
 $font-primary: 'Celias';
 $font-primary-bold: 'Celias Bold';
 $font-secondary-italic: 'Proxima Nova Italic';
 
 body {
-  background-color: $gray-light;
+  background-color: $gray-lighter;
 }
 
 h1, h2, h3 {
@@ -31,12 +32,19 @@ section.header {
 }
 
 section.page-body {
-  background-color: $gray-light;
+  background-color: $gray-lighter;
 
   div.title {
     margin-top: 65px;
     font-size: 22px;
     font-family: $font-primary-bold;
+    li {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    li.inactive {
+      color: $gray-light;
+    }
   }
 }
 
