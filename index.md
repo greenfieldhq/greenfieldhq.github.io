@@ -7,7 +7,6 @@ tagline: Supporting tagline
 
 {% include title-header.html %}
 
-
 <section class="page-body">
   <div class="container">
     {% include work-blog-title.html active="work" %}
