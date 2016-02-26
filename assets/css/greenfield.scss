@@ -7,6 +7,9 @@
 $brand-primary: #6EC829;
 $gray-base: #414042;
 $gray-light: #E6E7E8;
+$font-primary: 'Celias';
+$font-primary-bold: 'Celias Bold';
+$font-secondary-italic: 'Proxima Nova Italic';
 
 body {
   background-color: $gray-light;
@@ -14,7 +17,7 @@ body {
 
 h1, h2, h3 {
   color: $gray-base;
-  font-family: 'Celias Bold';
+  font-family: $font-primary-bold;;
 }
 
 section.header {
@@ -23,15 +26,17 @@ section.header {
   padding-bottom: 30px;
 
   h1 {
-    font-family: 'Proxima Nova Italic';
+    font-family: $font-secondary-italic;
   }
 }
 
 section.page-body {
   background-color: $gray-light;
 
-  .title {
+  div.title {
     margin-top: 65px;
+    font-size: 22px;
+    font-family: $font-primary-bold;
   }
 }
 
@@ -43,7 +48,7 @@ section.page-body {
   background-color: $brand-primary;
   background-image: none;
   border: none;
-  font-family: 'Proxima Nova Italic';
+  font-family: $font-secondary-italic;
 }
 
 .btn-primary:hover, .btn-primary:focus {
@@ -71,7 +76,7 @@ section.page-body {
 .navbar {
   margin: 0px;
   button {
-    font-family: 'Celias Bold';
+    font-family: $font-primary-bold;;
     font-size: 22px;
     margin-top: 18px;
   }
