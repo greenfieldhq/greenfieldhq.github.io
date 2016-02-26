@@ -12,19 +12,27 @@ body {
   background-color: $gray-light;
 }
 
-h1 {
+h1, h2, h3 {
   color: $gray-base;
-  font-family: 'Proxima Nova Italic';
+  font-family: 'Celias Bold';
 }
 
 section.header {
   background-color: #FFF;
   width: 100%;
   padding-bottom: 30px;
+
+  h1 {
+    font-family: 'Proxima Nova Italic';
+  }
 }
 
 section.page-body {
   background-color: $gray-light;
+
+  .title {
+    margin-top: 65px;
+  }
 }
 
 .btn {
@@ -32,10 +40,15 @@ section.page-body {
 }
 
 .btn-primary {
-  background-color: #6EC829;
+  background-color: $brand-primary;
   background-image: none;
   border: none;
   font-family: 'Proxima Nova Italic';
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: darken( $brand-primary, 5% );
+  background-position: 0 -15px;
 }
 
 .hire-us {
@@ -71,6 +84,7 @@ section.page-body {
   background-image: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  padding: 10px 20px 0px 20px;
 }
 
 .page-header {
