@@ -26,7 +26,7 @@ tagline: Supporting tagline
     <center>
       <ul class="list-inline">
         <li>OUR WORK</li>
-        <li>OUR BLOG</li>
+        <li class="inactive">OUR BLOG</li>
       </ul>
     </center>
   </div>
