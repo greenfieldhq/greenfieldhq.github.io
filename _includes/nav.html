@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <a class="navbar-brand" href="{{ HOME_PATH }}">
+      <img class="brand-logo" src="{{ BASE_PATH }}/assets/images/greenfield-logo-600.png"/>
+    </a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+    <div class="navbar-right">
+      <a href="/">
+        <button type="button" class="btn btn-link {% if page.url == "/" or page.url == "/blog" %}active-page{% endif %}">Work & Blog</button>
+      </a>
+      <a href="/about">
+      <button type="button" class="btn btn-link {% if page.url == "/about" %}active-page{% endif %}">About Us</button>
+      </a>
+    </div>
+  </div><!-- /.navbar-collapse -->
+</nav>
