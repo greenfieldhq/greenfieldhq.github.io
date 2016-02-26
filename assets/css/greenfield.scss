@@ -69,6 +69,10 @@ section.page-body {
   outline: 0px;
 }
 
+.active-page {
+  text-decoration: underline;
+}
+
 .hire-us {
   padding: 7px 15px 5px 15px;
   font-size: 20px;
@@ -92,6 +96,10 @@ section.page-body {
     font-family: $font-primary-bold;;
     font-size: 22px;
     margin-top: 18px;
+  }
+  a:hover, a:focus {
+    color: #2a6496;
+    text-decoration: none;
   }
 }
 

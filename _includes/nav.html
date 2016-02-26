@@ -8,9 +8,13 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="jb-navbar-collapse">
-    <form class="form navbar-right">
-      <button type="button" class="btn btn-link">Work & Blog</button>
-      <button type="button" class="btn btn-link">About us</button>
-    </form>
+    <div class="navbar-right">
+      <a href="/">
+        <button type="button" class="btn btn-link {% if page.url == "/" or page.url == "/blog" %}active-page{% endif %}">Work & Blog</button>
+      </a>
+      <a href="/about">
+      <button type="button" class="btn btn-link {% if page.url == "/about" %}active-page{% endif %}">About Us</button>
+      </a>
+    </div>
   </div><!-- /.navbar-collapse -->
 </nav>
