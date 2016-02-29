@@ -1,0 +1,73 @@
+---
+layout: page
+title : Blog
+header : Post Archive
+group: navigation
+---
+{% include JB/setup %}
+
+<section class="header">
+  <div class="row">
+    <div class="col-xs-offset-2 col-xs-8 col-lg-offset-3 col-lg-6">
+      <div class="page-header">
+        <h1>
+          We’re a nimble, Boston-based team of developers and designers focused on solving problems.
+        </h1>
+
+        <div class="btn btn-primary hire-us">HIRE US!</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-body">
+
+  <div class="title">
+    <center>
+      <ul class="list-inline">
+        <li>OUR WORK</li>
+        <li>
+        <a href="/blog">OUR BLOG</a>
+        </li>
+      </ul>
+    </center>
+  </div>
+</section>
+
+
+<section class="blog-page-body page-body">
+  <div class="row post-row">
+    <center>
+      <ul class="list-inline">
+        {% for post in site.posts limit:3 %}
+          <li class="post-display col-sm-12 col-md-offset-1 col-md-2 col-md-offset-1">
+            <a href="{{ post.url }}">
+            <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+            <div class="post-title">{{ post.title }}</div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </center>
+  </div>
+  <div class="row post-row">
+    <center>
+      <ul class="list-inline">
+        {% for post in site.posts limit:3 offset:3 %}
+          <li class="post-display col-sm-12 col-md-offset-1 col-md-2 col-md-offset-1">
+            <a href="{{ post.url }}">
+            <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+            <div class="post-title">{{ post.title }}</div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </center>
+  </div>
+  <div class="row">
+    <center>
+      <a href="/blog">All Posts</a>
+    </center>
+  </div>
+
+</section>
