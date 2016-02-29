@@ -4,6 +4,7 @@
 @import "fonts";
 
 $brand-primary: #6EC829;
+$white-base: #FFFFFF;
 $gray-base: #414042;
 $gray-light: lighten($gray-base, 40%);
 $gray-lighter: #E6E7E8;
@@ -22,7 +23,7 @@ h1, h2, h3, h4, h5 {
 }
 
 section.header {
-  background-color: #FFF;
+  background-color: $white-base;
   width: 100%;
   padding-bottom: 30px;
 
@@ -43,7 +44,7 @@ section.page-body {
       padding-right: 30px;
       padding-left: 30px;
     }
-    li.inactive {
+    li.inactive a {
       color: $gray-light;
     }
   }
@@ -103,7 +104,7 @@ section.page-body {
 }
 
 .navbar-default {
-  background-color: #FFF;
+  background-color: $white-base;
   border: none;
   border-radius: 0px;
   background-image: none;
@@ -115,7 +116,7 @@ section.page-body {
 .page-header {
   text-align: center;
   border: none;
-  background-color: #FFF;
+  background-color: $white-base;
 }
 
 .post-display img {
@@ -152,9 +153,9 @@ section.page-body {
   .caption {
     text-align: center;
     background-color: $gray-base;
-    color: #FFF;
+    color: $white-base;
     h4, h5 {
-      color: #FFF;
+      color: $white-base;
     }
   }
 }
@@ -165,7 +166,8 @@ section.page-body {
   background-color: $gray-base;
   font-family: $font-secondary-italic;
   text-align: center;
-  color: #FFF;
+  color: $white-base;
+  position: relative;
 
   span {
     position: absolute;
@@ -176,8 +178,20 @@ section.page-body {
     right: 120px;
   }
 
-  .caption h5, span h2 {
+  .caption {
+    position: absolute; 
+    bottom: 0px;
+    background-color: $brand-primary;
+    width: 100%;
+  }
+
+  .caption h4, span h3 {
     font-family: $font-bold-italic;
+    color: $white-base;
+  }
+  .caption h4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
 
@@ -191,7 +205,7 @@ section.page-body {
     padding: 0px;
     margin-bottom: 20px;
     line-height: 1.428571429;
-    background-color: #fff;
+    background-color: $white-base;
     border: 1px solid #ddd;
     border-radius: 0px;
     -webkit-transition: all .2s ease-in-out;
