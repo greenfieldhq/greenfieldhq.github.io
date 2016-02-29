@@ -1,0 +1,57 @@
+<div class="row">
+  {% for post in site.posts limit:3 %}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="{{ post.url }}">
+          <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+        </a>
+        <div class="caption">
+          <a href="{{ post.url }}">
+            <h5>{{ post.title }}</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="row">
+  {% for post in site.posts limit:3 offset:3 %}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="{{ post.url }}">
+          <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+        </a>
+        <div class="caption">
+          <a href="{{ post.url }}">
+            <h5>{{ post.title }}</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="row">
+  {% for post in site.posts limit:3 offset:6 %}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="{{ post.url }}">
+          <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+        </a>
+        <div class="caption">
+          <a href="{{ post.url }}">
+            <h5>{{ post.title }}</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="row">
+  <center>
+    <a href="/blog-home">All Posts</a>
+  </center>
+</div>
+
