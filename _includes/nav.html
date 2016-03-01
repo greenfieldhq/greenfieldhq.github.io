@@ -7,7 +7,13 @@
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="jb-navbar-collapse">
+  <div class="collapse navbar-collapse nav-justified" id="jb-navbar-collapse">
+
+      {% unless page.splash %}
+      <div class="btn btn-primary hire-us">HIRE US!</div>
+      {% endunless %}
+
+    
     <div class="navbar-right">
       <a href="/">
         <button type="button" class="btn btn-link {% if page.url == "/" or page.url == "/blog/" %}active-page{% endif %}">Work & Blog</button>

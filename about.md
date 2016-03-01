@@ -5,8 +5,6 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-{% include title-header.html %}
-
 <section class="page-body">
   {% include about-us.html %}
 </section>
