@@ -64,24 +64,14 @@
 
   <body>
     <div id="wrap">
-      
       {% include nav.html %}
-
       <div class="container-fluid">
         {{ content }}
       </div>
-
     </div>
 
-    <div id="footer">
-      <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-        </p>
-      </div>
-    </div>
-
+    {% include footer.html %}
     {% include JB/analytics %}
-
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
