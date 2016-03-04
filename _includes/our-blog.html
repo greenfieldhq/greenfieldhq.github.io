@@ -3,7 +3,13 @@
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <a href="{{ post.url }}">
-          <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+          <div class="thumbnail__image">
+            {{% if post.image %}}
+              <img src="{{site.url}}{{ post.image }}" class="post-image">
+            {{% else %}}
+              <img src="{{site.url}}/assets/images/greenfield-logo-600.png">
+            {{% end %}}
+          </div>
         </a>
         <div class="caption">
           <a href="{{ post.url }}">
@@ -20,7 +26,13 @@
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <a href="{{ post.url }}">
-          <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+          <div class="thumbnail__image">
+            {{% if post.image %}}
+              <img src="{{site.url}}{{ post.image }}" class="post-image">
+            {{% else %}}
+              <img src="{{site.url}}/assets/images/greenfield-logo-600.png">
+            {{% end %}}
+          </div>
         </a>
         <div class="caption">
           <a href="{{ post.url }}">
@@ -37,7 +49,13 @@
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <a href="{{ post.url }}">
-          <img src="{{site.url}}{{ post.image }}" alt="{{post.title}}" class="post-image">
+          <div class="thumbnail__image">
+            {{% if post.image %}}
+              <img src="{{site.url}}{{ post.image }}" class="post-image">
+            {{% else %}}
+              <img src="{{site.url}}/assets/images/greenfield-logo-600.png">
+            {{% end %}}
+          </div>
         </a>
         <div class="caption">
           <a href="{{ post.url }}">
@@ -54,4 +72,3 @@
     <a href="/blog-home">All Posts</a>
   </center>
 </div>
-

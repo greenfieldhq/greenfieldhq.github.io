@@ -186,7 +186,7 @@ section.page-body {
   }
 
   .caption {
-    position: absolute; 
+    position: absolute;
     bottom: 0px;
     background-color: $brand-primary;
     width: 100%;
@@ -217,6 +217,16 @@ section.page-body {
     border-radius: 0px;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+
+.thumbnail__image {
+  overflow: hidden;
+  max-height: 200px;
+  min-height: 242px;
+
+  img {
+    max-height: 400px;
+  }
 }
 
 h3 {
