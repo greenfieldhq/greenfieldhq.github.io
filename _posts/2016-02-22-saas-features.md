@@ -10,7 +10,6 @@ image: /assets/images/saas/How-Do-I-Decide-the-Best-Features-for-My-SaaS.jpg
 ---
 {% include JB/setup %}
 
-
 ![Notebook diagram photo]({{ BASE_PATH }}/assets/images/saas/How-Do-I-Decide-the-Best-Features-for-My-SaaS.jpg)
 
 
