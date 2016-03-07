@@ -14,8 +14,11 @@ Usage:
         => 'for post in site.posts reversed'
       2) Next make sure to change 'post.previous.date' to:
         => 'post.next.date'
-        
+
 -->{% endcomment %}
+
+<div class="container">
+  <div class="col-md-12" style="text-align: center;">
 
 {% if site.JB.posts_collate.provider == "custom" %}
   {% include custom/posts_collate %}
@@ -25,26 +28,51 @@ Usage:
     {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
     {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-  
+
+<div class="col-md-12">
+
     {% if forloop.first %}
-      <h2>{{this_year}}</h2>
+      <h1>{{this_year}}</h1>
       <h3>{{this_month}}</h3>
       <ul>
     {% endif %}
-  
-    <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  
+
+
+    <li class="col-md-offset-2 col-md-7 list-inline">
+      <span>{{ post.date | date: "%B %e, %Y" }}</span><br>
+      <a href="{{ BASE_PATH }}{{ post.url }}">
+        <div class="thumbnail">
+          <a href="{{ post.url }}">
+            <div class="thumbnail__image">
+              {{% if post.image %}}
+                <img src="{{site.url}}{{ post.image }}" class="post-image">
+              {{% else %}}
+                <img src="{{site.url}}/assets/images/greenfield-logo-600.png" width="100%">
+              {{% end %}}
+            </div>
+          </a>
+          <div class="caption">
+            <a href="{{ post.url }}">
+              <h5>{{ post.title }}</h5>
+            </a>
+          </div>
+        </div>
+      </a>
+    </li>
+
     {% if forloop.last %}
       </ul>
     {% else %}
       {% if this_year != next_year %}
         </ul>
-        <h2>{{next_year}}</h2>
+        <div class="clearfix"></div><br><br><br>
+        <h1>{{next_year}}</h1>
         <h3>{{next_month}}</h3>
         <ul>
-      {% else %}    
+      {% else %}
         {% if this_month != next_month %}
           </ul>
+          <div class="clearfix"></div><br><br>
           <h3>{{next_month}}</h3>
           <ul>
         {% endif %}
@@ -53,3 +81,7 @@ Usage:
   {% endfor %}
 {% endif %}
 {% assign posts_collate = nil %}
+
+</div>
+</div>
+</div>
