@@ -71,7 +71,9 @@
     <div id="wrap">
       {% include nav.html %}
       <div class="container-fluid">
-        {% include title-header.html %}
+        {% if page.splash %}
+          {% include title-header.html %}
+        {% endif %}
 
         {{ content }}
       </div>

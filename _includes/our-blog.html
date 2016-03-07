@@ -45,6 +45,29 @@
 </div>
 
 <div class="row">
+  {% for post in site.posts limit:3 offset:6 %}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="{{ post.url }}">
+          <div class="thumbnail__image">
+            {{% if post.image %}}
+              <img src="{{site.url}}{{ post.image }}" class="post-image">
+            {{% else %}}
+              <img src="{{site.url}}/assets/images/greenfield-logo-600.png">
+            {{% end %}}
+          </div>
+        </a>
+        <div class="caption">
+          <a href="{{ post.url }}">
+            <h5>{{ post.title }}</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="row">
   <center>
     <a href="/blog-home">All Posts</a>
   </center>
