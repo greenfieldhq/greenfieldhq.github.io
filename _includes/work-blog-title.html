@@ -1,11 +1,19 @@
 <div class="title">
   <center>
     <ul class="list-inline">
-      {% if inlcude.active == work %}
+      {% if include.active == "work" %}
         <li>OUR WORK</li>
-        <li class="inactive">OUR BLOG</li>
+        <li class="inactive">
+          <a href="/blog">
+            OUR BLOG
+          </a>
+        </li>
       {% else %}
-        <li class="inactive">OUR WORK</li>
+        <li class="inactive">
+          <a href="/">
+            OUR WORK
+          </a>
+        </li>
         <li>OUR BLOG</li>
       {% endif %}
     </ul>

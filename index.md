@@ -1,12 +1,9 @@
 ---
 layout: page
 title: Greenfield is a nimble, Boston-based team of developers and designers.
-tagline: Supporting tagline
+splash: true
 ---
 {% include JB/setup %}
-
-{% include title-header.html %}
-
 
 <section class="page-body">
   <div class="container">
