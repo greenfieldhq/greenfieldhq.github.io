@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5 {
   font-family: $font-primary-bold;;
 }
 
+h3 {
+  font-family: $font-bold-italic;
+}
+
 section.header {
   background-color: $white-base;
   width: 100%;
@@ -164,7 +168,6 @@ section.page-body {
 
 .page-body {
   padding: 0 100px;
-  text-align: center;
 }
 
 .post-row {
@@ -244,9 +247,6 @@ section.page-body {
   }
 }
 
-h3 {
-  font-family: $font-secondary-italic;
-}
 
 .beginning {
   margin-top: 30px;
