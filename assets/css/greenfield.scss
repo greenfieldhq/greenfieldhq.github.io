@@ -1,4 +1,6 @@
 ---
+
+
 ---
 
 @import "fonts";
@@ -459,15 +461,19 @@ form .form-submit {
 }
 
 .blog-home {
+  text-align: justify;
   margin-bottom: 80px;
   h2 {
     color: $brand-primary;
+    font-family: $font-primary;
   }
-  img {
-    max-width: 40%;
+  a:hover {
+    color: $brand-primary;
   }
 }
-
-.blog-entry {
-  padding-right: 50px;
-}
+ .blog-entry {
+   margin-bottom: 40px;
+   h4 {
+     text-align: justify;
+   }
+ }
