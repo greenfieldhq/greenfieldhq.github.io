@@ -377,6 +377,9 @@ h3 {
   a:hover {
     color: $brand-primary;
   }
+  .fa-twitter {
+    font-size: 40px;
+  }
 }
 
 .formRow {
@@ -449,4 +452,22 @@ form .form-submit {
 .contact h3, h4 {
   text-align: center;
   font-family: $font-secondary-italic
+}
+
+.all-posts a {
+  color: $brand-primary;
+}
+
+.blog-home {
+  margin-bottom: 80px;
+  h2 {
+    color: $brand-primary;
+  }
+  img {
+    max-width: 40%;
+  }
+}
+
+.blog-entry {
+  padding-right: 50px;
 }
