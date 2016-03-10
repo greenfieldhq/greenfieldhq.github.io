@@ -191,7 +191,7 @@ section.page-body {
 
   span {
     position: absolute;
-    top: 15px;
+    top: 25px;
     margin-bottom: 0px;
     text-align: center;
     left: 120px;
@@ -232,13 +232,25 @@ section.page-body {
     transition: all .2s ease-in-out;
 }
 
-.thumbnail__image {
+.thumbnail_image {
   overflow: hidden;
   max-height: 200px;
   min-height: 242px;
+  height: 242px;
+  text-align: center;
+
+  span.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 
   img {
-    max-height: 400px;
+    max-width: 358px;
+  }
+
+  img.greenfield-thumb {
+    max-width: 300px;
   }
 }
 

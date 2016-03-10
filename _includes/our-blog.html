@@ -3,12 +3,13 @@
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <a href="{{ post.url }}">
-          <div class="thumbnail__image">
-            {{% if post.image %}}
+          <div class="thumbnail_image">
+            {% if post.image %}
               <img src="{{site.url}}{{ post.image }}" class="post-image">
-            {{% else %}}
-              <img src="{{site.url}}/assets/images/greenfield-logo-600.png" width="100%">
-            {{% end %}}
+            {% else %}
+              <span class="helper"></span>
+              <img src="{{site.url}}/assets/images/greenfield-logo-600.png" class="greenfield-thumb">
+            {% endif %}
           </div>
         </a>
         <div class="caption">
@@ -26,12 +27,13 @@
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <a href="{{ post.url }}">
-          <div class="thumbnail__image">
-            {{% if post.image %}}
+          <div class="thumbnail_image">
+            {% if post.image %}
               <img src="{{site.url}}{{ post.image }}" class="post-image">
-            {{% else %}}
-              <img src="{{site.url}}/assets/images/greenfield-logo-600.png" width="100%">
-            {{% end %}}
+            {% else %}
+              <span class="helper"></span>
+              <img src="{{site.url}}/assets/images/greenfield-logo-600.png" class="greenfield-thumb">
+            {% endif %}
           </div>
         </a>
         <div class="caption">
@@ -49,12 +51,13 @@
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
         <a href="{{ post.url }}">
-          <div class="thumbnail__image">
-            {{% if post.image %}}
+          <div class="thumbnail_image">
+            {% if post.image %}
               <img src="{{site.url}}{{ post.image }}" class="post-image">
-            {{% else %}}
-              <img src="{{site.url}}/assets/images/greenfield-logo-600.png" width="100%">
-            {{% end %}}
+            {% else %}
+              <span class="helper"></span>
+              <img src="{{site.url}}/assets/images/greenfield-logo-600.png" class="greenfield-thumb">
+            {% endif %}
           </div>
         </a>
         <div class="caption">
