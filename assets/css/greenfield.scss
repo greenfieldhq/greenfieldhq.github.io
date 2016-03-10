@@ -357,6 +357,7 @@ section.team {
 section.contact-us {
   background-color: $gray-light;
   padding-top: 25px;
+  padding-bottom: 25px;
 
   form {
     margin-top: 50px;
@@ -371,7 +372,6 @@ section.contact-us {
     border: none;
     letter-spacing: 1px;
     height: 40px;
-    text-align: center;
   }
 
   .form-group textarea {
@@ -387,21 +387,6 @@ section.contact-us {
   :-ms-input-placeholder {
     font-family: $font-primary !important;
     color: black !important;
-  }
-
-  input.form-submit {
-    background-color: $brand-primary;
-    font-family: $font-primary-bold;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    border-radius: 15px;
   }
 }
 
