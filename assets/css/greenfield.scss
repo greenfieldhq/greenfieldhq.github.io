@@ -281,6 +281,10 @@ section.blog-post {
     line-height: 26px;
   }
 
+  img {
+    width: 100%;
+  }
+
   h1, h2, h3 {
     margin-top: 30px;
   }
@@ -292,6 +296,31 @@ section.blog-post {
       color: $gray-light;
     }
   }
+
+  .pagination-list li {
+    margin-left: 40px;
+    margin-right: 40px;
+    a {
+      color: $gray-base;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $brand-primary;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+      .pagination-icon a {
+          font-size: 2em;
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+      .pagination-icon a {
+          font-size: 4em;
+      }
+  }
+
 }
 
 section.beginning {
@@ -480,46 +509,4 @@ section.contact-us {
     text-align: center;
     font-family: $font-secondary-italic
   }
-}
-
- .blog-entry {
-   margin-bottom: 40px;
-   h4 {
-     text-align: justify;
-   }
- }
-
-.blog-page {
-  text-align: justify;
-  img {
-    width: 100%;
-  }
-  .post-body, .post-title {
-    font-family: $font-primary;
-    font-size: 17px;
-  }
-}
-
-.pagination-list li {
-  margin-left: 40px;
-  margin-right: 40px;
-  a {
-    color: $gray-base;
-  }
-  a:hover {
-    text-decoration: none;
-    color: $brand-primary;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-    .pagination-icon a {
-        font-size: 2em;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .pagination-icon a {
-        font-size: 4em;
-    }
 }
