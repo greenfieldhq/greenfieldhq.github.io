@@ -19,7 +19,7 @@ $font-bold-italic: 'Proxima Nova SemiBold Italic';
 body {
   background-color: $gray-lighter;
   font-family: $font-secondary;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -87,6 +87,9 @@ section.page-body {
 
 .btn-link {
   color: $gray-base;
+  &:hover {
+    color: $gray-base;
+  }
 }
 
 a {
@@ -363,6 +366,10 @@ section.team {
 
   li {
     vertical-align: top;
+    
+    p {
+      padding-top: 14px;
+    }
   }
 
   .join-button {
@@ -377,6 +384,7 @@ section.team {
       font-family: $font-secondary-italic;
       color: $gray-lighter;
       font-weight: bold;
+      padding-top: 0px;
     }
 
     span {
