@@ -7,6 +7,7 @@ title: "Cloud hosting or internal hosting?"
 description: The benefits of cloud hosting.
 author: greenfield
 image: /assets/images/cloud-hosting/cloud-hosting-costs.png
+nav: blog
 ---
 {% include JB/setup %}
 

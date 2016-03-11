@@ -7,6 +7,7 @@ title: "Boost Your Pageload Speed in Under 10 Minutes"
 description: Deploying Amazon Web Service's Cloudfront Content Delivery System improves your site's pageload speed - and your organic search performance.
 author: greenfield
 image: /assets/images/aws-cloudfront/ctr-by-serp-position.PNG
+nav: blog
 ---
 {% include JB/setup %}
 

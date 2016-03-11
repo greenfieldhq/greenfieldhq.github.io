@@ -6,6 +6,7 @@ tags : [iCal, calendar, ics, Ember, Rails]
 title: "iCal subscriptions with Rails"
 description: "How to subscribe to your application's events by setting up an .ics endpoint"
 author: faizaan_shamsi
+nav: blog
 ---
 {% include JB/setup %}
 

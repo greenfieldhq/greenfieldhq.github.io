@@ -6,6 +6,7 @@ tags :
 title: "3 Reasons Why You Should Try Elasticsearch"
 description: A small introduction to Elasticsearch.
 author: mike_munroe
+nav: blog
 ---
 {% include JB/setup %}
 

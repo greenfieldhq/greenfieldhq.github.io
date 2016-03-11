@@ -3,14 +3,9 @@ layout: page
 title : Blog
 header : Post Archive
 group: navigation
-splash: true
+nav: blog
 ---
 {% include JB/setup %}
 
-<section class="page-body">
-  <div class="container">
-    {% include work-blog-title.html active="blog" %}
-    {% include our-blog.html %}
-  </div>
-</section>
-
+{% assign posts_collate = site.posts %}
+{% include JB/posts_collate %}

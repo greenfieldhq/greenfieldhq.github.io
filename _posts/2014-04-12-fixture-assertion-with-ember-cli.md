@@ -6,6 +6,7 @@ tags : [ember, ember-cli]
 title: "Assertion Failed: Unable to find fixtures for model using Ember-CLI"
 description: How to fix assertion on fixtures set up within an Ember-CLI project.
 author: mike_munroe
+nav: blog
 ---
 {% include JB/setup %}
 

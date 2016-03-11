@@ -6,6 +6,7 @@ tags : [UI, UX]
 title: "Greenfield is hiring a Creative Director"
 description: We are looking for an experienced UX designer to join our team.
 author: mike_munroe
+nav: blog
 ---
 {% include JB/setup %}
 

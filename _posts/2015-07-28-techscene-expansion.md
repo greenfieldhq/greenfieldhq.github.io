@@ -8,6 +8,7 @@ Network Effects"
 description: Utilizing Techscene to map the startup ecosystem
 author: greenfield
 image: /assets/images/ts-exp/startup_ecosystem.png
+nav: blog
 ---
 {% include JB/setup %}
 
