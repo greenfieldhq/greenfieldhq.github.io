@@ -288,15 +288,7 @@ section.blog-post {
   h1, h2, h3 {
     margin-top: 30px;
   }
-
-  .author {
-    font-family: $font-secondary-italic;
-    font-size: 15px;
-    .date {
-      color: $gray-light;
-    }
-  }
-
+  
   .pagination-list li {
     margin-left: 40px;
     margin-right: 40px;
@@ -321,6 +313,15 @@ section.blog-post {
       }
   }
 
+}
+
+.author {
+  padding-bottom: 10px;
+  .date {
+    font-family: $font-secondary-italic;
+    color: $gray-light;
+    padding-left: 6px;
+  }
 }
 
 section.beginning {

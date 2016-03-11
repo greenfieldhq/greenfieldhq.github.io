@@ -19,6 +19,7 @@
           {% endif %}
       </ul>
 
+      {% assign author = site.data.authors[page.author] %}
         <h1>
           {{ page.title }}
           {% if page.tagline %}
@@ -26,12 +27,13 @@
           {% endif %}
         </h1>
         <div class="author">
-          <span>By: {{ page.author }}</span><br>
+          <span>By: {{ author.name }}</span><br>
           <span class="date">{{ page.date | date_to_long_string }}</span>
         </div>
       </div>
 
-      <div class="post-body">
+
+      <div class="content">
         {{ content }}
       </div>
 
