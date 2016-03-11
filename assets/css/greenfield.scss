@@ -221,15 +221,19 @@ section.page-body {
 .thumbnail {
     display: block;
     padding: 0px;
-    margin-bottom: 20px;
-    line-height: 1.428571429;
     background-color: $white-base;
-    border: 1px solid #ddd;
     border-radius: 0px;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+
+    max-width: 360px;
+    min-width: 288px;
+
+    img {
+      max-width: 360px;
+      max-height: 200px;
+    }
 }
 
+// TODO merge this so we only have one style for thumbnails
 .thumbnail_image {
   overflow: hidden;
   max-height: 200px;
