@@ -271,19 +271,49 @@ section {
 
 
 section.blog-post {
+  font-family: $font-primary;
   margin-top: 30px;
 
   div.content {
     margin-top: 15px;
     margin-top: 15px;
-    font-family: "Open Sans";
+    font-family: $font-secondary;
     font-size: 16px;
     line-height: 26px;
+  }
+
+  img {
+    width: 100%;
   }
 
   h1, h2, h3 {
     margin-top: 30px;
   }
+
+  .pagination-list li {
+    margin-left: 40px;
+    margin-right: 40px;
+    a {
+      color: $gray-base;
+    }
+    a:hover {
+      text-decoration: none;
+      color: $brand-primary;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+      .pagination-icon a {
+          font-size: 2em;
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+      .pagination-icon a {
+          font-size: 4em;
+      }
+  }
+
 }
 
 .author {
@@ -300,6 +330,7 @@ section.beginning {
 
   img {
     margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -367,7 +398,7 @@ section.team {
 
   li {
     vertical-align: top;
-    
+
     p {
       padding-top: 14px;
     }
@@ -481,4 +512,3 @@ section.contact-us {
     font-family: $font-secondary-italic
   }
 }
-
