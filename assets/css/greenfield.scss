@@ -273,8 +273,12 @@ section.blog-post {
     margin-top: 30px;
   }
 
-  .date {
-
+  .author {
+    font-family: $font-secondary-italic;
+    font-size: 15px;
+    .date {
+      color: $gray-light;
+    }
   }
 }
 
