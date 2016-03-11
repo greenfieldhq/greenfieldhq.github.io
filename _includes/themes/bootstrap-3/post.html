@@ -25,10 +25,9 @@
             <br><small>{{page.tagline}}</small>
           {% endif %}
         </h1>
-        <div class="date">
-          <span>By: {{ page.author }}</span> &raquo;
-          <span>{{ page.date | date_to_long_string }}</span>
-          <br><br>
+        <div class="author">
+          <span>By: {{ page.author }}</span><br>
+          <span class="date">{{ page.date | date_to_long_string }}</span>
         </div>
       </div>
 
