@@ -271,12 +271,13 @@ section {
 
 
 section.blog-post {
+  font-family: $font-primary;
   margin-top: 30px;
 
   div.content {
     margin-top: 15px;
     margin-top: 15px;
-    font-family: "Open Sans";
+    font-family: $font-secondary;
     font-size: 16px;
     line-height: 26px;
   }
@@ -288,7 +289,7 @@ section.blog-post {
   h1, h2, h3 {
     margin-top: 30px;
   }
-  
+
   .pagination-list li {
     margin-left: 40px;
     margin-right: 40px;
