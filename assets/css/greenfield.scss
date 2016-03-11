@@ -9,21 +9,22 @@ $gray-base: #414042;
 $gray-light: lighten($gray-base, 40%);
 $gray-lighter: #E6E7E8;
 $font-primary: 'Celias';
+$font-primary-italic: 'Celias Italic';
+$font-primary-medium: 'Celias Medium';
 $font-primary-bold: 'Celias Bold';
+$font-secondary: 'Proxima Nova Regular';
 $font-secondary-italic: 'Proxima Nova Italic';
 $font-bold-italic: 'Proxima Nova SemiBold Italic';
 
 body {
   background-color: $gray-lighter;
+  font-family: $font-secondary;
+  font-size: 17px;
 }
 
 h1, h2, h3, h4, h5 {
   color: $gray-base;
-  font-family: $font-primary-bold;;
-}
-
-h1, h2, h3 {
-  font-family: $font-bold-italic;
+  font-family: $font-primary-italic;;
 }
 
 .btn {
@@ -84,8 +85,15 @@ section.page-body {
   font-size: 20px;
 }
 
-.navbar-right {
-  .btn-link {
+.btn-link {
+  color: $gray-base;
+  &:hover {
+    color: $gray-base;
+  }
+}
+
+a {
+  &:hover {
     color: $gray-base;
   }
 }
@@ -221,15 +229,19 @@ section.page-body {
 .thumbnail {
     display: block;
     padding: 0px;
-    margin-bottom: 20px;
-    line-height: 1.428571429;
     background-color: $white-base;
-    border: 1px solid #ddd;
     border-radius: 0px;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+
+    max-width: 360px;
+    min-width: 288px;
+
+    img {
+      max-width: 360px;
+      max-height: 200px;
+    }
 }
 
+// TODO merge this so we only have one style for thumbnails
 .thumbnail_image {
   overflow: hidden;
   max-height: 200px;
@@ -292,7 +304,7 @@ section.beginning {
 
 section.approaches {
   .item {
-    color: #FFF;
+    color: $white-base;
     background-color: $brand-primary;
     font-family: $font-primary-bold;
     font-size: 12px;
@@ -329,13 +341,13 @@ section.working {
 
   p, h2 {
     margin-left: 30px;
-    color: #FFF;
+    color: $white-base;
   }
 
   .apply-now {
     margin-left: 30px;
     color: black;
-    background-color: #FFF;
+    background-color: $white-base;
   }
 
   .fa-angle-right {
@@ -354,6 +366,10 @@ section.team {
 
   li {
     vertical-align: top;
+
+    p {
+      padding-top: 14px;
+    }
   }
 
   .join-button {
@@ -368,6 +384,7 @@ section.team {
       font-family: $font-secondary-italic;
       color: $gray-lighter;
       font-weight: bold;
+      padding-top: 0px;
     }
 
     span {
@@ -386,6 +403,17 @@ section.team {
   .list-inline>li,
   .list-inline>li:first-child {
     padding: 10px 18px 10px 18px;
+  }
+}
+
+section.blog-home {
+  margin-top: 0px;
+  padding-top: 40px;
+  border-top: solid 1px $gray-lighter;
+  background-color: $white-base;
+
+  .blog-entry {
+    margin-bottom: 40px;
   }
 }
 
@@ -446,26 +474,13 @@ section.contact-us {
 }
 
 
-.contact h3, h4 {
-  text-align: center;
-  font-family: $font-secondary-italic
-}
-
-.all-posts a {
-  color: $brand-primary;
-}
-
-.blog-home {
-  text-align: justify;
-  margin-bottom: 80px;
-  h2 {
-    color: $brand-primary;
-    font-family: $font-primary;
-  }
-  a:hover {
-    color: $brand-primary;
+.contact {
+  h3, h4 {
+    text-align: center;
+    font-family: $font-secondary-italic
   }
 }
+
  .blog-entry {
    margin-bottom: 40px;
    h4 {
