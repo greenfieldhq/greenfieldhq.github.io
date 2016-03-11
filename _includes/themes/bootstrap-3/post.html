@@ -29,9 +29,10 @@
           {% endif %}
         </h1>
       </div>
+      {% assign author = site.data.authors[page.author] %}
   
       <div class="author">
-        <span>By: {{ page.author }}</span>
+        <span>By: {{ author.name }}</span>
         <span class="date">{{ page.date | date_to_long_string }}</span>
       </div>
       <div class="content">

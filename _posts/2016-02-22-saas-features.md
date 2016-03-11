@@ -5,7 +5,7 @@ tagline:
 tags : [saas]
 title: "Choosing Your Saas Features"
 description: How do you prioritize your SaaS features? We’ve got a few ideas.
-author: Greenfield
+author: greenfield
 image: /assets/images/saas/How-Do-I-Decide-the-Best-Features-for-My-SaaS.jpg
 ---
 {% include JB/setup %}
