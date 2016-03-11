@@ -468,3 +468,38 @@ section.contact-us {
      text-align: justify;
    }
  }
+
+.blog-page {
+  text-align: justify;
+  img {
+    width: 100%;
+  }
+  .post-body, .post-title {
+    font-family: $font-primary;
+    font-size: 17px;
+  }
+}
+
+.pagination-list li {
+  margin-left: 40px;
+  margin-right: 40px;
+  a {
+    color: $gray-base;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $brand-primary;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+    .pagination-icon a {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pagination-icon a {
+        font-size: 4em;
+    }
+}
