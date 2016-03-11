@@ -6,6 +6,7 @@ tags : [ember]
 title: "What browsers does Ember.js support?"
 description: Ember.js browser support
 author: mike_munroe
+nav: blog
 ---
 {% include JB/setup %}
 

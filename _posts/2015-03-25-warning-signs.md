@@ -6,6 +6,7 @@ tags :
 title: "5 Warning Signs that Your Development Team Needs Help"
 description: Some top warning signs to look out for.
 author: mike_munroe
+nav: blog
 ---
 {% include JB/setup %}
 

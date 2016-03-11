@@ -5,6 +5,7 @@ description: "How to Save a parent model and all of its children at the same tim
 category:
 tags: [rails, ember-cli, ember-data]
 author: jodi_detch
+nav: blog
 ---
 {% include JB/setup %}
 

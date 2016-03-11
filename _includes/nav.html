@@ -20,12 +20,16 @@
       <a href="#contact" class="btn btn-primary hire-us" data-scroll="#contact">HIRE US!</a>
     {% endunless %}
 
+
     <div class="navbar-right">
       <a href="/">
-        <button type="button" class="btn btn-link {% if page.url == "/" or page.url == "/blog/" %}active-page{% endif %}">Work & Blog</button>
+        <button type="button" class="btn btn-link {% if page.nav == "work"%}active-page{% endif %}">Work</button>
+      </a>
+      <a href="/blog">
+        <button type="button" class="btn btn-link {% if page.nav == "blog" || post.nav == "blog" %}active-page{% endif %}">Blog</button>
       </a>
       <a href="/about">
-      <button type="button" class="btn btn-link {% if page.url == "/about/" %}active-page{% endif %}">About Us</button>
+        <button type="button" class="btn btn-link {% if page.nav == "about" %}active-page{% endif %}">About Us</button>
       </a>
     </div>
   </div><!-- /.navbar-collapse -->

@@ -6,6 +6,7 @@ tags : [founder]
 title: "Founder Series: What is the difference between front end and back end?"
 description: Developers often talk about front end code or back end code. What does that mean?
 author: mike_munroe
+nav: blog
 ---
 {% include JB/setup %}
 

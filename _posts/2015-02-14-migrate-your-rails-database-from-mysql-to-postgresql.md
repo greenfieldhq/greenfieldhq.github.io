@@ -5,6 +5,7 @@ description: "How we migrated the techscene.at database from MySQL to PostgreSQL
 category:
 tags: [rails, mysql, postgresql, pgloader, techscene.at]
 author: ryan_tremaine
+nav: blog
 ---
 {% include JB/setup %}
 

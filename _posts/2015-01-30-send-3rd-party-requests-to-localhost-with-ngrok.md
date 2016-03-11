@@ -5,6 +5,7 @@ description: "How to send requests from 3rd party services to your develepment s
 category:
 tags: [ngrok, inbound-email, tunnel]
 author: faizaan_shamsi
+nav: blog
 ---
 {% include JB/setup %}
 
