@@ -1,23 +1,27 @@
+<section class="blog-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+  
+        {% if site.JB.posts_collate.provider == "custom" %}
+          {% include custom/posts_collate %}
+        {% else %}
+          {% for post in posts_collate  %}
+  
+            <div class="col-md-8 col-md-offset-2 blog-entry">
+              <a href="{{ BASE_PATH }}{{ post.url }}">
+              <h2>{{ post.title }}</h2>
+              </a>
+              <p>{{ post.author }} &raquo; {{ post.date | date: "%B %e, %Y" }}</p>
+              {{ post.description }}
+            </div>
+  
+          {% endfor %}
+        {% endif %}
 
-<div class="container blog-home">
-  <div class="col-md-12">
-
-  {% if site.JB.posts_collate.provider == "custom" %}
-    {% include custom/posts_collate %}
-  {% else %}
-    {% for post in posts_collate  %}
-
-      <div class="col-md-6 col-md-offset-3 blog-entry">
-        <a href="{{ BASE_PATH }}{{ post.url }}">
-        <h2>{{ post.title }}</h2>
-        </a>
-        <p>{{ post.author }} &raquo; {{ post.date | date: "%B %e, %Y" }}</p>
-        <h4>{{ post.description }}</h4>
+        {% assign posts_collate = nil %}
+  
       </div>
-
-    {% endfor %}
-  {% endif %}
-  {% assign posts_collate = nil %}
-
+    </div>
   </div>
-</div>
+</section>
