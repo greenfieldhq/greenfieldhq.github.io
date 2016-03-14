@@ -510,6 +510,31 @@ section.contact-us {
   }
 }
 
+section.sign-up {
+  background-color: $gray-base;
+  padding: 40px;
+  text-align: center;
+
+  h2 {
+    color: $white-base;
+    font-family: $font-secondary-italic;
+    line-height: 37px;
+    margin: 0;
+  }
+
+  .sign-up-form {
+    margin: 40px 40px 0;
+
+    .btn, .input-lg {
+      border-radius: 0px;
+    }
+
+    .btn-primary {
+      font-family: $font-secondary;
+    }
+  }
+}
+
 #footer {
   height: 30px;
   background-color: transparent;
