@@ -5,9 +5,4 @@ splash: true
 nav: work
 ---
 {% include JB/setup %}
-
-<section class="page-body">
-  <div class="container">
-    {% include our-work.html %}
-  </div>
-</section>
+{% include our-work.html %}

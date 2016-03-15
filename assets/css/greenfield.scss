@@ -12,19 +12,30 @@ $font-primary: 'Celias';
 $font-primary-italic: 'Celias Italic';
 $font-primary-medium: 'Celias Medium';
 $font-primary-bold: 'Celias Bold';
+$font-primary-bold-italic: 'Celias Bold Italic';
 $font-secondary: 'Proxima Nova Regular';
 $font-secondary-italic: 'Proxima Nova Italic';
 $font-bold-italic: 'Proxima Nova SemiBold Italic';
 
 body {
-  background-color: $gray-lighter;
+  background-color: #F4F4F4;
   font-family: $font-secondary;
   font-size: 17px;
+  line-height: 27px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
+  color: $gray-base;
+  font-family: $font-primary-bold-italic;;
+}
+
+h3, h4, h5 {
   color: $gray-base;
   font-family: $font-primary-italic;;
+}
+
+.body-content {
+  padding: 0 30px 0 30px;
 }
 
 .btn {
@@ -51,15 +62,16 @@ section.header {
   background-color: $white-base;
   width: 100%;
   margin-top: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 
   h1, h2 {
     font-family: $font-secondary-italic;
+    line-height: 37px;
   }
 }
 
 section.page-body {
-  background-color: $gray-lighter;
+  //background-color: $gray-lighter;
 
   div.title {
     margin-top: 40px;
@@ -67,19 +79,32 @@ section.page-body {
   }
 }
 
-.active-page {
-  text-decoration: underline;
+.active-page.btn-link {
+  text-decoration: none;
+  color: $brand-primary;
 }
 
 .hire-us {
   padding: 7px 15px 5px 15px;
   font-size: 20px;
+
+  -webkit-transition-duration: .20s;
+  transition-duration: .20s;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .btn-link {
   color: $gray-base;
+  -webkit-transition-duration: .20s;
+  transition-duration: .20s;
+  -webkit-transition-property: color, text-decoration;
+  transition-property: color, text-decoration;
+
   &:hover {
-    color: $gray-base;
+    //color: $gray-base;
+    text-decoration: none;
+    color: $brand-primary;
   }
 }
 
@@ -222,22 +247,28 @@ a {
     padding: 0px;
     background-color: $white-base;
     border-radius: 0px;
+    border: 0px;
 
-    max-width: 360px;
-    min-width: 288px;
+//   max-width: 360px;
+//    min-width: 288px;
 
     img {
-      max-width: 360px;
-      max-height: 200px;
+//      max-width: 360px;
+//      max-height: 200px;
+        height: 300px;
+    }
+
+    .caption {
+      visibility: hidden;
     }
 }
 
 // TODO merge this so we only have one style for thumbnails
 .thumbnail_image {
-  overflow: hidden;
-  max-height: 200px;
-  min-height: 242px;
-  height: 242px;
+//  overflow: hidden;
+//  max-height: 200px;
+//  min-height: 242px;
+//  height: 242px;
   text-align: center;
 
   span.helper {
@@ -262,15 +293,16 @@ section {
 
 
 section.blog-post {
-  font-family: $font-primary;
   margin-top: 30px;
 
   div.content {
     margin-top: 15px;
     margin-top: 15px;
     font-family: $font-secondary;
-    font-size: 16px;
-    line-height: 26px;
+
+    p {
+      margin: 0 0 30px;
+    }
   }
 
   img {
@@ -278,7 +310,7 @@ section.blog-post {
   }
 
   h1, h2, h3 {
-    margin-top: 30px;
+    margin-top: 45px;
   }
 
   .pagination-list li {
@@ -286,6 +318,10 @@ section.blog-post {
     margin-right: 40px;
     a {
       color: $gray-base;
+      -webkit-transition-duration: .20s;
+      transition-duration: .20s;
+      -webkit-transition-property: color;
+      transition-property: color;
     }
     a:hover {
       text-decoration: none;
@@ -294,21 +330,20 @@ section.blog-post {
   }
 
   @media screen and (max-width: 1199px) {
-      .pagination-icon a {
-          font-size: 2em;
-      }
+    .pagination-icon a {
+      font-size: 2em;
+    }
   }
 
   @media screen and (min-width: 1200px) {
-      .pagination-icon a {
-          font-size: 4em;
-      }
+    .pagination-icon a {
+      font-size: 4em;
+    }
   }
-
 }
 
 .author {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   .date {
     font-family: $font-secondary-italic;
     color: $gray-light;
@@ -437,6 +472,9 @@ section.blog-home {
 
   .blog-entry {
     margin-bottom: 40px;
+    h1, h2, h3 {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -482,24 +520,16 @@ section.contact-us {
   text-align: center;
   font-family: 'Celias Bold Italic' !important;
   font-size: 16px;
-  div {
-    padding: 5px;
-  }
   a {
     color: $gray-base;
-  }
-  a:hover {
-    color: $brand-primary;
-  }
-  .fa-twitter {
-    font-size: 40px;
+    padding: 0 10px 0 10px;
   }
 }
-
 
 .contact {
   h3, h4 {
     text-align: center;
-    font-family: $font-secondary-italic
+    font-family: $font-secondary-italic;
+    line-height: 27px;
   }
 }
