@@ -8,6 +8,7 @@ $white-base: #FFFFFF;
 $gray-base: #414042;
 $gray-light: lighten($gray-base, 40%);
 $gray-lighter: #E6E7E8;
+$gray-lightest: #F4F4F4;
 $font-primary: 'Celias';
 $font-primary-italic: 'Celias Italic';
 $font-primary-medium: 'Celias Medium';
@@ -18,7 +19,7 @@ $font-secondary-italic: 'Proxima Nova Italic';
 $font-bold-italic: 'Proxima Nova SemiBold Italic';
 
 body {
-  background-color: #F4F4F4;
+  // background-color: #F4F4F4;
   font-family: $font-secondary;
   font-size: 17px;
   line-height: 27px;
@@ -26,16 +27,12 @@ body {
 
 h1, h2 {
   color: $gray-base;
-  font-family: $font-primary-bold-italic;;
+  font-family: $font-primary-bold;;
 }
 
 h3, h4, h5 {
   color: $gray-base;
-  font-family: $font-primary-italic;;
-}
-
-.body-content {
-  padding: 0 30px 0 30px;
+  font-family: $font-primary;
 }
 
 .btn {
@@ -49,39 +46,13 @@ h3, h4, h5 {
   font-family: $font-secondary-italic;
 }
 
-.btn-primary:hover, .btn-primary:focus {
-  background-color: darken( $brand-primary, 5% );
-  background-position: 0 -15px;
-}
-
 .btn:focus {
   outline: 0px;
 }
 
-section.header {
-  background-color: $white-base;
-  width: 100%;
-  margin-top: 0px;
-  padding-bottom: 0px;
-
-  h1, h2 {
-    font-family: $font-secondary-italic;
-    line-height: 37px;
-  }
-}
-
-section.page-body {
-  //background-color: $gray-lighter;
-
-  div.title {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-}
-
 .active-page.btn-link {
-  text-decoration: none;
-  color: $brand-primary;
+  //text-decoration: underline;
+  //color: $brand-primary;
 }
 
 .hire-us {
@@ -102,9 +73,8 @@ section.page-body {
   transition-property: color, text-decoration;
 
   &:hover {
-    //color: $gray-base;
     text-decoration: none;
-    color: $brand-primary;
+    color: $gray-base;
   }
 }
 
@@ -117,7 +87,7 @@ a {
 .navbar-brand {
   .brand-logo {
     max-width: 240px;
-    max-height: 66px;
+    max-height: 52px;
   }
 }
 
@@ -191,106 +161,90 @@ a {
   margin: 30px 0;
 }
 
-.thumbnail {
-  .caption {
-    text-align: center;
-    background-color: $gray-base;
-    color: $white-base;
-    h4, h5 {
-      color: $white-base;
-    }
-  }
-}
-
-.thumbnail.hire-us {
-  width: 100%;
-  height: 256px;
-  background-color: $gray-base;
-  font-family: $font-secondary-italic;
-  text-align: center;
-  color: $white-base;
-  position: relative;
-
-  span {
-    position: absolute;
-    top: 25px;
-    margin-bottom: 0px;
-    text-align: center;
-    left: 120px;
-    right: 120px;
-  }
-
-  .caption {
-    position: absolute;
-    bottom: 0px;
-    background-color: $brand-primary;
-    width: 100%;
-  }
-
-  .caption h4, span h3 {
-    font-family: $font-bold-italic;
-    color: $white-base;
-  }
-  .caption h4 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-}
-
-.thumbnail, .img-thumbnail {
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.075);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.075);
+section.page-body.our-work {
+  margin: 15px;
 }
 
 .thumbnail {
-    display: block;
-    padding: 0px;
-    background-color: $white-base;
-    border-radius: 0px;
-    border: 0px;
 
-//   max-width: 360px;
-//    min-width: 288px;
-
-    img {
-//      max-width: 360px;
-//      max-height: 200px;
-        height: 300px;
-    }
-
-    .caption {
-      visibility: hidden;
-    }
-}
-
-// TODO merge this so we only have one style for thumbnails
-.thumbnail_image {
-//  overflow: hidden;
-//  max-height: 200px;
-//  min-height: 242px;
-//  height: 242px;
-  text-align: center;
-
-  span.helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
+  height: 350px;
+  border-radius: 0px;
+  border: 0px;
 
   img {
-    max-width: 358px;
+    object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px;
   }
 
-  img.greenfield-thumb {
-    max-width: 300px;
+  .title {
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    transition: all .5s cubic-bezier(0.165,.84,.44,1);
+    width: 100%;
+    z-index: 1;
+
+    span.title-caption {
+      display: inline-block;
+      padding: 5px 10px 0px 11px;
+
+      h5 {
+        text-transform: uppercase;
+        color: $white-base;
+        font-size: 15px;
+      }
+    }
+  }
+
+  &.informa {
+    // http://photo.khmer-tube.com/wp-content/uploads/2013/03/photo-tube-273095.jpg
+    span.title-caption {
+      background-color: #3E6DAB;
+    }
+  }
+
+  &.ask-beatrice {
+    span.title-caption {
+      background-color: #118EAE;
+    }
+  }
+
+  &.techscene {
+    span.title-caption {
+      background-color: #db3c45;
+    }
   }
 }
+
+.next-project {
+  background-color: $gray-lightest;
+}
+
 
 section {
   margin-top: 60px;
   margin-bottom: 30px;
 }
 
+section.header {
+  background-color: $white-base;
+  width: 100%;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+section.page-body {
+  div.title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
 
 section.blog-post {
   margin-top: 30px;
@@ -352,7 +306,8 @@ section.blog-post {
 }
 
 section.beginning {
-  margin-top: 0px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 
   img {
     margin-top: 20px;
@@ -479,7 +434,7 @@ section.blog-home {
 }
 
 section.contact-us {
-  background-color: $gray-light;
+  background-color: $gray-lightest;
   padding-top: 25px;
   padding-bottom: 25px;
 

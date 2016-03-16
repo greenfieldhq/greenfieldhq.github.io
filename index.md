@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Greenfield is a nimble, Boston-based team of developers and designers.
+title: Real People Solving Real Problems
 splash: true
 nav: work
 ---

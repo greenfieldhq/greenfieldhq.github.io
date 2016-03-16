@@ -16,20 +16,25 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
 
   <div class="collapse navbar-collapse nav-justified" id="jb-navbar-collapse">
+    <!--
     {% unless page.splash %}
       <a href="#contact" class="btn btn-primary hire-us" data-scroll="#contact">HIRE US!</a>
     {% endunless %}
+    -->
 
 
     <div class="navbar-right">
       <a href="/">
         <button type="button" class="btn btn-link {% if page.nav == "work"%}active-page{% endif %}">Work</button>
       </a>
-      <a href="/blog">
-        <button type="button" class="btn btn-link {% if page.nav == "blog" || post.nav == "blog" %}active-page{% endif %}">Blog</button>
+      <a href="/contact">
+        <button type="button" class="btn btn-link {% if page.nav == "about" %}active-page{% endif %}">Hire Us</button>
       </a>
       <a href="/about">
         <button type="button" class="btn btn-link {% if page.nav == "about" %}active-page{% endif %}">About Us</button>
+      </a>
+      <a href="/blog">
+        <button type="button" class="btn btn-link {% if page.nav == "blog" || post.nav == "blog" %}active-page{% endif %}">Blog</button>
       </a>
     </div>
   </div><!-- /.navbar-collapse -->

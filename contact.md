@@ -5,4 +5,4 @@ splash: false
 nav: about
 ---
 {% include JB/setup %}
-{% include about-us.html %}
+{% include hire-us.html %}
