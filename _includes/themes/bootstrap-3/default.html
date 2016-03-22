@@ -66,13 +66,16 @@
       {% include nav.html %}
       <div class="container-fluid">
         {% if page.splash %}
-          {% include title-header.html %}
+          {% include header.html %}
         {% endif %}
 
         {{ content }}
       </div>
     </div>
-    {% include hire-us.html %}
+    {% if page.contact_us_footer %}
+      {% include contact-us-footer.html %}
+    {% endif %}
+
     {% include footer.html %}
     {% include JB/analytics %}
 

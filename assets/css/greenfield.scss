@@ -27,7 +27,7 @@ body {
 
 h1, h2 {
   color: $gray-base;
-  font-family: $font-primary-bold;;
+  font-family: $font-primary;
 }
 
 h3, h4, h5 {
@@ -86,8 +86,7 @@ a {
 
 .navbar-brand {
   .brand-logo {
-    max-width: 240px;
-    max-height: 52px;
+    max-height: 60px;
   }
 }
 
@@ -96,7 +95,7 @@ a {
   button {
     font-family: $font-primary-bold;;
     font-size: 18px;
-    margin-top: 18px;
+    margin-top: 22px;
   }
   a:hover, a:focus {
     text-decoration: none;
@@ -131,11 +130,32 @@ a {
   }
 }
 
-.page-header {
+.header {
+  background-color: $white-base;
+  width: 100%;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.page-header__hero {
   text-align: center;
   border: none;
   background-color: $white-base;
   margin: 20px 0 20px;
+  h1 {
+    font-size: 50px;
+    @media screen and (max-width: 768px) {
+      font-size: 45px;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 70px;
+    }
+  }
 }
 
 .post-title {
@@ -161,92 +181,147 @@ a {
   margin: 30px 0;
 }
 
-section.page-body.our-work {
+.our-work {
   margin: 15px;
+  margin-bottom: 60px;
 }
 
-.thumbnail {
+.thumbnail-grid__item {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  max-height: 360px;
 
-  height: 350px;
-  border-radius: 0px;
-  border: 0px;
-
-  img {
-    object-fit: cover;
-    object-fit: cover;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 15px;
+  @media screen and (max-width: 768px) {
+    max-height: 300px;
   }
 
-  .title {
-    bottom: 0px;
-    position: absolute;
-    text-align: center;
-    transition: all .5s cubic-bezier(0.165,.84,.44,1);
-    width: 100%;
-    z-index: 1;
-
-    span.title-caption {
-      display: inline-block;
-      padding: 5px 10px 0px 11px;
-
-      h5 {
-        text-transform: uppercase;
-        color: $white-base;
-        font-size: 15px;
-      }
-    }
+  @media screen and (min-width: 992px) {
+    max-height: 360px;
   }
 
-  &.informa {
-    // http://photo.khmer-tube.com/wp-content/uploads/2013/03/photo-tube-273095.jpg
-    span.title-caption {
-      background-color: #3E6DAB;
-    }
-  }
-
-  &.ask-beatrice {
-    span.title-caption {
-      background-color: #118EAE;
-    }
-  }
-
-  &.techscene {
-    span.title-caption {
-      background-color: #db3c45;
-    }
+  @media screen and (min-width: 1200px) {
+    max-height: 420px;
   }
 }
 
-.next-project {
-  background-color: $gray-lightest;
+.thumbnail-grid__col {
+  padding: 5px;
 }
 
-
-section {
-  margin-top: 60px;
-  margin-bottom: 30px;
+.thumbnail-grid__splash {
+  overflow: hidden;
+  position: relative;
 }
 
-section.header {
-  background-color: $white-base;
+.thumbnail-grid__img {
+  transition: all .5s cubic-bezier(0.165,.84,.44,1);
+  min-width: 100%;
+}
+
+.thumbnail-grid__title {
+  position: absolute;
+  bottom: 0px;
   width: 100%;
-  margin-top: 0px;
-  padding-bottom: 0px;
-}
+  background-color: #118EAE;
+  height: 60px;
+  text-align: center;
+  transition: all .3s cubic-bezier(0.165,.84,.44,1);
+  padding-top: 14px;
 
-section.page-body {
-  div.title {
-    margin-top: 40px;
-    margin-bottom: 30px;
+  h5 {
+    text-transform: uppercase;
+    color: $white-base;
+    font-size: 18px;
   }
 }
 
-section.blog-post {
+.thumbnail-grid__overlay {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  h2 {
+    text-transform: uppercase;
+    color: $gray-base;
+    font-size: 35px;
+    font-family: $font-primary-italic;
+    padding: 0 50px 0 50px;
+  }
+}
+
+.thumbnail-grid__item {
+  &:hover {
+    .thumbnail-grid__img {
+      transform: scale(1.1);
+      opacity: .8;
+      -webkit-filter: contrast(110%);
+      filter: contrast(110%);
+    }
+
+    .thumbnail-grid__title {
+      height: 80px;
+    }
+  }
+}
+.thumbnail-grid__item--informa {
+  .thumbnail-grid__splash, .thumbnail-grid__title {
+    background-color: #3E6DAB;
+  }
+}
+
+.thumbnail-grid__item--ask-beatrice {
+  .thumbnail-grid__splash, .thumbnail-grid__title {
+    background-color: #118EAE;
+  }
+}
+
+.thumbnail-grid__item--techscene {
+  .thumbnail-grid__splash {
+    background-color: #629eab;
+  }
+
+  .thumbnail-grid__title {
+    background-color: #db3c45;
+  }
+
+  h5 {
+    font-family: $font-primary-italic;
+  }
+
+  &:hover {
+    .thumbnail-grid__img {
+      opacity: .95;
+    }
+  }
+}
+
+.thumbnail-grid__item--hire-us {
+  .thumbnail-grid__img {
+    opacity: 0;
+  }
+
+  .thumbnail-grid__splash {
+    background-color: $gray-lighter;
+  }
+
+  .thumbnail-grid__title {
+    background-color: $gray-light;
+  }
+
+  &:hover {
+    .thumbnail-grid__img {
+      opacity: 1.0;
+    }
+
+    .thumbnail-grid__title {
+      //height: 60px;
+    }
+  }
+}
+
+.blog-post {
   margin-top: 30px;
 
   div.content {
@@ -279,7 +354,7 @@ section.blog-post {
     }
     a:hover {
       text-decoration: none;
-      color: $brand-primary;
+      //color: $brand-primary;
     }
   }
 
@@ -305,7 +380,7 @@ section.blog-post {
   }
 }
 
-section.beginning {
+.beginning {
   margin-top: 60px;
   margin-bottom: 30px;
 
@@ -315,7 +390,7 @@ section.beginning {
   }
 }
 
-section.approaches {
+.approaches {
   .item {
     color: $white-base;
     background-color: $brand-primary;
@@ -344,7 +419,7 @@ section.approaches {
   }
 }
 
-section.working {
+.working {
   padding-top: 120px;
   padding-bottom: 100px;
   background-image: url(http://www.friendsoffortpointchannel.org/wp-content/uploads/2014/01/General_2-1024x600@2x.jpg);
@@ -368,7 +443,7 @@ section.working {
   }
 }
 
-section.team {
+.team {
   img.img-circle {
     height: 150px;
   }
@@ -419,7 +494,7 @@ section.team {
   }
 }
 
-section.blog-home {
+.blog-home {
   margin-top: 0px;
   padding-top: 40px;
   border-top: solid 1px $gray-lighter;
@@ -433,7 +508,7 @@ section.blog-home {
   }
 }
 
-section.contact-us {
+.contact-us {
   background-color: $gray-lightest;
   padding-top: 25px;
   padding-bottom: 25px;
