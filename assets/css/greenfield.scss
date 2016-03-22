@@ -286,10 +286,6 @@ a {
     background-color: #db3c45;
   }
 
-  h5 {
-    font-family: $font-primary-italic;
-  }
-
   &:hover {
     .thumbnail-grid__img {
       opacity: .95;
@@ -310,6 +306,10 @@ a {
     background-color: $gray-light;
   }
 
+  h5 {
+    font-family: $font-primary-italic;
+  }
+
   &:hover {
     .thumbnail-grid__img {
       opacity: 1.0;
@@ -317,6 +317,10 @@ a {
 
     .thumbnail-grid__title {
       //height: 60px;
+    }
+
+    h2 {
+      color: $white-base;
     }
   }
 }
@@ -543,6 +547,32 @@ a {
     color: black !important;
   }
 }
+
+.sign-up {
+  background-color: $gray-base;
+  padding: 40px;
+  text-align: center;
+
+  h2 {
+    color: $white-base;
+    font-family: $font-secondary-italic;
+    line-height: 37px;
+    margin: 0;
+  }
+
+  .sign-up-form {
+    margin: 40px 40px 0;
+
+    .btn, .input-lg {
+      border-radius: 0px;
+    }
+
+    .btn-primary {
+      font-family: $font-secondary;
+    }
+  }
+}
+
 
 #footer {
   height: 30px;
