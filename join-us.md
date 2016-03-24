@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Hire Greenfield
+title: Join Greenfield
 splash: false
 nav: about
 ---
 {% include JB/setup %}
-{% include hire-us.html %}
+{% include work-for-us.html %}

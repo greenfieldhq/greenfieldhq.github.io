@@ -92,6 +92,7 @@ h3, h4, h5 {
   background-color: $brand-primary;
   background-image: none;
   border: none;
+  border-radius: 0px;
   font-family: $font-secondary-italic;
   &:focus, &:hover {
     background-color: darken($brand-primary, 5%);
@@ -733,7 +734,5 @@ a {
   }
 
   textarea {
-    height: 3em !important;
-    resize: none;
   }
 }
