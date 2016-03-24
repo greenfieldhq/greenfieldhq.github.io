@@ -415,6 +415,11 @@ a {
   }
 }
 
+.case-study__hero--phone-border {
+  border: 5px solid #F9F7F8;
+  border-radius: 2px;
+}
+
 .case-study__ribbon {
   margin-top: $font-size-jumbo;
   padding-top: 30px;
@@ -430,6 +435,10 @@ a {
 
 .case-study__ribbon--techscene {
   background-color: #C5E5EC;
+}
+
+.case-study__parking-icons {
+  margin-top: $font-size-bigger;
 }
 
 .blog-post {
