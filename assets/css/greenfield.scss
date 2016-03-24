@@ -18,6 +18,15 @@ $font-secondary: 'Proxima Nova Regular';
 $font-secondary-italic: 'Proxima Nova Italic';
 $font-bold-italic: 'Proxima Nova SemiBold Italic';
 
+$font-size-jumbo: 3.998em;
+$font-size-bigger: 2.827em;
+$font-size-big: 1.999em;
+$font-size-normal_plus: 1.414em;
+$font-size-normal: 1em;
+$font-size-small: 0.707em;
+$font-size-tiny: 0.5em;
+$font-size-micro: 0.354em;
+
 html {
   font-size: 1em;
 }
@@ -398,6 +407,17 @@ a {
   margin-top: 100px;
   img {
     max-width: 100%;
+  }
+}
+
+.case-study__ribbon {
+  margin-top: $font-size-jumbo;
+  background-color: #79CABD;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  img {
+    width: 100%;
   }
 }
 
