@@ -124,6 +124,7 @@ h3, h4, h5 {
 a {
   &:hover {
     color: $gray-base;
+    text-decoration: none;
   }
 }
 
