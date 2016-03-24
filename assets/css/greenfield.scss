@@ -301,14 +301,18 @@ a {
 
 .thumbnail-grid__overlay {
   position: absolute;
-  bottom: 50%;
   width: 100%;
   text-align: center;
+  z-index: 2;
   h2 {
     text-transform: uppercase;
     color: $gray-base;
     font-size: 2.827em;
     font-family: $font-primary-italic;
+  }
+
+  div {
+    margin: 10px;
   }
 }
 
@@ -405,7 +409,7 @@ a {
 }
 
 .case-study__hero {
-  margin-top: 100px;
+  margin-top: 70px;
   img {
     max-width: 100%;
   }
@@ -413,13 +417,19 @@ a {
 
 .case-study__ribbon {
   margin-top: $font-size-jumbo;
-  background-color: #79CABD;
   padding-top: 30px;
   padding-bottom: 30px;
-
   img {
     width: 100%;
   }
+}
+
+.case-study__ribbon--informa {
+  background-color: #79CABD;
+}
+
+.case-study__ribbon--techscene {
+  background-color: #C5E5EC;
 }
 
 .blog-post {
