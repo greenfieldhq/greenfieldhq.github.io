@@ -663,3 +663,24 @@ a {
     line-height: 27px;
   }
 }
+
+.hire-form {
+  font-size: 22px;
+
+  label {
+    float:left;
+    padding-left: 12px;
+  }
+
+  .input-fields input, textarea {
+    font-size: 17px;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(110, 200, 41, 0.6) !important;
+    background-color: $gray-lightest;
+  }
+
+  textarea {
+    height: 3em !important;
+    resize: none;
+  }
+}
