@@ -28,11 +28,11 @@ $font-size-tiny: 0.5em;
 $font-size-micro: 0.354em;
 
 html {
-  font-size: 1em;
+  font-size: $font-size-normal;
 }
 
 
-html {font-size: 1em;}
+html {font-size: $font-size-normal;}
 
 body {
   background-color: white;
@@ -108,15 +108,6 @@ h3, h4, h5 {
   //color: $brand-primary;
 }
 
-.hire-us {
-  padding: 7px 15px 5px 15px;
-  font-size: 20px;
-
-  -webkit-transition-duration: .20s;
-  transition-duration: .20s;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-}
 
 .btn-link {
   color: $gray-base;
@@ -175,13 +166,6 @@ a {
   height: 6px;
   width: 30px;
   border-radius: 5px;
-}
-
-.nav-justified {
-  text-align: center;
-  .hire-us {
-    margin-top: 20px;
-  }
 }
 
 .header {
@@ -511,7 +495,7 @@ a {
 
 .about-us {
   p {
-    margin-right: 1em;
+    margin-right: $font-size-normal;
   }
 }
 
@@ -530,7 +514,6 @@ a {
 }
 
 .about-us__approach {
-
   h2 {
     text-transform: uppercase;
   }
@@ -539,19 +522,19 @@ a {
     color: $white-base;
     background-color: $brand-primary;
     font-family: $font-primary-bold;
-    font-size: 12px;
+    font-size: $font-size-normal;
   }
 
   .item-1 {
-    background-color: lighten($brand-primary, 17%) !important;
+    background-color: lighten($brand-primary, 17%);
   }
 
   .item-2 {
-    background-color: lighten($brand-primary, 10%) !important;
+    background-color: lighten($brand-primary, 10%);
   }
 
   .item-3 {
-    background-color: lighten($brand-primary, 5%) !important;
+    background-color: lighten($brand-primary, 5%);
   }
 
   .approach {
@@ -585,7 +568,6 @@ a {
   }
 
   .apply-now {
-    margin-left: 30px;
     color: $white-base;
     background-color: transparent;
     border: 2px solid $white-base;
@@ -667,15 +649,46 @@ a {
     margin-bottom: 40px;
     h1, h2, h3 {
       margin-bottom: 0px;
-      margin-top: 1em;
+      margin-top: $font-size-normal;
     }
   }
 }
 
-.contact-us {
-  background-color: $gray-lightest;
+.hire-us, .contact-footer {
+}
+
+.hire-us__banner,
+.contact-footer__banner,
+.contact-footer__form,
+.careers__banner {
+  background-color: $brand-primary;
   padding-top: 25px;
   padding-bottom: 25px;
+  h2, h3, h4 {
+    color: $white-base;
+  }
+}
+
+.contact-footer__form {
+  font-size: $font-size-normal-plus;
+
+  .btn-primary {
+    color: $white-base;
+    background-color: transparent;
+    border: 2px solid $white-base;
+    border-radius: 5px;
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+
+.careers__form {
+  font-size: $font-size-normal;
+}
+
+.hire-us__form, .careers__form {
+  background-color: $gray-lightest;
+  font-size: 1.2em;
 
   form {
     margin-top: 50px;
@@ -699,12 +712,21 @@ a {
     letter-spacing: 1px;
   }
 
-  ::-webkit-input-placeholder,
-  :-moz-placeholder,
-  ::-moz-placeholder,
-  :-ms-input-placeholder {
-    font-family: $font-primary !important;
-    color: black !important;
+  label {
+    float:left;
+    padding-left: 12px;
+  }
+
+  .input-fields input, textarea.form-control {
+    font-size: $font-size-normal;
+    box-shadow: none;
+    border-bottom: 2px solid $brand-primary;
+    background-color: $gray-lightest;
+  }
+
+  .btn-primary {
+    padding: 7px 15px 5px 15px;
+    font-size: $font-size-normal;
   }
 }
 
@@ -740,32 +762,5 @@ a {
   a {
     color: $gray-base;
     padding: 0 10px 0 10px;
-  }
-}
-
-.contact {
-  h3, h4 {
-    text-align: center;
-    font-family: $font-secondary-italic;
-    line-height: 27px;
-  }
-}
-
-.hire-form {
-  font-size: 22px;
-
-  label {
-    float:left;
-    padding-left: 12px;
-  }
-
-  .input-fields input, textarea {
-    font-size: 17px;
-    box-shadow: none;
-    border-bottom: 2px solid rgba(110, 200, 41, 0.6) !important;
-    background-color: $gray-lightest;
-  }
-
-  textarea {
   }
 }
