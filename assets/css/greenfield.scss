@@ -654,7 +654,10 @@ a {
   }
 }
 
-.hire-us, .contact-footer {
+.contact-us__success {
+  display: none;
+  width: 100%;
+  text-align: center;
 }
 
 .hire-us__banner,
