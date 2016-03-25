@@ -1,64 +1,80 @@
 @font-face {  
   font-family: 'Celias Bold';
-  src:url('../fonts/celias-bold.woff2')format("woff2");
+  src: url('../fonts/celias-bold.woff2') format("woff2"),
+  url('../fonts/celias-bold.woff') format("woff");
 }
 @font-face {
   font-family: 'Celias Light';
-  src:url('../fonts/celias-light.woff2')format("woff2");
+  src: url('../fonts/celias-light.woff2')format("woff2"),
+  url('../fonts/celias-light.woff')format("woff");
 }
 @font-face {
   font-family: 'Celias Medium';
-  src:url('../fonts/celias-medium.woff2')format("woff2");
+  src: url('../fonts/celias-medium.woff2')format("woff2"),
+  url('../fonts/celias-medium.woff')format("woff");
 }
 @font-face {
   font-family: 'Celias';
-  src:url('../fonts/celias.woff2')format("woff2");
+  src: url('../fonts/celias.woff2')format("woff2"),
+  url('../fonts/celias.woff')format("woff");
 }
 @font-face {  
   font-family: 'Celias Bold Italic';
-  src:url('../fonts/celias-bold-italic.woff2')format("woff2");
+  src: url('../fonts/celias-bold-italic.woff2')format("woff2"),
+  url('../fonts/celias-bold-italic.woff')format("woff");
 }
 @font-face {
   font-family: 'Celias Light Italic';
-  src:url('../fonts/celias-light-italic.woff2')format("woff2");
+  src: url('../fonts/celias-light-italic.woff2')format("woff2"),
+  url('../fonts/celias-light-italic.woff')format("woff");
 }
 @font-face {
   font-family: 'Celias Medium Italic';
-  src:url('../fonts/celias-medium-italic.woff2')format("woff2");
+  src: url('../fonts/celias-medium-italic.woff2')format("woff2"),
+  url('../fonts/celias-medium-italic.woff')format("woff");
 }
 @font-face {
   font-family: 'Celias Italic';
-  src:url('../fonts/celias-italic.woff2')format("woff2");
+  src: url('../fonts/celias-italic.woff2')format("woff2"),
+  url('../fonts/celias-italic.woff')format("woff");
 }
 @font-face {
   font-family: 'Proxima Nova Regular';
-  src:url('../fonts/proxima-nova-regular.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-regular.woff2')format("woff2"),
+  url('../fonts/proxima-nova-regular.woff')format("woff");
 
 }@font-face {
   font-family: 'Proxima Nova SemiBold';
-  src:url('../fonts/proxima-nova-semibold.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-semibold.woff2')format("woff2"),
+  url('../fonts/proxima-nova-semibold.woff')format("woff");
 }
 @font-face {
   font-family: 'Proxima Nova Light';
-  src:url('../fonts/proxima-nova-light.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-light.woff2')format("woff2"),
+  url('../fonts/proxima-nova-light.woff')format("woff");
 }
 @font-face {
   font-family: 'Proxima Nova Medium';
-  src:url('../fonts/proxima-nova-medium.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-medium.woff2')format("woff2"),
+  url('../fonts/proxima-nova-medium.woff')format("woff");
 }
 @font-face {
   font-family: 'Proxima Nova Light Italic';
-  src:url('../fonts/proxima-nova-light-italic.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-light-italic.woff2')format("woff2"),
+  url('../fonts/proxima-nova-light-italic.woff')format("woff");
 }
 @font-face {
   font-family: 'Proxima Nova SemiBold Italic';
-  src:url('../fonts/proxima-nova-semibold-italic.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-semibold-italic.woff2')format("woff2"),
+  url('../fonts/proxima-nova-semibold-italic.woff')format("woff");
 }
 @font-face {
   font-family: 'Proxima Nova Italic';
-  src:url('../fonts/proxima-nova-italic.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-italic.woff2')format("woff2"),
+  url('../fonts/proxima-nova-italic.woff')format("woff");
 }
 @font-face {
   font-family: 'Proxima Nova Medium Italic';
-  src:url('../fonts/proxima-nova-medium-italic.woff2')format("woff2");
+  src: url('../fonts/proxima-nova-medium-italic.woff2')format("woff2"),
+  url('../fonts/proxima-nova-medium-italic.woff')format("woff");
 }

@@ -10,13 +10,13 @@ $gray-light: lighten($gray-base, 40%);
 $gray-lighter: #E6E7E8;
 $gray-lightest: #F4F4F4;
 $font-primary: 'Celias';
-$font-primary-italic: 'Celias Italic';
-$font-primary-medium: 'Celias Medium';
-$font-primary-bold: 'Celias Bold';
-$font-primary-bold-italic: 'Celias Bold Italic';
-$font-secondary: 'Proxima Nova Regular';
-$font-secondary-italic: 'Proxima Nova Italic';
-$font-bold-italic: 'Proxima Nova SemiBold Italic';
+$font-primary-italic: 'Celias Italic'; // order
+// $font-primary-medium: 'Celias Medium';
+$font-primary-bold: 'Celias Bold'; // order
+$font-primary-bold-italic: 'Celias Bold Italic'; // order
+$font-secondary: 'Proxima Nova Regular'; // order
+$font-secondary-italic: 'Proxima Nova Italic'; // order
+// $font-bold-italic: 'Proxima Nova SemiBold Italic';
 
 $font-size-jumbo: 3.998em;
 $font-size-bigger: 2.827em;
