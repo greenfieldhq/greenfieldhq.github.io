@@ -393,6 +393,10 @@ a {
 
 .case-study {
   margin-top: 30px;
+
+  .row {
+    margin-bottom: 70px;
+  }
 }
 
 .case-study__title {
@@ -413,10 +417,15 @@ a {
   img {
     max-width: 100%;
   }
+
+  &.ask-beatrice-screen {
+    max-height: 857px;
+    overflow: hidden;
+  }
 }
 
 .case-study__hero--phone-border {
-  border: 5px solid #F9F7F8;
+  border: 3px solid #F9F7F8;
   border-radius: 2px;
 }
 
@@ -507,8 +516,9 @@ a {
 }
 
 .about-us__beginning {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  background-color: #F4F4F4;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   .about-us__beginning__img {
     width: 100%;
@@ -576,8 +586,12 @@ a {
 
   .apply-now {
     margin-left: 30px;
-    color: black;
-    background-color: $white-base;
+    color: $white-base;
+    background-color: transparent;
+    border: 2px solid $white-base;
+    border-radius: 5px;
+    text-shadow: none;
+    box-shadow: none;
   }
 
   .fa-angle-right {
