@@ -1,0 +1,31 @@
+<div class="blog-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+  
+        {% if site.JB.posts_collate.provider == "custom" %}
+          {% include custom/posts_collate %}
+        {% else %}
+          {% for post in posts_collate  %}
+  
+            <a href="{{ BASE_PATH }}{{ post.url }}">
+              <div class="col-md-8 col-md-offset-2 blog-entry">
+                <h2>{{ post.title }}</h2>
+                {% assign author = site.data.authors[post.author] %}
+                <div class="author">
+                  <span>By: {{ author.name }}</span>
+                  <span class="date">{{ post.date | date_to_long_string }}</span>
+                </div>
+                {{ post.description }}
+              </div>
+            </a>
+  
+          {% endfor %}
+        {% endif %}
+
+        {% assign posts_collate = nil %}
+  
+      </div>
+    </div>
+  </div>
+</div>
