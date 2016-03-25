@@ -680,8 +680,8 @@ a {
 .contact-footer__form,
 .careers__banner {
   background-color: $brand-primary;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 0;
+  padding-bottom: $font-size-bigger;
   h2, h3, h4 {
     color: $white-base;
   }
