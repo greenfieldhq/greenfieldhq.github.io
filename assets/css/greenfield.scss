@@ -660,6 +660,23 @@ a {
   text-align: center;
 }
 
+.hire-us__success {
+  //position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: $brand-primary;
+  border: 20px solid $gray-lightest;
+  padding: 10px;
+  vertical-align: middle;
+
+  h3 {
+    color: $white-base;
+    //position: absolute;
+    //bottom: 50%;
+  }
+}
+
 .hire-us__banner,
 .contact-footer__banner,
 .contact-footer__form,

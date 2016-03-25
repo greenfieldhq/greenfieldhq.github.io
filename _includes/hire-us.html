@@ -1,3 +1,30 @@
+<script>
+$(function() {
+  $('#contact-us-form').submit(function(event) {
+    event.preventDefault();
+
+    var formEl = $(this);
+    var submitButton = $('input[type=submit]', formEl);
+
+    $.ajax({
+      type: 'POST',
+      url: formEl.prop('action'),
+      accept: {
+        javascript: 'application/javascript'
+      },
+      data: formEl.serialize(),
+      beforeSend: function() {
+        submitButton.prop('disabled', 'disabled');
+      }
+    }).done(function(data) {
+      //submitButton.prop('disabled', false);
+      $('#contact-us-form').hide();
+      $('.hire-us__success').show();
+    });
+  });
+});
+</script>
+
 <div class="hire-us">
   <div class="hire-us__banner">
     <div class="container">
@@ -20,10 +47,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-offset-3 col-md-6">
+          <div class="hire-us__success text-center">
+            <h3>
+              Thanks for reaching out! We'll be in contact shortly!
+            </h3>
+          </div>
+
           <form class="form-group"
                 accept-charset="UTF-8"
                 action="https://formkeep.com/f/6c305a61a698"
-                method="POST">
+                method="POST"
+                id="contact-us-form">
             <div class="input-fields">
               <label>Name</label>
               <p>
