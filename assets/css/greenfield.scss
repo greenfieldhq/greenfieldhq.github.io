@@ -431,6 +431,9 @@ a {
 
 .case-study__parking-icons {
   margin-top: $font-size-bigger;
+  img {
+    width: 100%;
+  }
 }
 
 .blog-post {
@@ -440,7 +443,6 @@ a {
     margin-top: 15px;
     margin-top: 15px;
     font-family: $font-secondary;
-
     p {
       margin: 0 0 30px;
     }
