@@ -431,6 +431,9 @@ a {
 
 .case-study__parking-icons {
   margin-top: $font-size-bigger;
+  img {
+    width: 100%;
+  }
 }
 
 .blog-post {
@@ -440,7 +443,6 @@ a {
     margin-top: 15px;
     margin-top: 15px;
     font-family: $font-secondary;
-
     p {
       margin: 0 0 30px;
     }
@@ -753,10 +755,9 @@ a {
   padding: 40px;
   text-align: center;
 
-  h2 {
+  h3 {
     color: $white-base;
     font-family: $font-secondary-italic;
-    line-height: 37px;
     margin: 0;
   }
 
