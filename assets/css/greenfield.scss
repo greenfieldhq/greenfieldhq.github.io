@@ -238,6 +238,9 @@ a {
   position: relative;
   max-height: 360px;
 
+  // 580 x 420
+  // 1160 x 840
+
   @media screen and (max-width: 768px) {
     max-height: 300px;
   }
