@@ -9,15 +9,15 @@ author: vikram_ramakrishnan
 {% include JB/setup %}
 
 88.89% of [Greenfield](www.greenfieldhq.com)'s team is attending [EmberConf 2016](http://emberconf.com/schedule.html)!
-With over 950+ attendees, this EmberConf's largest showing yet. It's an
+With over 950+ attendees, this is EmberConf's largest showing yet. It's an
 exciting time to be working in Ember, and this short blog post highlights 
 some of today's presentations:
 
 ###Keynote
-This was a really great keynote by [Yehuda Katz](https://twitter.com/wycats) & [Tom Dale](https://twitter.com/tomdale) highlight where Ember is headed, with a particular focus on performance & optimization.
+This was a really great keynote by [Yehuda Katz](https://twitter.com/wycats) & [Tom Dale](https://twitter.com/tomdale) who highlight where Ember is headed, with a particular focus on performance & optimization.
 
-- Ember core team remains but is also dividing up into sub-teams (Ember Data, Ember-CLI, Learning)
-- The Ember core team is really pushing to be more mobile friendly
+- The Ember core team's focus is beginning to shift towards improving performance on mobile devices
+- Due to the core team's focus, it is also dividing up into sub-teams (Ember Data, Ember-CLI, Learning)
 - Glimmer2 is phenomenally fast (seeing something in the range of 3-5x improvements in FPS in some examples)
 
 ###Service Workers
@@ -25,24 +25,24 @@ This was a really great keynote by [Yehuda Katz](https://twitter.com/wycats) & [
 
 - Service workers as a reliable replacement for application cache
 - Highlighted benefits of service workers for offline functionality in apps
-- Impressed by how easily service workers can be integrated with Ember-CLi
+- Impressed by how easily service workers can be integrated with Ember-CLI
 
 ###Cross-Pollinating Communities: We All Win
 [Chris Ball](https://twitter.com/cball_) of [echobind](https://echobind.com/) presented a short history of Ember through multiple vantage points.
 
-- "Good artists good copy, great artists steal"
+- "Good artists copy, great artists steal"
 - A great historical look at Ember.js from its roots in SproutCore to where we are today
 - Ember has drawn from a number of frameworks (convention over configuration, one-way data binding) and other frameworks have drawn from Ember (Angular’s CLI, React Router)
 
 ###<select>ing Good Ember Patterns
 
 [Brenna O'Brien](https://twitter.com/brnnbrn) spent time walking us [through](http://talks.brennaobrien.com/ember-select/selecting-good-ember-patterns.pdf) making good design pattern
-choices in the vein of "Data Down, Actions Up" and Closure Actions to build
+choices in the vein of "Data Down, Actions Up" (DDAU) and Closure Actions to build
 a flexible, reusable and modern app.
 
 - Benefits of components with custom HTML & custom data flow
 - Implementing DDAU to help add more dynamism to your Ember app
-- `{{get}}` helper, which lets you [dynamically lookup](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_get) an object's property &`{{mut}}` helper to implement 1 or 2-way bindings
+- `{{get}}` helper, which lets you [dynamically lookup](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_get) an object's property & `{{mut}}` helper to implement 1 or 2-way bindings
 
 ###Building Desktop Apps with Ember and Electron
 
@@ -64,7 +64,7 @@ desktop app, highlighting its cross-platform benefits!
 ###Warp Speed Memory Management
 
 [Kelly Senna](https://twitter.com/simplysenna) reflected on the importance of memory management
-for a few reasons: (1) User experienced are unequal; (2) Browsers are affected
+for a few reasons: (1) User experiences are unequal; (2) Browsers are affected
 by memory & performance concerns; and (3) understanding memory gives you a
 better understanding of your tools.
 
