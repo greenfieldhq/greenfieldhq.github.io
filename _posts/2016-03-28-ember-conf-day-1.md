@@ -17,8 +17,8 @@ some of today's presentations:
 This was a really great keynote by [Yehuda Katz](https://twitter.com/wycats) & [Tom Dale](https://twitter.com/tomdale) highlight where Ember is headed, with a particular focus on performance & optimization.
 
 - Ember core team remains but is also dividing up into sub-teams (Ember Data, Ember-CLI, Learning)
-- Team is really pushing to be more mobile friendly
-- Glimmer2 is phenomenally fast (seeing something in the range of 3-5x improvements in FPS)
+- The Ember core team is really pushing to be more mobile friendly
+- Glimmer2 is phenomenally fast (seeing something in the range of 3-5x improvements in FPS in some examples)
 
 ###Service Workers
 [John Kleinschmidt](https://twitter.com/jkleinsc) of [cure.org](https://cure.org/) introduced us to Service Workers in Ember to highlight its benefits.
@@ -55,10 +55,21 @@ desktop app, highlighting its cross-platform benefits!
 
 ###Building Mobile Applications with Ember
 
-Alex Blom walked us through [ember-cli-cordova](https://github.com/poetic/ember-cli-cordova), a tool to help develop mobile Ember apps.
+[Alex Blom](https://twitter.com/AlexBlom) walked us through [ember-cli-cordova](https://github.com/poetic/ember-cli-cordova), a tool to help develop mobile Ember apps.
 
 - Forked over a Platform Service from Ionic to determine what Platform the app is running on
 - Handling touch events with [Hammer.js](http://hammerjs.github.io/). Also, infinite scrolling with [smoke and mirrors](https://github.com/runspired/smoke-and-mirrors) and animations with [liquidfire](https://github.com/ember-animation/liquid-fire) work with Cordova. Another animation library to consider is [velocity.js](https://github.com/julianshapiro/velocity)
 - [Crosswalk Project](https://crosswalk-project.org/) enables some performance optimizations. Managing 'Reflow'
+
+###Warp Speed Memory Management
+
+[Kelly Senna](https://twitter.com/simplysenna) reflected on the importance of memory management
+for a few reasons: (1) User experienced are unequal; (2) Browsers are affected
+by memory & performance concerns; and (3) understanding memory gives you a
+better understanding of your tools.
+
+- Memory Life Cycle: allocate, use & release. Extensive discussion of garbage collection in memory release
+- Run Loop: Sync, Actions, routerTransitions, Render, afterRender, Destroy
+- "Be mindful of underyling technologies," meaning, though Ember and other frameworks provide very productive development environments, realize that there is much going on under the hood that is worth understanding
 
 If you're at EmberConf 2016 too, tweet us at [greenfieldhq](https://twitter.com/greenfieldhq). We'd love to meet up!
