@@ -290,8 +290,15 @@ a {
   h2 {
     text-transform: uppercase;
     color: $gray-base;
-    font-size: 2.827em;
+    font-size: $font-size-bigger;
     font-family: $font-primary-italic;
+    @media screen and (max-width: 768px) {
+      font-size: $font-size-big;
+    }
+
+    @media screen and (min-width: 992px) {
+      font-size: $font-size-bigger;
+    }
   }
 
   div {
