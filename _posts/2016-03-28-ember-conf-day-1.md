@@ -8,7 +8,7 @@ author: vikram_ramakrishnan
 ---
 {% include JB/setup %}
 
-89% of [Greenfield](www.greenfieldhq.com)'s team is attending [EmberConf 2016](http://emberconf.com/schedule.html).
+89% of [Greenfield](www.greenfieldhq.com)'s team is attending [EmberConf 2016](http://emberconf.com/schedule.html)!
 With over 950+ attendees, this EmberConf's largest showing yet. It's an
 exciting time to be working in Ember, and this short blog post highlights 
 some of today's presentations:
@@ -36,12 +36,25 @@ Chris Ball of [echobind](https://echobind.com/) presented a short history of Emb
 
 ###<select>ing Good Ember Patterns
 
-Brenna O'Brien spent time walking us through making good design pattern
+Brenna O'Brien spent time walking us [through](http://talks.brennaobrien.com/ember-select/selecting-good-ember-patterns.pdf) making good design pattern
 choices in the vein of "Data Down, Actions Up" and Closure Actions to build
 a flexible, reusable and modern app.
 
 - Benefits of components with custom HTML & custom data flow
 - Implementing DDAU to help add more dynamism to your Ember app
 - `{{get}}` helper, which lets you [dynamically lookup](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_get) an object's property &`{{mut}}` helper to implement 1 or 2-way bindings
+
+###Building Desktop Apps with Ember and Electron
+
+Felix Rieseberg talked about how you can turn your Ember app into a legitimate
+desktop app, highlighting its cross-platform benefits!
+
+- [Ember-Electron](https://github.com/felixrieseberg/ember-electron) integrates Ember & Electron (development, testing & packaging). For example, we can still use the Ember inspector with Electron
+- Multiple Electron apps can be bundled together to provide a "single" native app experience
+- A short discussion around security concerns when building a desktop app through Electron
+
+###Building Mobile Applications with Ember
+
+Alex Blom
 
 If you're at EmberConf 2016 too, tweet us at [greenfieldhq](https://twitter.com/greenfieldhq). We'd love to meet up!
