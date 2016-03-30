@@ -42,7 +42,7 @@ a flexible, reusable and modern app.
 
 - Benefits of components with custom HTML & custom data flow
 - Implementing DDAU to help add more dynamism to your Ember app
-- the `{{get}}` helper, which lets you [dynamically lookup](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_get) an object's property & `{{mut}}` helper to implement 1 or 2-way bindings
+- the `get` template helper, which lets you [dynamically lookup](http://emberjs.com/api/classes/Ember.Templates.helpers.html#method_get) an object's property & `mut` helper to implement 1 or 2-way bindings
 
 ### Building Desktop Apps with Ember and Electron
 
