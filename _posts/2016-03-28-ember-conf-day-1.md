@@ -34,7 +34,7 @@ This was a really great keynote by [Yehuda Katz](https://twitter.com/wycats) & [
 - A great historical look at Ember.js from its roots in SproutCore to where we are today
 - Ember has drawn from a number of frameworks (convention over configuration, one-way data binding) and other frameworks have drawn from Ember (Angular’s CLI, React Router)
 
-###<select>ing Good Ember Patterns
+###`<select>`ing Good Ember Patterns
 
 [Brenna O'Brien](https://twitter.com/brnnbrn) spent time walking us [through](http://talks.brennaobrien.com/ember-select/selecting-good-ember-patterns.pdf) making good design pattern
 choices in the vein of "Data Down, Actions Up" (DDAU) and Closure Actions to build
@@ -78,12 +78,20 @@ better understanding of your tools.
 of the Ember CLI build. This was a highly illuminating talk and clarified many
 questions I had about the build process.
 
-- Old implementation: Tree, a directory of files + Plugin, which takes in a tree, performs some transformations and returns another tree. Now, tree has been renamed to "node."
+- Old implementation: Tree, a directory of files + Plugin, which takes in a tree, performs some transformations and returns another tree. Now, tree has been renamed to "node"
 - Entire build pipeline is an acyclic graph with source node & transform node (kind of corresponding to tree + plugin). Building concatenates each node which gets to `public` & merges into output node
 - Running `BROCCOLI_VIZ=true ember build` & `dot -Tpng graph.<version>.dot > out.png` will generate a visualization of an app's build tree ([see more here](https://github.com/ember-cli/ember-cli/blob/master/PERF_GUIDE.md#broccoli-viz))
 
 ###You're Building a Distributed System!
 
-[Mike Pack](https://twitter.com/mikepack_)
+[Mike Pack](https://twitter.com/mikepack_) discusses building stateful applications in the browser
+and how they relate to distributed systems. He also reflects on the interesting
+idea of "Semi-permanent" state vis-à-vis offline apps & data synchronization.
 
-If you're at EmberConf 2016 too, tweet us at [greenfieldhq](https://twitter.com/greenfieldhq). We'd love to meet up!
+- Discussed his time developing an offline Ember app in Uganda
+- Three types of State: (1) Ephemeral State; (2) Permanent State; and (3) Semi-permanent State. Ephemeral state is local to the user's browser (think page refresh & not persisted to server). Permanent state is persisted to a server and written to a disk. Semi-permanent state lives in the browser, is transitory and is written to disk (i.e., local storage)
+- Consistency + Availability + Partition Tolerance = [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem). Consistent state occurs when client and server have same data. Availability occurs when software 'works.' When two nodes no longer communicate with one another, they are in 'Partition.' Handling this is Partition Tolerance. Data synchronization is the final step in this process. A few tools follow here: [CouchDB](http://couchdb.apache.org/) + [PouchDB](https://pouchdb.com/), [Firebase](https://www.firebase.com/), [Orbit.js](https://github.com/orbitjs), [CRDTs](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+
+###Happy Hour
+
+Where we're headed now. If you're at EmberConf 2016 too, tweet us at [greenfieldhq](https://twitter.com/greenfieldhq). We'd love to meet up!
