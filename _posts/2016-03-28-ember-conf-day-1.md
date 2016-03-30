@@ -72,4 +72,18 @@ better understanding of your tools.
 - Run Loop: Sync, Actions, routerTransitions, Render, afterRender, Destroy
 - "Be mindful of underyling technologies," meaning, though Ember and other frameworks provide very productive development environments, realize that there is much going on under the hood that is worth understanding
 
+###Dissecting an Ember CLI Build
+
+[Estelle DeBlois](https://twitter.com/edeblois) demonstrated the inner workings
+of the Ember CLI build. This was a highly illuminating talk and clarified many
+questions I had about the build process.
+
+- Old implementation: Tree, a directory of files + Plugin, which takes in a tree, performs some transformations and returns another tree. Now, tree has been renamed to "node."
+- Entire build pipeline is an acyclic graph with source node & transform node (kind of corresponding to tree + plugin). Building concatenates each node which gets to `public` & merges into output node
+- Running `BROCCOLI_VIZ=true ember build` & `dot -Tpng graph.<version>.dot > out.png` will generate a visualization of an app's build tree ([see more here](https://github.com/ember-cli/ember-cli/blob/master/PERF_GUIDE.md#broccoli-viz))
+
+###You're Building a Distributed System!
+
+[Mike Pack](https://twitter.com/mikepack_)
+
 If you're at EmberConf 2016 too, tweet us at [greenfieldhq](https://twitter.com/greenfieldhq). We'd love to meet up!
