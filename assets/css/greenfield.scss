@@ -258,6 +258,7 @@ a {
 .thumbnail-grid__splash {
   overflow: hidden;
   position: relative;
+  // TODO min-height
 }
 
 .thumbnail-grid__img {
@@ -290,10 +291,17 @@ a {
   h2 {
     text-transform: uppercase;
     color: $gray-base;
-    font-size: $font-size-bigger;
+    font-size: $font-size-normal-plus;
     font-family: $font-primary-italic;
+    margin: 0px;
+    padding: 10px;
+
     @media screen and (max-width: 768px) {
       font-size: $font-size-big;
+    }
+
+    @media screen and (max-width: 512px) {
+      font-size: $font-size-normal;
     }
 
     @media screen and (min-width: 992px) {
