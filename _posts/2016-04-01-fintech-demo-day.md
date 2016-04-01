@@ -19,7 +19,7 @@ can now be prototyped and worked on quickly and for free.
 Here are some high level themes that we came across that seemed to be
 overarching related to the companies that presented:
 
-1. Every startup that presented fundamentally implemented technology to enable better decision making by investors, individuals and other customers
+1. Every startup that presented fundamentally implemented technology to enable better decision making by investors, individuals and other customers. [flesh this out]
 2. Data feeds are still hard to wrangle and startups need better easy access
 to good quality, standardized data sources. For example, some data providers
 provide data in CSVs, others through proprietary formats that need to be
@@ -68,35 +68,19 @@ in London. Their tagline is "We push opportunities to your people."
 [Twitter](https://twitter.com/realCognism)
 
 ### Nutonian
-Nutonian offers an application that empowers SAS and MATLAB professionals to automatically discover analytical models via sophisticated evolutionary algorithms.
-- http://nutonian.com
-- https://twitter.com/nutonian
 
-Joy Kinnear, British Consulte General
+[Nutonian](http://nutonian.com)'s main product Eureqa stems from a Cornell
+University AI Lab. It helps investment professionals analyze data by providing
+the best models they can use based on billions of datapoints. According to them,
+there are hundreds of thousands of "Data scientist" job openings out there,
+which indicates that there is a shortage of expertise out there to help with
+good analytics. This is the general process of their product: (1) User either
+uploads data or connects to a data provider (like Factset); (2) The data gets
+analyzed against thousands of economic indicators; and (3) A series of models
+and their historical accuracy is sent back to the user, from which they can
+decide which are the best to use.
 
-- Data important, but impact isn't there yet
-- Facset + CapitalIQ = data partners
-- 200,000 data scientist job openings
-- not enough people to help companies come up with good analytics
-- data science in enterprise; orgs held hostage by select few
-- "machines are the future of analytics"
-
-Eureqa
-
-cornell AI lab
-
-- eureqa goes through billions of opportunities that gives you a model you should use
-- "the first question is often not a good one, the fifth? that gets better"
-- models by themselves aren't a strategy, so we need to find a good model
-- demo of real estate investment firm
-
-1. upload data or connect to fin data providers
-2. now we're looking at tons of data, eco indicators per month
-3. send this data in and get back a bunch of models and how accurate they were
-4. gives you more information and specifics about each of these (real gdp has a high correlation)
-5. you can export it in excel, pdf, etc.; RESTful python API
-
-- raw data to actionable answers at the push of a button
+[Twitter](https://twitter.com/nutonian)
 
 ### Kyper
 Kyper's data marketplace and logistics technology power the entire lifecycle of data, from data on-boarding to research and product development.
