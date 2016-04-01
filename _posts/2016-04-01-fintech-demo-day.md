@@ -18,8 +18,6 @@ partners (like AWS) with startups. The benefit here is that what was once very
 expensive to get started (due to the cost of data access) can now be prototyped
 and worked on quickly and for free.
 
-![datapartners]({{ BASE_PATH }}/assets/images/fintech-sandbox-demo-day/data-partners.jpg)
-
 A few high level themes arose from the event:
 
 ### Non-standardized data feeds are a headache
@@ -47,6 +45,8 @@ important insights and discoveries. The strongest application developers
 fundamentally value design, and the strongest applications add business value
 through thoughtful and deliberate design. The startups that presented clearly
 recognize this, thereby providing meaningful revelations to their end customers.
+
+![datapartners]({{ BASE_PATH }}/assets/images/fintech-sandbox-demo-day/data-partners.jpg)
 
 Here's a rundown of the companies that presented:
 
