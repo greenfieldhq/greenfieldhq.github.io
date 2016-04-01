@@ -5,6 +5,8 @@ permalink: pretty
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 markdown: kramdown
+kramdown:
+  input: GFM
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
