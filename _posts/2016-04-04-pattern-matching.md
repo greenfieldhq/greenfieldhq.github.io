@@ -51,7 +51,7 @@ unreadable) like this:
 |> hd
 |> Enum.reverse
 |> hd
-=> "thereyouare"
+# => "thereyouare"
 ```
 
 Chaining together `tl`s and `hd`s with `Enum.reverse`s is completely unnecessary
@@ -114,7 +114,7 @@ data
 |> hd
 |> elem(2)
 |> hd
-=> "(415) 222-9670"
+# => "(415) 222-9670"
 ```
 
 Yep, I would much prefer pattern matching than doing that.
