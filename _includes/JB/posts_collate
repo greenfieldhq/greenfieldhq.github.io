@@ -16,7 +16,9 @@
                   <span>By: {{ author.name }}</span>
                   <span class="date">{{ post.date | date_to_long_string }}</span>
                 </div>
-                {{ post.description }}
+                <span class="blog-entry__description">
+                  {{ post.description }}
+                </span>
               </div>
             </a>
   

@@ -1,31 +1,38 @@
 <div class="blog-post">
   <div class="row">
     <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+      <div class="blog-post__title">
+         <div class="blog-post__pagination">
+            <span class="blog-post__page-button">
+             {% if page.previous %}
+               <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+                 <i class="fa fa-angle-left"></i>
+               </a>
+             {% endif %}
+            </span>
 
-      <div class="post-title">
-        <ul class="pagination-list list-inline">
-          {% if page.previous %}
-            <li class="prev pagination-icon">
-              <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><i class="fa fa-angle-left"></i></a>
-            </li>
-          {% endif %}
-            <li class="pagination-icon">
+            <span class="blog-post__page-button">
               <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">&times;</a>
-            </li>
-          {% if page.next %}
-            <li class="next pagination-icon">
-              <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><i class="fa fa-angle-right"></i></a>
-            </li>
-          {% endif %}
-      </ul>
+            </span>
 
-      {% assign author = site.data.authors[page.author] %}
+            <span class="blog-post__page-button">
+             {% if page.next %}
+               <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">
+                 <i class="fa fa-angle-right"></i>
+               </a>
+             {% endif %}
+            </span>
+         </div>
+
+        {% assign author = site.data.authors[page.author] %}
+
         <h1>
           {{ page.title }}
           {% if page.tagline %}
             <br><small>{{page.tagline}}</small>
           {% endif %}
         </h1>
+
         <div class="author">
           <span>By: {{ author.name }}</span><br>
           <span class="date">{{ page.date | date_to_long_string }}</span>
