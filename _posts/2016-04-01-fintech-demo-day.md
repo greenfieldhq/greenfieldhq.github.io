@@ -94,27 +94,15 @@ csv, xml, or xls. Their marketplace allows the developer to gain access to data 
 [Twitter](https://twitter.com/kyperdata)
 
 ### EverSafe
-EverSafe is a financial safety net for seniors and their families. EverSafe protects older adults from fraud, identity theft and unscrupulous telemarketers.
-- https://www.eversafe.com/index.html
-- https://twitter.com/EverSafeSeniors
+[EverSafe](https://www.eversafe.com/index.html) provides the elderly and their family members protection from
+fraud. The elderly have significant risks associated with financial
+exploitation. EverSafe's technology tries to get ahead of these fraudulent
+activities by analyzing financial data and flagging any suspicious activity.
+For example, there are more than sixty red flags for older populations and
+EverSafe's technology scans its users' financial accounts looking for these red
+flags. Family members get alerted when any suspicious activity shows up.
 
-Mark Goodman, MassMutual Ventures
-
-- harriet tischler, 80, victim of financial exploitation
-- old people have risk associated with financial exploitation
-- use innovative & proprietary technology to get ahead of this problem
-- allow elderly to live with grace and dignity
-- eversafe scans financial accounts for patterns of suspicious behavior =>
-- data feeds into algo (60 red flags for older population) =>
-- When suspicious activity shows up, family members get alerts
-- tech is mobile + web
-- one algo
-
-- unusual increase in cash withdrawals
-- alerts
-
-- "your data makes our learning algorithms more powerful"
-- "ask us how you can help"
+[Twitter](https://twitter.com/EverSafeSeniors)
 
 ### Open Invest Co.
 Open Invest provides openness in investment management, open refinement of strategies for wealth management and capital preservation, along with an ease of management of systematically described strategies.
