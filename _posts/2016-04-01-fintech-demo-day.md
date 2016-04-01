@@ -105,30 +105,16 @@ flags. Family members get alerted when any suspicious activity shows up.
 [Twitter](https://twitter.com/EverSafeSeniors)
 
 ### Open Invest Co.
-Open Invest provides openness in investment management, open refinement of strategies for wealth management and capital preservation, along with an ease of management of systematically described strategies.
-- https://openinvest.co/
-- https://twitter.com/openinvestco
+[Open Invest](https://openinvest.co/) gives its users the ability to choose
+investment strategies based on both financial return and social good. Their
+argument is that Millenials invest based on their own values, and that
+investing with an eye for social good can be just as profitable as not. They
+offer a clean, crisp dashboard that lets users pick industries they are not
+interested in (like Tobacco, for example), and their software returns possible
+investment strategies based on their inputs. The system builds on itself as it
+gains more insight in what types of companies its users don't want to invest in.
 
-Ranjit Tinaikar, Thomson Reuters
-
-- make it easy to invest
-- mainstream socially responsible investing
-- investment strategy that seeks to consider both financial return & social good
-- "financial performance is not affected when you take into accountsocial returns"
-- Millenials invest in accordance with their values
-
-- automated systems for tax loss harvesting
-- target client: mid 30s, doctor at UCSF, vegan, environmentally responsible, paid off all loans
-
-- dashboard => user picks which field they dont want (like tobacco)
-- follow up an you can choose companies that dont support another field
-- backend data (400 + indicators)
-- they get carbon use from a data provider
-- you can exlucde specific companies and tell the system why, which helps inform trends for the next user
-
-ongoing client interactions
-- due to changing trending issues
-- keep fees low, low churn, etc.
+[Twitter](https://twitter.com/openinvestco)
 
 ### Trigger
 Trigger helps you manage your portfolio by simplifying your investment ideas. We make it easy to execute and share your views via an IF THIS THEN THAT statement, called a Trigger. Use your linked brokerage account to get real-time alerts on the events you are about and place orders immediately after your trigger has fired.
