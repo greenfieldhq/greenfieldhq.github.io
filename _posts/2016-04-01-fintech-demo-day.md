@@ -83,36 +83,15 @@ decide which are the best to use.
 [Twitter](https://twitter.com/nutonian)
 
 ### Kyper
-Kyper's data marketplace and logistics technology power the entire lifecycle of data, from data on-boarding to research and product development.
-- https://www.kyper.com/
-- https://twitter.com/kyperdata
 
-Dwayne Desaulniers, Associated Press - "Gone from horses to python"
+[Kyper](https://www.kyper.com/)'s marketplace matches data providers with
+developers. Similar to [Quandl](https://www.quandl.com/), it matches developers
+with much needed datasets that allow them to quickly prototype and develop
+ideas. They are trying to solve the problem of imposed technologies by data
+providers, like Java, .NET, C#, various communication protocols, formats like
+csv, xml, or xls. Their marketplace allows the developer to gain access to data based on their needs rather than the imposed restrictions of the data providers.
 
-- Quant fund team members
-- Fintech data publishers << interface == Kyper >> Fintech developers
-- right now integration with mulitple data publishers is difficult
-- imposed tech like java .net c# comm protocls, csv, clxs, xml
-
-- this process is repeated over and over; massive systemic duplication of effort
-
-- kyper wnats to remove the friction by providing data as a service
-- devs can quickly prototype ideas and implement ideas
-- for publishers, kyper provides portal; images, logo , branding
-- dev perspective, very easily find a data set that is useful to you; you can subscribe to a data source for $x/mo and have immediate access to it
-- stock + earnings events + wikipedia traffic
-
-pubs
-1. access new markets
-2. new products
-3. respond to client
-4. protect data
-
-devs
-1. access data immed
-2. prototype fast
-3. accurately access roi
-4. build internal consensus
+[Twitter](https://twitter.com/kyperdata)
 
 ### EverSafe
 EverSafe is a financial safety net for seniors and their families. EverSafe protects older adults from fraud, identity theft and unscrupulous telemarketers.
