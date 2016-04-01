@@ -8,6 +8,8 @@ author: vikram_ramakrishnan
 ---
 {% include JB/setup %}
 
+![speaker]({{ BASE_PATH }}/assets/images/fintech-sandbox-demo-day/speaker.jpg)
+
 Last week, [Greenfield](http://www.greenfieldhq.com) attended the [FinTech Sandbox](http://FinTechsandbox.org/)'s Demo Day, which highlighted
 some of the exciting FinTech startups which have gone through the program.
 The FinTech Sandbox connects some phenomenal data partners (Thomson Reuters,
@@ -15,6 +17,8 @@ Factset, Tradier, Xignite, and others), accelerator partners and infrastructure
 partners (like AWS) with startups. The benefit here is that what was once very
 expensive to get started (due to the cost of data access) can now be prototyped
 and worked on quickly and for free.
+
+![datapartners]({{ BASE_PATH }}/assets/images/fintech-sandbox-demo-day/data-partners.jpg)
 
 A few high level themes arose from the event:
 
