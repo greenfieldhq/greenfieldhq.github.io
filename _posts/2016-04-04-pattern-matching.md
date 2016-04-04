@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bring Sanity to Your Data Structures with Elixr Pattern Matching"
+title: "Bring Sanity to Your Data Structures with Elixir Pattern Matching"
 description: "Examples of pattern matching deeply nested data structures in Elixir."
 category:
 tags: [elixir, pattern matching, functional programming, api]
@@ -36,12 +36,16 @@ structures? Let's take a look:
 [[], _, [_, _, canyoufindme]] = [[], "anything", ["oh", "hai", "thereyouare"]]
 ```
 
+Just side note. The above data structure is probably not anything we would
+actually want to write IRL. I'm just using it as an example of how you might
+retrieve a value from a nested data structure.
+
 Here, we match `canyoufindme` with the string `"thereyouare"`. By the way,
 the `_` simply ignores whatever's on the right hand side of the match. `_`
 just means 'I don't care about assigning the right side of this match
-to anything so ignore me.' 
+to anything so ignore me.'
 
-Without pattern matching, we'd end up doing something ridiculous (and
+Without pattern matching, we might end up doing something ridiculous (and
 unreadable) like this:
 
 ```elixir
@@ -54,10 +58,20 @@ unreadable) like this:
 # => "thereyouare"
 ```
 
+Or, we might try something more reasonable, but still not entirely satisfactory:
+
+```elixir
+[[], "anything", ["oh", "hai", "thereyouare"]]
+|> List.last
+|> List.last
+# => "thereyouare"
+```
+
 Chaining together `tl`s and `hd`s with `Enum.reverse`s is completely unnecessary
-here. If you know how many times you need to grab a head or tail and reverse
-a list, then you probably know the *precise* format of the data structure coming
-in, which begs the question, "Why not use pattern matching?"
+here. Similarly, calling `List.last` multiple times seems to beg a little
+refactoring. If you know how many times you need to grab a head or tail and
+reverse a list, then you probably know the *precise* format of the data
+structure coming in, which evokes the question, "Why not use pattern matching?"
 
 I promised this would be a short blog post, but I wanted to give one more
 example where pattern matching would be helpful over chaining-madness.
