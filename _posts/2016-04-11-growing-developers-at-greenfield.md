@@ -11,16 +11,16 @@ author: tom_chen
 ![tree]({{ BASE_PATH
 }}/assets/images/growing-developers-at-greenfield/tree.jpeg)
 
-Before I was a developer at Greenfield, I spent several years working in
-academia. After deciding to make the leap into full-time software development
-and completing [Launch Academy](https://www.launchacademy.com/) last year, I was
-anxious to join a company where I could work with and learn from experienced
-developers who were shipping high quality code. When I arrived at Greenfield, I
-was happy to find a team that was not only welcoming and supportive but also
-active in the open source community, passionate about best practices, and as
-excited about building awesome software as I am. Having been at Greenfield for a
-few months now, I'd like to share a couple of lessons I’ve learned that might be
-valuable to others just getting started in their software careers.
+Before I was a developer at Greenfield, I spent several years working as
+professor in academia. After deciding to make the leap into full-time software
+development and completing [Launch Academy](https://www.launchacademy.com/) last
+year, I was anxious to join a company where I could work with and learn from
+experienced developers who ship high quality code. At Greenfield, I was happy to
+find a team that was not only welcoming and supportive but also active in the
+open source community, passionate about best practices, and as excited about
+building awesome software as I am. Having been at Greenfield for a few months
+now, I'd like to share a couple of lessons I’ve learned that might be valuable
+to others just getting started in their software careers.
 
 ### Think Process, Not Product
 
@@ -35,7 +35,7 @@ helpful to have a record of what I’m learning not only as a reference for futu
 me to look back on but also as a way to pause and recognize my successes and
 reflect on what I could do better tomorrow. If you spend all your energy focused
 on what you don’t know, it’s easy to [downplay the progress you're
-making](http://larahogan.me/donuts/). But If you concentrate on the *process* of
+making](http://larahogan.me/donuts/). But if you concentrate on the *process* of
 learning something new each day, those small gains will add up to big wins over
 time. [All great developers were beginners](https://changelog.com/189/) at some
 point, and they achieved developer greatness one day a time, just like you.
@@ -65,17 +65,18 @@ It’s often said that the best way to learn is to teach what you know, and I’
 found this to be very true in software development. Even if you’re new to
 development, there’s definitely someone out there right now who is struggling to
 work through something you’ve just figured out. Sharing that knowledge on Stack
-Overflow, on Twitter, in a blog post not only helps others but also reinforces
-your own understanding. I often find that trying to communicate what I’ve
-learned to someone else helps cement what I know, and it more often than not
-reveals gaps in my understanding that I can then go and fill in. That last part
-is key. You don’t need to wait until you’ve written perfect code before you show
-it to others. Showing your work in progress, asking questions, and getting
-feedback are all key to learning. Contributing to [open source
-software](https://blog.newrelic.com/2014/05/05/open-source_gettingstarted/) is
-an especially great way to show your work, help others, and learn while you do
-it. The best code is not written alone. Participating in the community — giving,
-sharing, receiving — helps all of us get better.
+Overflow, on Twitter, or in a blog post not only helps others but also
+reinforces your own understanding. I often find that trying to communicate what
+I’ve learned to someone else helps cement what I know, and it more often than
+not reveals gaps in my understanding that I can then go and fill in. That last
+part is key. You don’t need to wait until you’ve written perfect code before you
+show it to others. Showing your work in progress, asking questions, and getting
+feedback are all key to learning. The best code is not written alone.
+Contributing to [open source
+software](https://blog.newrelic.com/2014/05/05/open-source_gettingstarted/) is a
+great way to show your work, help others, and learn while you do it.
+Participating in the community — giving, sharing, receiving — helps all of us
+get better.
 
 I hope these reflections are helpful to others who may be just getting their
 software careers off the ground. Software development is an exciting field to be
