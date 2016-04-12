@@ -25,7 +25,7 @@ innocuous examples like these:
 or
 
 ```elixir
-{x, y} = {1, 2}
+{x, y} = {1, 10}
 ```
 
 Both of these match `x` with `1` and `y` with `10`. Seems straightforward, right?
