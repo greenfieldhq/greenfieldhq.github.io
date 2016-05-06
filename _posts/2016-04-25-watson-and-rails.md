@@ -11,7 +11,7 @@ learn more about Watson's history and it's future
 [here](http://www.techrepublic.com/article/ibm-watson-the-inside-story-of-how-the-jeopardy-winning-supercomputer-was-born-and-what-it-wants-to-do-next/).
 
 Watson uses natural language processing (NLP) and machine learning to extract
-information from large amounts of data. In it's run on _Jeopardy!_, Watson had
+information from large amounts of data. In its run on _Jeopardy!_, Watson had
 access to four terabytes of disk storage consisting of 200 million pages of
 content, including the full text of
 [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia).
@@ -49,13 +49,13 @@ dismay when I discovered that this and other Watson APIs don't have any Ruby
 documentation. Not only that, but Ruby doesn't natively support uploading a
 file through an HTTP request.
 
-#### Here's how I made it work:
+## How I Made it Work
 
 My app allowed teachers to upload assignments and students to view, complete, and
 make submissions - basically modernizing the homework process.
 
 In my database I have a model called `Assignment` with numerous properties, one
-of which is the property `file`, which is a string.
+of which is the property `file`, which is a string representing the filename.
 
 When creating a new assignment on the `/assignments/new` page, the file is
 saved via the following form field:
@@ -165,7 +165,9 @@ class WatsonApi
     end
 
     response = conn.post(path, payload)
-    json_response_body = JSON.parse(response.body)
+    JSON.parse(response.body)
+    # The parsed response will be returned and therefore
+    # set as @data in the initializer
   end
 end
 ```
