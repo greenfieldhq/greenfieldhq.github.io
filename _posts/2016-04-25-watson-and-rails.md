@@ -33,6 +33,7 @@ conversion. We can use Watson to convert text to speech (or vice versa), and
 recognize faces and objects from images.
 
 ![API options]({{ BASE_PATH }}/assets/images/watson-and-rails/watson-apis.png)
+_From IBM Bluemix_
 
 ## Watson and Ruby
 
@@ -50,8 +51,8 @@ file through an HTTP request.
 
 #### Here's how I made it work:
 
-My app was all about teachers being able to upload assignments so that students
-could view them and make submissions. Basically, it was for homework.
+My app allowed teachers to upload assignments and students to view, complete, and
+make submissions - basically modernizing the homework process.
 
 In my database I have a model called `Assignment` with numerous properties, one
 of which is the property `file`, which is a string.
@@ -116,8 +117,8 @@ class WatsonApi
   end
 
   def questions
-    # This is for iterating through the returned
-    # JSON to pull out the desired data
+    # This iterates through the returned JSON and pulls out the desired data,
+    # in this case the questions from the Assignment.
     @data.values[3].map { |item| [item["title"], item["content"][0]["text"]] }
   end
 
@@ -148,11 +149,11 @@ class WatsonApi
     if Rails.env.production?
       payload = {
         config: Faraday::UploadIO.new("#{::Rails.root}/lib/WatsonApi/config.json", "application/json"),
-      	# config tells Watson what you want your document converted to (JSON/HTML/PLAIN TEXT)
-        # This is in a separate file config.json (see below)
-	      file: Faraday::UploadIO.new(open(@doc), "application/pdf")
-      	# In production, calling open on the @doc url with open-uri allows us
-      	# to open the url as if it were a file
+          # config tells Watson what you want your document converted to (JSON/HTML/PLAIN TEXT)
+          # This is in a separate file config.json (see below)
+        file: Faraday::UploadIO.new(open(@doc), "application/pdf")
+          # In production, calling open on the @doc url with open-uri allows us
+          # to open the url as if it were a file
       }
     else
       payload = {
